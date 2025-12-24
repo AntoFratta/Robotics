@@ -1,0 +1,11 @@
+{
+  "name": "Mario",
+  "age": 78,
+  "living_situation": "Con la moglie",
+  "communication_needs": "Sente poco: usare frasi brevi e confermare comprensione",
+  "main_condition": "Parkinson",
+  "current_therapies": "Levodopa",
+  "wakes_up_at": "07:00",
+  "goes_to_sleep_at": "22:30",
+  "health_goal": "Camminare 10 minuti al giorno"
+}

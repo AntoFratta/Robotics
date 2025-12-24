@@ -1,0 +1,6 @@
+langchain-ollama
+langchain-chroma
+chromadb
+langchain-core
+langgraph
+typing_extensions

@@ -1,0 +1,94 @@
+{
+  "name": {
+    "description": "il nome della persona",
+    "section": "Dati personali"
+  },
+  "age": {
+    "description": "l’età della persona",
+    "section": "Dati personali"
+  },
+  "job": {
+    "description": "la precedente o attuale occupazione principale, se presente",
+    "section": "Dati personali"
+  },
+  "living_at": {
+    "description": "la città o il paese in cui la persona vive",
+    "section": "Dati personali"
+  },
+  "gender": {
+    "description": "genere dell’utente",
+    "section": "Dati personali"
+  },
+  "living_situation": {
+    "description": "se la persona vive da sola, con familiari, con il coniuge, o in una struttura di assistenza",
+    "section": "Dati personali"
+  },
+  "communication_needs": {
+    "description": "eventuali difficoltà di vista, udito, linguaggio o uso della tecnologia da tenere in considerazione",
+    "section": "Dati personali"
+  },
+  "main_condition": {
+    "description": "il principale problema di salute o diagnosi, descritto con parole proprie",
+    "section": "Dati clinici"
+  },
+  "condition_since": {
+    "description": "da quanto tempo è presente questo problema di salute, anche in modo approssimativo",
+    "section": "Dati clinici"
+  },
+  "current_therapies": {
+    "description": "le principali cure o terapie attualmente in corso",
+    "section": "Dati clinici"
+  },
+  "most_bothersome_symptom": {
+    "description": "il disturbo o sintomo che, nella vita quotidiana, dà più fastidio alla persona",
+    "section": "Dati clinici"
+  },
+  "symptoms_worse_when": {
+    "description": "i momenti della giornata in cui i disturbi sono percepiti come più intensi, ad esempio mattina, pomeriggio, sera o notte",
+    "section": "Dati clinici"
+  },
+  "main_health_concern": {
+    "description": "la principale preoccupazione legata alla propria salute che la persona desidera segnalare",
+    "section": "Dati clinici"
+  },
+  "other_conditions": {
+    "description": "altre patologie importanti oltre alla principale, se la persona desidera indicarle",
+    "section": "Dati clinici"
+  },
+  "wakes_up_at": {
+    "description": "orario in cui la persona di solito si sveglia",
+    "section": "Dati sulla routine"
+  },
+  "goes_to_sleep_at": {
+    "description": "orario in cui la persona di solito va a dormire",
+    "section": "Dati sulla routine"
+  },
+  "main_daily_activities": {
+    "description": "le attività principali della giornata, ad esempio passeggiate, attività in casa, incontri con altre persone",
+    "section": "Dati sulla routine"
+  },
+  "illness_impact": {
+    "description": "in che modo il problema di salute influisce sulle attività di tutti i giorni",
+    "section": "Dati sul vissuto della malattia"
+  },
+  "main_difficulty": {
+    "description": "la difficoltà che in questo periodo pesa di più per la persona",
+    "section": "Dati sul vissuto della malattia"
+  },
+  "support_person": {
+    "description": "la persona di riferimento che offre maggiore sostegno, se presente",
+    "section": "Dati sul vissuto della malattia"
+  },
+  "health_goal": {
+    "description": "l’aspetto della salute o della giornata che la persona desidera migliorare in modo particolare",
+    "section": "Dati sul vissuto della malattia"
+  },
+  "autonomy_level_adl": {
+    "description": "il grado di autonomia nelle attività quotidiane, come muoversi in casa, lavarsi, vestirsi, e il bisogno di aiuto",
+    "section": "Dati sul vissuto della malattia"
+  },
+  "emotional_impact": {
+    "description": "l’effetto che la situazione di salute ha sullo stato emotivo della persona nella vita di tutti i giorni",
+    "section": "Dati sul vissuto della malattia"
+  }
+}
