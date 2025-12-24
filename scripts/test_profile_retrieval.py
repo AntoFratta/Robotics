@@ -15,6 +15,9 @@ def main():
 
     while True:
         q = input("\nQuery (Q per uscire): ").strip()
+        if q == "":
+            print("Inserisci una query (es. 'routine', 'comunicazione', 'obiettivo').")
+            continue
         if q.lower() == "q":
             break
         ctx = retrieve_profile_context(retriever, q)

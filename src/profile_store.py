@@ -27,7 +27,7 @@ class ProfileStoreConfig:
     embed_model: str = "mxbai-embed-large"
 
     # Retrieval
-    k: int = 5
+    k: int = 3
 
 
 def _load_json(path: Path) -> Any:
