@@ -21,3 +21,10 @@ class DialogueState(TypedDict):
 
     # Flag fine
     done: bool
+
+    # Profilo
+    profile_path: str
+    profile_context: str
+
+    # Retriever (Chroma + OllamaEmbeddings), creato una sola volta in app.py
+    retriever: object
