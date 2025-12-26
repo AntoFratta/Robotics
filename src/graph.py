@@ -1,11 +1,62 @@
 # src/graph.py
 from __future__ import annotations
 
+import re
 from langgraph.graph import StateGraph, START, END
 from langchain_core.messages import SystemMessage, HumanMessage
 
 from .state import DialogueState
 from .profile_store import retrieve_profile_context
+
+
+def _cleanup(text: str) -> str:
+    if not text:
+        return ""
+    t = text.strip()
+    t = re.sub(r"(?is)^\s*ecco.*?:\s*", "", t).strip()
+    lines = [ln.strip() for ln in t.splitlines() if ln.strip()]
+    return "\n".join(lines).strip()
+
+
+def _is_bad_rewrite(candidate: str, original: str) -> bool:
+    """Heuristics anti-deriva: se sembra che l'LLM abbia cambiato significato o stile, fallback."""
+    if not candidate:
+        return True
+
+    c = candidate.lower()
+
+    # vieta il "tu"
+    forbidden_tokens = {"tu", "ti", "te", "tua", "tuo", "tue", "tuoi"}
+    if any(tok in c.split() for tok in forbidden_tokens):
+        return True
+
+    # vieta nomi propri presi dal profilo (esempio: mario)
+    if "mario" in c:
+        return True
+
+    # frasi tipiche di “re-interpretazione” che cambiano significato
+    bad_phrases = [
+        "a causa della",
+        "considerando",
+        "tenendo conto",
+        "in base alla sua",
+        "dato che",
+        "per via della",
+        "le è difficile",
+        "ha provato a fare qualcosa",
+    ]
+    if any(p in c for p in bad_phrases):
+        return True
+
+    # errori grammaticali frequenti visti (“Lei ha riuscito…”)
+    if "lei ha riuscito" in c:
+        return True
+
+    # se NON contiene un punto interrogativo e l'originale sì, sospetto
+    if ("?" in original) and ("?" not in candidate):
+        return True
+
+    return False
 
 
 def node_select_question(state: DialogueState) -> DialogueState:
@@ -19,7 +70,7 @@ def node_select_question(state: DialogueState) -> DialogueState:
         return state
 
     state["current_question"] = questions[idx]["text"]
-    state["display_question"] = None  # verrà riempita dal rewrite
+    state["display_question"] = None
     return state
 
 
@@ -27,7 +78,6 @@ def node_profile_context(state: DialogueState) -> DialogueState:
     retriever = state["retriever"]
 
     question = (state.get("current_question") or "").strip()
-
     prev_answer = ""
     if state.get("qa_history"):
         prev_answer = (state["qa_history"][-1].get("answer") or "").strip()
@@ -42,8 +92,8 @@ def node_profile_context(state: DialogueState) -> DialogueState:
 
 def node_rewrite_question(state: DialogueState) -> DialogueState:
     """
-    Usa ChatOllama per riscrivere la domanda in modo più chiaro,
-    mantenendo lo stesso significato e adattandola al profilo.
+    NON paraprasare: solo semplificazione e spezzatura in frasi brevi.
+    Se l'LLM deraglia -> fallback alla domanda originale.
     """
     original = (state.get("current_question") or "").strip()
     if not original:
@@ -51,35 +101,38 @@ def node_rewrite_question(state: DialogueState) -> DialogueState:
         return state
 
     profile_ctx = (state.get("profile_context") or "").strip()
-    prev_answer = ""
-    if state.get("qa_history"):
-        prev_answer = (state["qa_history"][-1].get("answer") or "").strip()
 
     system = SystemMessage(
         content=(
-            "Sei un assistente che conduce un'intervista con una persona anziana.\n"
-            "Devi RISCRIVERE la domanda mantenendo ESATTAMENTE lo stesso significato e obiettivo.\n"
-            "Adatta la formulazione alle esigenze del profilo (es. frasi brevi, una cosa per volta).\n"
-            "Non aggiungere nuove domande o nuove informazioni.\n"
-            "Mantieni il registro formale (Lei).\n"
-            "Output: SOLO la domanda riscritta, senza spiegazioni."
+            "Sei un assistente che fa domande a una persona anziana.\n"
+            "Devi SOLO SEMPLIFICARE la domanda, non riscriverla liberamente.\n\n"
+            "REGOLE (rigide):\n"
+            "1) Mantieni lo STESSO significato parola per parola, senza cambiare concetti.\n"
+            "2) Puoi SOLO: spezzare in frasi brevi, rendere più chiari i pronomi, togliere ridondanze.\n"
+            "3) NON sostituire parole chiave con sinonimi (es. 'preoccupato' resta 'preoccupato').\n"
+            "4) Mantieni SEMPRE 'Lei/Le/Suo/Sua'. Non usare mai 'tu'.\n"
+            "5) Non inserire nomi propri o dettagli del profilo.\n"
+            "6) Se la domanda ha due parti (es. 'Se sì... Se no...'), mantienile entrambe.\n"
+            "7) Output: SOLO la domanda semplificata (può essere su più righe)."
         )
     )
 
     human = HumanMessage(
         content=(
-            f"DOMANDA ORIGINALE:\n{original}\n\n"
-            f"PROFILO (contesto recuperato):\n{profile_ctx}\n\n"
-            f"ULTIMA RISPOSTA UTENTE (se utile):\n{prev_answer}\n"
+            f"DOMANDA:\n{original}\n\n"
+            f"VINCOLI DI STILE (non da citare):\n{profile_ctx}\n"
         )
     )
 
     llm = state["llm"]
     result = llm.invoke([system, human])
-    rewritten = (result.content or "").strip()
+    candidate = _cleanup(result.content or "")
 
-    # fallback se il modello risponde vuoto
-    state["display_question"] = rewritten if rewritten else original
+    if _is_bad_rewrite(candidate, original):
+        state["display_question"] = original
+    else:
+        state["display_question"] = candidate
+
     return state
 
 
@@ -91,14 +144,14 @@ def node_ask_and_read(state: DialogueState) -> DialogueState:
         state["last_user_answer"] = None
         return state
 
-    # Debug: mostra profilo + originale/riscritta
+    # Debug
     print("\n[CONTESTO PROFILO - DEBUG]")
     print(state.get("profile_context", ""))
 
     if q_original and q_display and q_display.strip() != q_original.strip():
         print("\n[DOMANDA ORIGINALE]")
         print(q_original)
-        print("\n[DOMANDA RISCRITTA]")
+        print("\n[DOMANDA SEMPLIFICATA]")
         print(q_display)
     else:
         print(f"\nDOMANDA {state['current_index'] + 1}: {q_display}")
