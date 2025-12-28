@@ -1,0 +1,12 @@
+{
+  "name": "Anna",
+  "age": 82,
+  "gender": "F",
+  "living_situation": "Da sola",
+  "communication_needs": "Parla lentamente",
+  "main_condition": "Alzheimer iniziale",
+  "current_therapies": "Donepezil",
+  "wakes_up_at": "06:30",
+  "goes_to_sleep_at": "21:00",
+  "health_goal": "Mantenere l'autonomia il più possibile"
+}

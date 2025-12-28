@@ -180,9 +180,14 @@ def node_ask_and_read(state: DialogueState) -> DialogueState:
 def node_save_current_answer(state: DialogueState) -> DialogueState:
     q = state.get("current_question")
     a = state.get("last_user_answer")
+    assistant_reply = state.get("assistant_reply", "")
 
     if q and a:
-        state["qa_history"].append({"question": q, "answer": a})
+        state["qa_history"].append({
+            "question": q,
+            "answer": a,
+            "assistant_reply": assistant_reply  # Salva anche la risposta assistente
+        })
 
     state["last_user_answer"] = None
     return state

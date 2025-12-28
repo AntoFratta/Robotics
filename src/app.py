@@ -11,37 +11,42 @@ from src.state import DialogueState
 from src.profile_store import ProfileStoreConfig, build_profile_retriever
 
 
-def pick_latest_profile(profiles_dir: Path) -> Path:
-    profiles = sorted(
-        profiles_dir.glob("*.json"),
-        key=lambda p: p.stat().st_mtime,
-        reverse=True
-    )
-    if not profiles:
-        raise FileNotFoundError(f"Nessun profilo .json trovato in: {profiles_dir}")
-    return profiles[0]
-
 
 def main():
     ROOT = Path(__file__).resolve().parents[1]  # cartella Robotics/
 
     data_dir = ROOT / "data"
     profiles_dir = data_dir / "profiles"
-
     questions_path = data_dir / "diary_questions.json"
     schema_path = data_dir / "profile_schema.json"
-
-    # prende AUTOMATICAMENTE il profilo più recente dentro data/profiles/
-    profile_path = pick_latest_profile(profiles_dir)
-
+    
     runtime_dir = ROOT / "runtime"
-    db_dir = runtime_dir / "chroma_profile_db" / profile_path.stem
-    db_dir.parent.mkdir(parents=True, exist_ok=True)
+    config_dir = runtime_dir / "config"
+    sessions_dir = runtime_dir / "sessions"
+
+    # --- Selezione profilo interattiva ---
+    from src.profile_selector import select_profile_interactive, get_safe_field
+    from src.session_logger import SessionLogger
+    
+    selection = select_profile_interactive(profiles_dir, config_dir)
+    
+    if selection is None:
+        print("\n⚠️ Nessun profilo selezionato. Uscita.")
+        return
+    
+    profile_path, profile_data, patient_id = selection
+    
+    print(f"\n✅ Profilo caricato: {get_safe_field(profile_data, 'name', 'Paziente')}")
+    print(f"   Patient ID: {patient_id}")
+    print()
 
     # --- Load diary questions ---
     diary_questions = json.loads(questions_path.read_text(encoding="utf-8"))
 
     # --- Build retriever (profilo -> vector store) ---
+    db_dir = runtime_dir / "chroma_profile_db" / profile_path.stem
+    db_dir.parent.mkdir(parents=True, exist_ok=True)
+    
     cfg = ProfileStoreConfig(
         profile_path=profile_path,
         schema_path=schema_path,
@@ -54,6 +59,9 @@ def main():
     # Qwen2.5:7b ha migliori capacità di seguire istruzioni e gestire l'italiano
     # Temperatura 0.65 per varietà nelle risposte mantenendo coerenza
     llm = ChatOllama(model="qwen2.5:7b", temperature=0.65)
+
+    # --- Session Logger ---
+    session_logger = SessionLogger(patient_id, sessions_dir)
 
     # --- Graph ---
     graph = build_graph()
@@ -73,13 +81,30 @@ def main():
         "skip_question_print": False,
     }
 
-    print(f"\n[INFO] Profilo in uso: {profile_path}")
     final_state = graph.invoke(initial_state, config={"recursion_limit": 400})
 
-    print("\n=== FINE DIALOGO ===")
-    print(f"Domande risposte: {len(final_state['qa_history'])}")
+    # --- Salva sessione ---
+    print("\n" + "=" * 50)
+    print("  FINE DIALOGO")
+    print("=" * 50)
+    print(f"Domande risposte: {len(final_state['qa_history'])}\n")
+    
+    # Log ogni Q&A
     for i, qa in enumerate(final_state["qa_history"], start=1):
-        print(f"\n{i}) Q: {qa['question']}\n   A: {qa['answer']}")
+        q_text = qa["question"]
+        a_text = qa["answer"]
+        
+        # Recupera reply assistente dalla history (se disponibile)
+        assistant_reply = qa.get("assistant_reply", "")
+        
+        session_logger.log_qa(i, q_text, a_text, assistant_reply)
+        
+        # Mostra anche a schermo
+        print(f"{i}) Q: {q_text}")
+        print(f"   A: {a_text}\n")
+    
+    # Salva sessione
+    session_logger.save(profile_data)
 
 
 if __name__ == "__main__":
