@@ -1,6 +1,7 @@
 {
   "name": "Mario",
   "age": 78,
+  "gender": "M",
   "living_situation": "Con la moglie",
   "communication_needs": "Sente poco: usare frasi brevi e confermare comprensione",
   "main_condition": "Parkinson",
