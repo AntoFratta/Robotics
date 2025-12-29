@@ -37,3 +37,22 @@ class DialogueState(TypedDict):
 
     # Se True, non ristampare "DOMANDA N:" perché la domanda è già stata mostrata dall'assistente
     skip_question_print: bool
+
+    # --- Guided Path: Branching fields ---
+    # Modalità della domanda corrente: "MAIN", "FOLLOWUP", "DEEPENING"
+    question_mode: str
+
+    # Override della domanda da chiedere (usato per follow-up/deepening)
+    pending_question: Optional[str]
+
+    # Contatore di branch per la domanda corrente del diario (max 1)
+    branch_count_for_current: int
+
+    # Tipo di diramazione attiva (se presente): "evasive", "ansia_panico", etc.
+    current_branch_type: Optional[str]
+
+    # Backup dell'indice originale (per debug/tracking)
+    original_question_index: int
+
+    # Session logger (per tracking branches)
+    session_logger: object

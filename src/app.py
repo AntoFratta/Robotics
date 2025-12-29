@@ -56,9 +56,9 @@ def main():
     retriever = build_profile_retriever(cfg)
 
     # --- LLM (Ollama) ---
-    # TESTING: llama3.1:8b per test rapidi (più veloce)
+    # TESTING: qwen2.5:7b per test rapidi (più veloce)
     # PRODUZIONE: Torna a qwen2.5:14b per qualità massima
-    llm = ChatOllama(model="qwen2.5:14b", temperature=0.75)
+    llm = ChatOllama(model="qwen2.5:7b", temperature=0.75)
 
     # --- Session Logger ---
     session_logger = SessionLogger(patient_id, sessions_dir)
@@ -79,6 +79,14 @@ def main():
         "llm": llm,
         "assistant_reply": None,
         "skip_question_print": False,
+        # Guided Path: Branching fields
+        "question_mode": "MAIN",
+        "pending_question": None,
+        "branch_count_for_current": 0,
+        "current_branch_type": None,
+        "original_question_index": 0,
+        # Session logger per tracking branches
+        "session_logger": session_logger,
     }
 
     final_state = graph.invoke(initial_state, config={"recursion_limit": 400})

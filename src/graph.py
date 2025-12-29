@@ -2,14 +2,16 @@
 from __future__ import annotations
 
 import json
+import random
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
 from langgraph.graph import StateGraph, START, END
 from langchain_core.messages import SystemMessage, HumanMessage
 
 from .state import DialogueState
 from .profile_store import retrieve_profile_context
+from .response_classifier import is_evasive_answer, detect_emotional_theme, get_theme_display_name
 from .utils import (
     gender_label,
     coerce_gender,
@@ -36,6 +38,27 @@ def _get_profile_field(state: DialogueState, field: str, default: str = "") -> s
         return str(v).strip() if v is not None else default
     except Exception:
         return default
+
+
+# -----------------------------
+# Helpers: follow-up questions
+# -----------------------------
+_FOLLOWUP_CACHE: Optional[dict] = None
+
+
+def _load_followup_questions() -> dict:
+    """Carica follow_up_questions.json (con cache)"""
+    global _FOLLOWUP_CACHE
+    if _FOLLOWUP_CACHE is not None:
+        return _FOLLOWUP_CACHE
+    
+    # Trova il file nella stessa directory del profilo (data/)
+    current_file = Path(__file__)
+    data_dir = current_file.parents[1] / "data"
+    followup_path = data_dir / "follow_up_questions.json"
+    
+    _FOLLOWUP_CACHE = json.loads(followup_path.read_text(encoding="utf-8"))
+    return _FOLLOWUP_CACHE
 
 
 
@@ -78,28 +101,50 @@ def node_profile_context(state: DialogueState) -> DialogueState:
 
 
 def node_ask_and_read(state: DialogueState) -> DialogueState:
-    q = state.get("current_question")
+    """
+    Input utente - supporta modalità MAIN/FOLLOWUP/DEEPENING.
+    Usa pending_question se presente, altrimenti current_question.
+    """
+    mode = state.get("question_mode", "MAIN")
+    
+    # Se c'è pending_question, usa quella (follow-up/deepening)
+    q = state.get("pending_question")
+    if not q:
+        q = state.get("current_question")
+    
     if not q:
         state["last_user_answer"] = None
         return state
-
-    if not state.get("skip_question_print", False):
-        print(f"\nDOMANDA {state['current_index'] + 1}: {q}")
-
+    
+    # Stampa diversa in base al mode
+    if mode == "MAIN":
+        if not state.get("skip_question_print", False):
+            print(f"\nDOMANDA {state['current_index'] + 1}: {q}")
+    else:
+        # Follow-up o deepening: senza numero, come se fosse assistente
+        print(f"\n{q}")
+    
     ans = input("Risposta (scrivi Q per uscire): ").strip()
-
+    
+    # NON resettiamo pending_question qui - serve a save_current_answer
+    # Verrà resettata dopo il salvataggio
+    
     if ans.lower() == "q":
         state["done"] = True
         state["last_user_answer"] = None
         return state
-
+    
     state["last_user_answer"] = ans
     state["skip_question_print"] = False
     return state
 
 
 def node_save_current_answer(state: DialogueState) -> DialogueState:
-    q = state.get("current_question")
+    # Usa pending_question se presente (follow-up), altrimenti current_question
+    q = state.get("pending_question")
+    if not q:
+        q = state.get("current_question")
+    
     a = state.get("last_user_answer")
 
     if q and a:
@@ -110,7 +155,10 @@ def node_save_current_answer(state: DialogueState) -> DialogueState:
             "assistant_reply": ""  # Placeholder, verrà riempito da empathy_bridge
         })
 
+    # Reset dopo aver salvato
     state["last_user_answer"] = None
+    state["pending_question"] = None
+    
     return state
 
 
@@ -272,6 +320,96 @@ def node_advance_to_next_question(state: DialogueState) -> DialogueState:
         state["done"] = True
 
     state["assistant_reply"] = None
+    
+    # Reset branch counter per la nuova domanda
+    state["branch_count_for_current"] = 0
+    state["current_branch_type"] = None
+    state["question_mode"] = "MAIN"
+    
+    return state
+
+
+# -----------------------------
+# Guided Path: Branching nodes
+# -----------------------------
+def node_follow_up_evasive(state: DialogueState) -> DialogueState:
+    """
+    Prepara follow-up per risposte evasive ("niente", "non ricordo", etc.)
+    """
+    followup_data = _load_followup_questions()
+    templates = followup_data.get("evasive", [])
+    
+    if not templates:
+        # Fallback: nessun follow-up disponibile
+        return state
+    
+    # Scegli random dalla categoria 'evasive'
+    chosen = random.choice(templates)
+    followup_q = chosen["template"]
+    
+    # Debug: mostra rilevamento
+    print("\n[DEBUG] Rilevata risposta evasiva → follow-up")
+    
+    # Log branch per tracking
+    if state.get("session_logger"):
+        state["session_logger"].log_branch(
+            branch_type="evasive",
+            theme_display="Risposta evasiva",
+            followup_question=followup_q
+        )
+    
+    # Imposta nello state
+    state["pending_question"] = followup_q
+    state["question_mode"] = "FOLLOWUP"
+    state["branch_count_for_current"] = state.get("branch_count_for_current", 0) + 1
+    state["current_branch_type"] = "evasive"
+    
+    return state
+
+
+def node_emotional_deepening(state: DialogueState) -> DialogueState:
+    """
+    Prepara domanda di approfondimento per temi emotivi forti.
+    IMPORTANTE: Rileva il tema dalla risposta utente, perché i router non possono modificare lo state.
+    """
+    # Rileva il tema dalla risposta dell'utente (ultima risposta in qa_history)
+    theme = None
+    if state.get("qa_history"):
+        last_answer = state["qa_history"][-1].get("answer", "").strip()
+        theme = detect_emotional_theme(last_answer)
+    
+    if not theme:
+        # Fallback: nessun tema rilevato, skip
+        return state
+    
+    followup_data = _load_followup_questions()
+    templates = followup_data.get(theme, [])
+    
+    if not templates:
+        # Fallback: nessun follow-up disponibile per questo tema
+        return state
+    
+    chosen = random.choice(templates)
+    followup_q = chosen["template"]
+    
+    # Debug: mostra rilevamento
+    theme_name = get_theme_display_name(theme)
+    print(f"\n[DEBUG] Rilevato tema emotivo: {theme_name} → approfondimento")
+    
+    # Log branch per tracking
+    if state.get("session_logger"):
+        state["session_logger"].log_branch(
+            branch_type=theme,
+            theme_display=theme_name,
+            followup_question=followup_q
+        )
+    
+    # Imposta nello state
+    state["pending_question"] = followup_q
+    state["question_mode"] = "DEEPENING"
+    state["branch_count_for_current"] = state.get("branch_count_for_current", 0) + 1
+    state["current_branch_type"] = theme  # Salva per tracking
+    
     return state
 
 
@@ -286,8 +424,59 @@ def route_after_ask(state: DialogueState) -> str:
     return END if state.get("done") else "save_current_answer"
 
 
-def route_after_save(state: DialogueState) -> str:
-    return END if state.get("done") else "empathy_bridge"
+def route_answer_type(state: DialogueState) -> str:
+    """
+    Router intelligente: decide se fare follow-up, deepening o procedere normale.
+    
+    Logica:
+    1. Se già in FOLLOWUP/DEEPENING mode → empathy_bridge (skip classification)
+    2. Se già fatto 1 follow-up per questa domanda → empathy_bridge
+    3. Se risposta evasiva → follow_up_evasive
+    4. Se tema emotivo → emotional_deepening
+    5. Altrimenti → empathy_bridge
+    """
+    if state.get("done"):
+        return END
+    
+    # IMPORTANTE: Se siamo già in FOLLOWUP/DEEPENING, non riclassificare
+    # La risposta è a un follow-up, quindi procedi sempre a empathy_bridge
+    mode = state.get("question_mode", "MAIN")
+    if mode in ["FOLLOWUP", "DEEPENING"]:
+        # Reset mode a MAIN per la prossima domanda del diario
+        state["question_mode"] = "MAIN"
+        return "empathy_bridge"
+    
+    # Limite max 1 follow-up per domanda
+    branch_count = state.get("branch_count_for_current", 0)
+    if branch_count >= 1:
+        return "empathy_bridge"
+    
+    # Ottieni ultima risposta
+    last_answer = ""
+    if state.get("qa_history"):
+        last_answer = state["qa_history"][-1].get("answer", "").strip()
+    
+    if not last_answer:
+        return "empathy_bridge"
+    
+    # 1. Check risposta evasiva (priorità alta)
+    if is_evasive_answer(last_answer):
+        return "follow_up_evasive"
+    
+    # 2. Check tema emotivo
+    theme = detect_emotional_theme(last_answer)
+    if theme:
+        # Nota: Il tema verrà ri-rilevato in node_emotional_deepening
+        # (i router non possono mutare lo state in LangGraph)
+        return "emotional_deepening"
+    
+    # 3. Nessuna diramazione → normale
+    return "empathy_bridge"
+
+
+# DEPRECATO: ora usiamo route_answer_type come router dopo save
+# def route_after_save(state: DialogueState) -> str:
+#     return END if state.get("done") else "empathy_bridge"
 
 
 def route_after_bridge(state: DialogueState) -> str:
@@ -297,22 +486,33 @@ def route_after_bridge(state: DialogueState) -> str:
 def build_graph():
     builder = StateGraph(DialogueState)
 
+    # Nodi esistenti
     builder.add_node("select_question", node_select_question)
     builder.add_node("profile_context", node_profile_context)
     builder.add_node("ask_and_read", node_ask_and_read)
     builder.add_node("save_current_answer", node_save_current_answer)
     builder.add_node("empathy_bridge", node_empathy_bridge)
     builder.add_node("advance_to_next_question", node_advance_to_next_question)
+    
+    # NUOVI nodi per guided path
+    builder.add_node("follow_up_evasive", node_follow_up_evasive)
+    builder.add_node("emotional_deepening", node_emotional_deepening)
 
+    # Edges
     builder.add_edge(START, "select_question")
     builder.add_conditional_edges("select_question", route_after_select)
 
     builder.add_edge("profile_context", "ask_and_read")
     builder.add_conditional_edges("ask_and_read", route_after_ask)
 
-    builder.add_conditional_edges("save_current_answer", route_after_save)
+    # NUOVO: router intelligente dopo save_current_answer
+    builder.add_conditional_edges("save_current_answer", route_answer_type)
+    
+    # Follow-up e deepening ritornano ad ask_and_read
+    builder.add_edge("follow_up_evasive", "ask_and_read")
+    builder.add_edge("emotional_deepening", "ask_and_read")
+    
     builder.add_conditional_edges("empathy_bridge", route_after_bridge)
-
     builder.add_edge("advance_to_next_question", "select_question")
 
     return builder.compile()

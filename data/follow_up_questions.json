@@ -1,0 +1,72 @@
+{
+    "evasive": [
+        {
+            "template": "Capisco. A volte può essere difficile ricordare. C'è qualche piccolo dettaglio che Le viene in mente?",
+            "placeholders": []
+        },
+        {
+            "template": "Va bene. Provi a pensare anche solo a una sensazione o un pensiero che ha avuto in questi giorni.",
+            "placeholders": []
+        },
+        {
+            "template": "Non si preoccupi. A volte aiuta pensare a momenti specifici della giornata: la mattina, il pomeriggio, la sera. Le viene in mente qualcosa?",
+            "placeholders": []
+        }
+    ],
+    "ansia_panico": [
+        {
+            "template": "Quando avverte ansia o panico, cosa nota per primo nel Suo corpo?",
+            "placeholders": []
+        },
+        {
+            "template": "Può dirmi in quale momento della giornata Le capita più spesso di sentirsi così?",
+            "placeholders": []
+        },
+        {
+            "template": "Quando si sente in questo modo, riesce a capire cosa ha scatenato quella sensazione?",
+            "placeholders": []
+        }
+    ],
+    "dolore_fisico": [
+        {
+            "template": "Può dirmi in quale parte del corpo sente più fastidio o dolore?",
+            "placeholders": []
+        },
+        {
+            "template": "Questo disagio fisico influenza le Sue attività quotidiane? In che modo?",
+            "placeholders": []
+        },
+        {
+            "template": "Ha notato se c'è qualcosa che migliora o peggiora questa sensazione fisica?",
+            "placeholders": []
+        }
+    ],
+    "solitudine": [
+        {
+            "template": "Quando si sente solo, c'è qualcuno con cui Le piacerebbe parlare o passare del tempo?",
+            "placeholders": []
+        },
+        {
+            "template": "Ci sono momenti della giornata in cui questa sensazione di solitudine è più forte?",
+            "placeholders": []
+        },
+        {
+            "template": "Ha qualche attività o pensiero che La aiuta quando si sente così?",
+            "placeholders": []
+        }
+    ],
+    "tristezza": [
+        {
+            "template": "Quando si sente triste o scoraggiato, riesce a identificare un motivo specifico?",
+            "placeholders": []
+        },
+        {
+            "template": "Questa sensazione di tristezza è presente durante tutta la giornata o va e viene?",
+            "placeholders": []
+        },
+        {
+            "template": "C'è qualche momento recente in cui si è sentito un po' meglio, anche solo per poco?",
+            "placeholders": []
+        }
+    ]
+}
