@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import json
-import re
 from pathlib import Path
 from typing import Any
 
@@ -11,6 +10,15 @@ from langchain_core.messages import SystemMessage, HumanMessage
 
 from .state import DialogueState
 from .profile_store import retrieve_profile_context
+from .utils import (
+    gender_label,
+    coerce_gender,
+    format_question_for_gender,
+    strip_questions,
+    strip_labels,
+    is_formal_ok,
+    trim_to_max_sentences,
+)
 
 
 # -----------------------------
@@ -30,99 +38,6 @@ def _get_profile_field(state: DialogueState, field: str, default: str = "") -> s
         return default
 
 
-def _gender_label(gender: str) -> str:
-    g = (gender or "").strip().upper()
-    if g in {"M", "MALE", "UOMO", "MASCHIO", "MASCHILE"}:
-        return "MASCHILE"
-    if g in {"F", "FEMALE", "DONNA", "FEMMINA", "FEMMINILE"}:
-        return "FEMMINILE"
-    return "NON_SPECIFICATO"
-
-
-def _coerce_gender(text: str, gender_label: str) -> str:
-    if gender_label not in {"MASCHILE", "FEMMINILE"}:
-        return text
-
-    if gender_label == "MASCHILE":
-        repl = {
-            "preoccupata": "preoccupato",
-            "stressata": "stressato",
-            "determinata": "determinato",
-            "legata": "legato",
-            "stata": "stato",
-            "serena": "sereno",
-            "tranquilla": "tranquillo",
-            "angosciata": "angosciato",
-            "spaventata": "spaventato",
-            "stanca": "stanco",
-        }
-    else:
-        repl = {
-            "preoccupato": "preoccupata",
-            "stressato": "stressata",
-            "determinato": "determinata",
-            "legato": "legata",
-            "stato": "stata",
-            "sereno": "serena",
-            "tranquillo": "tranquilla",
-            "angosciato": "angosciata",
-            "spaventato": "spaventata",
-            "stanco": "stanca",
-        }
-
-    out = text
-    for k, v in repl.items():
-        out = re.sub(rf"\b{k}\b", v, out, flags=re.IGNORECASE)
-    return out
-
-
-# -----------------------------
-# Cleanup
-# -----------------------------
-def _strip_questions(text: str) -> str:
-    """
-    Rimuove righe che sono domande (iniziano con parole interrogative o finiscono con ?).
-    Ma NON rimuove righe che contengono '?' nel mezzo come parte di una frase descrittiva.
-    """
-    lines = []
-    for ln in text.splitlines():
-        ln_stripped = ln.strip()
-        # Salta righe vuote
-        if not ln_stripped:
-            continue
-        # Rimuovi solo se è CHIARAMENTE una domanda
-        # - Inizia con parola interrogativa
-        # - OPPURE finisce con '?' (domanda diretta)
-        if re.match(r'^\s*(come|cosa|quando|dove|perché|perchè|chi|quale|quanto)\b', ln_stripped.lower()):
-            continue
-        if ln_stripped.endswith('?'):
-            continue
-        lines.append(ln_stripped)
-    return '\n'.join(lines).strip()
-
-
-def _strip_labels(text: str) -> str:
-    # rimuove etichette tipo "Riflesso:", "Validazione:", ecc.
-    out = text
-    out = re.sub(r"(?im)^\s*(riflesso|validazione|valido|valida)\s*:\s*", "", out)
-    out = re.sub(r"\s+", " ", out).strip()
-    return out
-
-
-def _is_formal_ok(text: str) -> bool:
-    low = text.lower()
-    forbidden = [
-        r"\btu\b", r"\bti\b", r"\bte\b", r"\btua\b", r"\btuo\b",
-        r"\bstai\b", r"\bsei\b", r"\bper te\b"
-    ]
-    return not any(re.search(p, low) for p in forbidden)
-
-
-def _trim_to_max_sentences(text: str, max_sentences: int = 3) -> str:
-    s = re.sub(r"\s+", " ", text).strip()
-    parts = re.split(r"(?<=[.!?])\s+", s)
-    return " ".join(parts[:max_sentences]).strip()
-
 
 # -----------------------------
 # Graph nodes
@@ -136,7 +51,13 @@ def node_select_question(state: DialogueState) -> DialogueState:
         state["done"] = True
         return state
 
-    state["current_question"] = questions[idx]["text"]
+    # Ottieni genere per formattare domanda
+    gender_lbl = gender_label(_get_profile_field(state, "gender", ""))
+    
+    raw_question = questions[idx]["text"]
+    formatted_question = format_question_for_gender(raw_question, gender_lbl)
+    
+    state["current_question"] = formatted_question
     return state
 
 
@@ -180,13 +101,13 @@ def node_ask_and_read(state: DialogueState) -> DialogueState:
 def node_save_current_answer(state: DialogueState) -> DialogueState:
     q = state.get("current_question")
     a = state.get("last_user_answer")
-    assistant_reply = state.get("assistant_reply", "")
 
     if q and a:
+        # Salva Q&A - assistant_reply verrà aggiunto dopo in empathy_bridge
         state["qa_history"].append({
             "question": q,
             "answer": a,
-            "assistant_reply": assistant_reply  # Salva anche la risposta assistente
+            "assistant_reply": ""  # Placeholder, verrà riempito da empathy_bridge
         })
 
     state["last_user_answer"] = None
@@ -211,7 +132,7 @@ def node_empathy_bridge(state: DialogueState) -> DialogueState:
         last_a = (state["qa_history"][-1].get("answer") or "").strip()
 
     # gender
-    gender = _gender_label(_get_profile_field(state, "gender", ""))
+    gender_lbl = gender_label(_get_profile_field(state, "gender", ""))
     
     # NUOVO: recupera il contesto profilo
     profile_context = state.get("profile_context", "").strip()
@@ -231,33 +152,30 @@ def node_empathy_bridge(state: DialogueState) -> DialogueState:
             
             "ESEMPI DI BUONE RISPOSTE (varia lo stile):\n\n"
             
-            "Domanda: 'Come si è sentito?'\n"
+            "Risposta: 'Ho visto i miei nipoti'\n"
+            "→ BUONO: 'Che bello che abbia potuto vedere i suoi nipoti! Questi momenti sono davvero preziosi.'\n"
+            "→ BUONO: 'I momenti con i nipoti possono portare tanta gioia.'\n\n"
+            
             "Risposta: 'Ho avuto attacchi di panico'\n"
-            "→ Buono 1: 'Gli attacchi di panico possono essere davvero difficili da affrontare. "
-            "È comprensibile sentirsi sopraffatti.'\n"
-            "→ Buono 2: 'Capisco che gli attacchi di panico Le abbiano causato molto disagio. "
-            "Sono esperienze molto intense.'\n\n"
+            "→ BUONO: 'Gli attacchi di panico sono esperienze molto intense. Mi rendo conto di quanto possano essere difficili.'\n"
+            "→ BUONO: 'Immagino quanto possa essere stato difficile affrontare quegli attacchi di panico.'\n\n"
             
-            "Domanda: 'Che colore userebbe per il suo umore?'\n"
-            "Risposta: 'Grigio'\n"
-            "→ Buono: 'Il grigio può riflettere un momento di incertezza. "
-            "Mi sembra di capire come si sente.'\n\n"
+            "Risposta: 'Felicità'\n"
+            "→ BUONO: 'La felicità è un'emozione bellissima. È importante riconoscere quando ci sentiamo così.'\n\n"
             
-            "ESEMPIO NEGATIVO (da NON fare):\n"
-            "❌ 'Comprendo che lei ha riuscito a fare questo' (errore grammaticale: 'ha riuscito' → 'è riuscito/a')\n"
-            "❌ 'Mario, capisco che tu...' (NON usare nome, NON usare 'tu')\n"
-            "❌ 'È normale. Come si sente ora?' (NON fare domande)\n\n"
+            "❌ ESEMPI DA EVITARE (NON ripetere sempre lo stesso pattern!):\n"
+            "→ EVITA: 'Capisco che... È normale/comprensibile...' [TROPPO RIPETITIVO]\n"
+            "→ EVITA: Iniziare SEMPRE con 'Capisco che'\n"
+            "→ EVITA: Finire SEMPRE con 'È normale/comprensibile'\n\n"
             
-            "VARIAZIONI per iniziare (non sempre 'Comprendo che'):\n"
-            "- 'Capisco che...'\n"
-            "- 'Mi rendo conto che...'\n"
-            "- '[Elemento concreto] può essere...'\n"
-            "- 'È comprensibile che...'\n"
-            "- 'Immagino quanto...'\n\n"
+            "⚠️ VARIETÀ OBBLIGATORIA:\n"
+            "- Cambia il modo di iniziare: 'Che bello', 'Immagino', 'Mi rendo conto', '[Elemento concreto] può essere...'\n"
+            "- Cambia il modo di validare: non sempre 'è normale', usa anche 'è comprensibile', 'è importante', 'sono momenti preziosi'\n"
+            "- VARIA LA STRUTTURA: non seguire sempre lo stesso schema\n\n"
             
             "REGOLE CRITICHE:\n"
             f"- Usa SEMPRE e SOLO 'Lei' (mai tu/ti/te/tuo/tua)\n"
-            f"- Genere: {gender} - usa accordi corretti ('Lei è riuscito/a', non 'ha riuscito')\n"
+            f"- Genere: {gender_lbl} - usa accordi corretti ('Lei è riuscito/a', non 'ha riuscito')\n"
             "- NON fare domande\n"
             "- NON usare etichette come 'Validazione:' o 'Riflesso:'\n"
             "- NON dire 'Lei ha detto' o 'Lei ha risposto'\n"
@@ -286,13 +204,13 @@ def node_empathy_bridge(state: DialogueState) -> DialogueState:
     result = llm.invoke([system, human])
     raw = (result.content or "").strip()
 
-    empathy = _strip_questions(raw)
-    empathy = _strip_labels(empathy)
-    empathy = _trim_to_max_sentences(empathy, 3)
-    empathy = _coerce_gender(empathy, gender)
+    empathy = strip_questions(raw)
+    empathy = strip_labels(empathy)
+    empathy = trim_to_max_sentences(empathy, 3)
+    empathy = coerce_gender(empathy, gender_lbl)
 
     # Se fallisce validazione formale, prova a rigenerare con prompt più esplicito
-    if empathy and not _is_formal_ok(empathy):
+    if empathy and not is_formal_ok(empathy):
         # Tentativo 2: rigenera con avvertimento esplicito
         strict_system = SystemMessage(
             content=(
@@ -303,22 +221,30 @@ def node_empathy_bridge(state: DialogueState) -> DialogueState:
         )
         result = llm.invoke([strict_system, human])
         raw = (result.content or "").strip()
-        empathy = _strip_questions(raw)
-        empathy = _strip_labels(empathy)
-        empathy = _trim_to_max_sentences(empathy, 3)
-        empathy = _coerce_gender(empathy, gender)
+        empathy = strip_questions(raw)
+        empathy = strip_labels(empathy)
+        empathy = trim_to_max_sentences(empathy, 3)
+        empathy = coerce_gender(empathy, gender_lbl)
 
     # Fallback contestuale solo se entrambi i tentativi falliscono
-    if (not empathy) or (not _is_formal_ok(empathy)):
+    if (not empathy) or (not is_formal_ok(empathy)):
         # Fallback più specifico basato sul tipo di risposta
         if len(last_a.split()) <= 2:
             empathy = "Comprendo. La ringrazio per averlo condiviso con me."
         else:
             empathy = "Capisco. La ringrazio per aver condiviso questa esperienza."
 
+    # IMPORTANTE: Aggiorna l'ultimo qa_history con l'assistant_reply generato
+    if state.get("qa_history") and len(state["qa_history"]) > 0:
+        state["qa_history"][-1]["assistant_reply"] = empathy
+
     # Bridge alla prossima domanda
     if idx + 1 < len(questions):
-        next_q = questions[idx + 1]["text"]
+        gender_lbl_for_next = gender_label(_get_profile_field(state, "gender", ""))
+        
+        raw_next_q = questions[idx + 1]["text"]
+        next_q = format_question_for_gender(raw_next_q, gender_lbl_for_next)
+        
         state["assistant_reply"] = f"{empathy}\n\nPer capire meglio: {next_q}"
 
         print("\nASSISTENTE:")

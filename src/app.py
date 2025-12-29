@@ -25,7 +25,7 @@ def main():
     sessions_dir = runtime_dir / "sessions"
 
     # --- Selezione profilo interattiva ---
-    from src.profile_selector import select_profile_interactive, get_safe_field
+    from src.utils import select_profile_interactive, get_safe_field
     from src.session_logger import SessionLogger
     
     selection = select_profile_interactive(profiles_dir, config_dir)
@@ -56,9 +56,9 @@ def main():
     retriever = build_profile_retriever(cfg)
 
     # --- LLM (Ollama) ---
-    # Qwen2.5:7b ha migliori capacità di seguire istruzioni e gestire l'italiano
-    # Temperatura 0.65 per varietà nelle risposte mantenendo coerenza
-    llm = ChatOllama(model="qwen2.5:7b", temperature=0.65)
+    # TESTING: llama3.1:8b per test rapidi (più veloce)
+    # PRODUZIONE: Torna a qwen2.5:14b per qualità massima
+    llm = ChatOllama(model="qwen2.5:14b", temperature=0.75)
 
     # --- Session Logger ---
     session_logger = SessionLogger(patient_id, sessions_dir)
