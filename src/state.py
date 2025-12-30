@@ -56,3 +56,6 @@ class DialogueState(TypedDict):
 
     # Session logger (per tracking branches)
     session_logger: object
+
+    # Signals estratti dalle risposte (emotion/theme extraction)
+    signals: List[Dict[str, Any]]

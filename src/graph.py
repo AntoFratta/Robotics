@@ -12,6 +12,7 @@ from langchain_core.messages import SystemMessage, HumanMessage
 from .state import DialogueState
 from .profile_store import retrieve_profile_context
 from .response_classifier import is_evasive_answer, detect_emotional_theme, get_theme_display_name
+from .signal_extractor import should_extract_signals, extract_signals, get_default_signals
 from .utils import (
     gender_label,
     coerce_gender,
@@ -149,7 +150,9 @@ def node_save_current_answer(state: DialogueState) -> DialogueState:
 
     if q and a:
         # Salva Q&A - assistant_reply verrà aggiunto dopo in empathy_bridge
+        # question_id è current_index + 1 (1-indexed)
         state["qa_history"].append({
+            "question_id": state.get("current_index", 0) + 1,
             "question": q,
             "answer": a,
             "assistant_reply": ""  # Placeholder, verrà riempito da empathy_bridge
@@ -158,6 +161,36 @@ def node_save_current_answer(state: DialogueState) -> DialogueState:
     # Reset dopo aver salvato
     state["last_user_answer"] = None
     state["pending_question"] = None
+    
+    return state
+
+
+def node_extract_signals(state: DialogueState) -> DialogueState:
+    """
+    Estrae segnali emotivi/tematici dall'ultima risposta.
+    Fast path per risposte corte (< 5 parole).
+    """
+    # Ottieni ultima risposta
+    if not state.get("qa_history"):
+        return state
+    
+    last_qa = state["qa_history"][-1]
+    answer = last_qa.get("answer", "").strip()
+    question = last_qa.get("question", "")
+    question_id = last_qa.get("question_id", 0)
+    
+    # Fast path: skip LLM per risposte corte
+    if not should_extract_signals(answer):
+        signals_data = get_default_signals()
+    else:
+        # Estrazione LLM completa
+        signals_data = extract_signals(answer, question)
+    
+    # Aggiungi a state
+    state["signals"].append({
+        "question_id": question_id,
+        "extracted": signals_data
+    })
     
     return state
 
@@ -497,6 +530,9 @@ def build_graph():
     # NUOVI nodi per guided path
     builder.add_node("follow_up_evasive", node_follow_up_evasive)
     builder.add_node("emotional_deepening", node_emotional_deepening)
+    
+    # NUOVO nodo per signal extraction
+    builder.add_node("extract_signals", node_extract_signals)
 
     # Edges
     builder.add_edge(START, "select_question")
@@ -505,8 +541,9 @@ def build_graph():
     builder.add_edge("profile_context", "ask_and_read")
     builder.add_conditional_edges("ask_and_read", route_after_ask)
 
-    # NUOVO: router intelligente dopo save_current_answer
-    builder.add_conditional_edges("save_current_answer", route_answer_type)
+    # NUOVO flusso: save → extract → router
+    builder.add_edge("save_current_answer", "extract_signals")
+    builder.add_conditional_edges("extract_signals", route_answer_type)
     
     # Follow-up e deepening ritornano ad ask_and_read
     builder.add_edge("follow_up_evasive", "ask_and_read")

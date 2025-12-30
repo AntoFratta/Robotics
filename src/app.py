@@ -87,6 +87,8 @@ def main():
         "original_question_index": 0,
         # Session logger per tracking branches
         "session_logger": session_logger,
+        # Signals extraction
+        "signals": [],
     }
 
     final_state = graph.invoke(initial_state, config={"recursion_limit": 400})
@@ -111,8 +113,8 @@ def main():
         print(f"{i}) Q: {q_text}")
         print(f"   A: {a_text}\n")
     
-    # Salva sessione
-    session_logger.save(profile_data)
+    # Salva sessione (CSV + JSON con qa_history, branches, signals)
+    session_logger.save(profile_data, final_state.get("signals", []))
 
 
 if __name__ == "__main__":

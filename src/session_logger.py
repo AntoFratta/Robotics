@@ -23,6 +23,7 @@ class SessionLogger:
         self.start_time = datetime.now()
         self.conversation_log: List[Dict[str, Any]] = []
         self.branches_triggered: List[Dict[str, Any]] = []  # Track follow-up branches
+        self.signals: List[Dict[str, Any]] = []  # Track extracted signals
         
         # Crea directory sessioni
         self.patient_dir = sessions_dir / patient_id
@@ -64,10 +65,15 @@ class SessionLogger:
             "followup_question": followup_question
         })
     
-    def save(self, profile_data: Dict[str, Any]):
+    def save(self, profile_data: Dict[str, Any], signals: List[Dict] = None):
         """
         Salva la sessione in CSV e metadata in JSON.
+        
+        Args:
+            profile_data: Dati profilo per metadata
+            signals: Segnali emotivi estratti (opzionale)
         """
+        self.signals = signals or []
         end_time = datetime.now()
         duration = (end_time - self.start_time).total_seconds()
         
@@ -121,6 +127,7 @@ class SessionLogger:
                 "total_count": len(self.branches_triggered),
                 "details": self.branches_triggered
             },
+            "signals": self.signals,
             "statistics": {
                 "total_questions": len(self.conversation_log),
                 "branch_questions": len(self.branches_triggered)
