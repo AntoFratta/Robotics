@@ -165,7 +165,7 @@ def extract_signals(answer: str, question: str) -> Dict[str, Any]:
             strict_system = SystemMessage(
                 content=(
                     system.content + 
-                    "\n\n⚠️ CRITICO: Devi rispondere ESATTAMENTE con il formato JSON mostrato sopra. "
+                    "\n\nATTENZIONE: Devi rispondere ESATTAMENTE con il formato JSON mostrato sopra. "
                     "Niente testo prima o dopo. Solo JSON puro."
                 )
             )

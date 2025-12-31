@@ -9,11 +9,13 @@ from langchain_ollama import ChatOllama
 from src.graph import build_graph
 from src.state import DialogueState
 from src.profile_store import ProfileStoreConfig, build_profile_retriever
+from src.profile_utils import select_profile_interactive, get_safe_field
+from src.session_logger import SessionLogger
 
 
 
 def main():
-    ROOT = Path(__file__).resolve().parents[1]  # cartella Robotics/
+    ROOT = Path(__file__).resolve().parents[1]
 
     data_dir = ROOT / "data"
     profiles_dir = data_dir / "profiles"
@@ -24,26 +26,23 @@ def main():
     config_dir = runtime_dir / "config"
     sessions_dir = runtime_dir / "sessions"
 
-    # --- Selezione profilo interattiva ---
-    from src.utils import select_profile_interactive, get_safe_field
-    from src.session_logger import SessionLogger
-    
+    # Selezione profilo interattiva
     selection = select_profile_interactive(profiles_dir, config_dir)
     
     if selection is None:
-        print("\n⚠️ Nessun profilo selezionato. Uscita.")
+        print("\nNessun profilo selezionato. Uscita.")
         return
     
     profile_path, profile_data, patient_id = selection
     
-    print(f"\n✅ Profilo caricato: {get_safe_field(profile_data, 'name', 'Paziente')}")
-    print(f"   Patient ID: {patient_id}")
+    print(f"\nProfilo caricato: {get_safe_field(profile_data, 'name', 'Paziente')}")
+    print(f"Patient ID: {patient_id}")
     print()
 
-    # --- Load diary questions ---
+    # Caricamento domande del diario
     diary_questions = json.loads(questions_path.read_text(encoding="utf-8"))
 
-    # --- Build retriever (profilo -> vector store) ---
+    # Costruzione retriever per vector store profilo
     db_dir = runtime_dir / "chroma_profile_db" / profile_path.stem
     db_dir.parent.mkdir(parents=True, exist_ok=True)
     
@@ -55,15 +54,13 @@ def main():
     )
     retriever = build_profile_retriever(cfg)
 
-    # --- LLM (Ollama) ---
-    # TESTING: qwen2.5:7b per test rapidi (più veloce)
-    # PRODUZIONE: Torna a qwen2.5:14b per qualità massima
+    # Inizializzazione LLM (Ollama)
     llm = ChatOllama(model="qwen2.5:7b", temperature=0.75)
 
-    # --- Session Logger ---
+    # Inizializzazione logger di sessione
     session_logger = SessionLogger(patient_id, sessions_dir)
 
-    # --- Graph ---
+    # Costruzione grafo di dialogo
     graph = build_graph()
 
     initial_state: DialogueState = {
@@ -79,27 +76,24 @@ def main():
         "llm": llm,
         "assistant_reply": None,
         "skip_question_print": False,
-        # Guided Path: Branching fields
         "question_mode": "MAIN",
         "pending_question": None,
         "branch_count_for_current": 0,
         "current_branch_type": None,
         "original_question_index": 0,
-        # Session logger per tracking branches
         "session_logger": session_logger,
-        # Signals extraction
         "signals": [],
     }
 
     final_state = graph.invoke(initial_state, config={"recursion_limit": 400})
 
-    # --- Salva sessione ---
+    # Salvataggio sessione
     print("\n" + "=" * 50)
     print("  FINE DIALOGO")
     print("=" * 50)
     print(f"Domande risposte: {len(final_state['qa_history'])}\n")
     
-    # Log ogni Q&A
+    # Logging di ogni coppia domanda-risposta
     for i, qa in enumerate(final_state["qa_history"], start=1):
         q_text = qa["question"]
         a_text = qa["answer"]

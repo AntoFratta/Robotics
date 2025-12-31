@@ -102,7 +102,7 @@ class SessionLogger:
         # Salva JSON strutturato completo
         self._save_json()
         
-        print(f"\n✅ Sessione salvata:")
+        print(f"\nSessione salvata:")
         print(f"   CSV: {self.csv_path}")
         print(f"   Metadata: {self.meta_path}")
         print(f"   JSON: {self.json_path}")
