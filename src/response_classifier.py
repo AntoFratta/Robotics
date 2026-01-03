@@ -7,32 +7,25 @@ Rileva risposte evasive e temi emotivi forti.
 from typing import Optional
 
 
-# --- Keyword sets per ogni tema ---
+# --- Keyword sets per ogni emozione (Ekman) ---
 EVASIVE_KEYWORDS = [
     "no", "niente", "non ricordo", "non so", "nulla", 
     "non mi viene in mente", "boh", "mah"
 ]
 
-ANSIA_PANICO_KEYWORDS = [
+PAURA_KEYWORDS = [
     "panico", "ansia", "ansios", "paura", "spavent", 
     "affanno", "affann", "respiro", "respir", 
     "batticuore", "battito", "tremore", "tremor",
-    "agitato", "agitaz", "nervoso", "nerv"
+    "agitato", "agitaz", "nervoso", "nerv",
+    "preoccup", "timore", "timor"
 ]
 
-DOLORE_FISICO_KEYWORDS = [
-    "dolore", "male", "fa male", "mi fa male",
-    "rigidità", "rigid", "tremori", "tremor",
-    "difficoltà a muover", "non riesco a muover",
-    "stanchezza fisica", "spossato", "spossa",
-    "debol", "affaticato", "affatic"
-]
-
-SOLITUDINE_KEYWORDS = [
-    "solo", "sola", "solitudine", "solitudin",
-    "nessuno", "abbandona", "lasciato",
-    "figli non vengono", "figli non", "non mi cerca",
-    "isolato", "isola", "nessuno mi"
+RABBIA_KEYWORDS = [
+    "rabbia", "arrabbiato", "arrabbiat", "furioso", "furios",
+    "frustrato", "frustrat", "irritato", "irritat",
+    "nervoso", "nerv", "esasperato", "esasperat",
+    "stufo", "stuf", "non ne posso più"
 ]
 
 TRISTEZZA_KEYWORDS = [
@@ -40,7 +33,16 @@ TRISTEZZA_KEYWORDS = [
     "vuoto", "vuota", "sconforto", "sconfort",
     "scoraggiato", "scoraggiat", "demoralizzato", "demoralizzat",
     "non ce la faccio", "non ce la", "depresso", "depress",
-    "piango", "piangere", "lacrime", "lacrim"
+    "piango", "piangere", "lacrime", "lacrim",
+    "solo", "sola", "solitudine", "solitudin",
+    "nessuno", "abbandona", "lasciato", "isolato"
+]
+
+FELICITA_KEYWORDS = [
+    "felice", "felicità", "contento", "content",
+    "gioia", "gioios", "allegro", "allegr",
+    "bene", "beni", "benissimo", "ottimo", "ottim",
+    "sereno", "seren", "tranquillo", "tranquill"
 ]
 
 
@@ -88,61 +90,61 @@ def is_evasive_answer(answer: str) -> bool:
 
 def detect_emotional_theme(answer: str) -> Optional[str]:
     """
-    Rileva tema emotivo forte dalla risposta usando keyword matching.
+    Rileva emozione forte dalla risposta usando keyword matching (Ekman).
     
     Priorità (se match multipli):
-    1. ansia_panico
-    2. dolore_fisico
-    3. solitudine
-    4. tristezza
+    1. Paura
+    2. Rabbia
+    3. Tristezza
+    4. Felicità
     
     Args:
         answer: La risposta dell'utente
     
     Returns:
-        - "ansia_panico" se rileva ansia/panico
-        - "dolore_fisico" se rileva dolore/malessere
-        - "solitudine" se rileva solitudine/abbandono
-        - "tristezza" se rileva tristezza/sconforto
-        - None se nessun tema forte rilevato
+        - "Paura" se rileva paura/ansia/panico
+        - "Rabbia" se rileva rabbia/frustrazione
+        - "Tristezza" se rileva tristezza/solitudine
+        - "Felicità" se rileva felicità/gioia
+        - None se nessuna emozione forte rilevata
     """
     normalized = _normalize(answer)
     
-    # Se risposta troppo corta (< 3 caratteri), skip detection temi
+    # Se risposta troppo corta (< 3 caratteri), skip detection
     if len(normalized) < 3:
         return None
     
     # Check in ordine di priorità
-    if _contains_any_keyword(normalized, ANSIA_PANICO_KEYWORDS):
-        return "ansia_panico"
+    if _contains_any_keyword(normalized, PAURA_KEYWORDS):
+        return "Paura"
     
-    if _contains_any_keyword(normalized, DOLORE_FISICO_KEYWORDS):
-        return "dolore_fisico"
-    
-    if _contains_any_keyword(normalized, SOLITUDINE_KEYWORDS):
-        return "solitudine"
+    if _contains_any_keyword(normalized, RABBIA_KEYWORDS):
+        return "Rabbia"
     
     if _contains_any_keyword(normalized, TRISTEZZA_KEYWORDS):
-        return "tristezza"
+        return "Tristezza"
+    
+    if _contains_any_keyword(normalized, FELICITA_KEYWORDS):
+        return "Felicità"
     
     return None
 
 
 def get_theme_display_name(theme: str) -> str:
     """
-    Ottiene il nome human-readable del tema (per debug/logging)
+    Ottiene il nome human-readable del tema/emozione (per debug/logging)
     
     Args:
-        theme: Il codice del tema (es: "ansia_panico")
+        theme: Il codice del tema/emozione
     
     Returns:
-        Nome leggibile del tema
+        Nome leggibile
     """
     theme_names = {
         "evasive": "Risposta evasiva",
-        "ansia_panico": "Ansia/Panico",
-        "dolore_fisico": "Dolore fisico",
-        "solitudine": "Solitudine",
-        "tristezza": "Tristezza/Sconforto",
+        "Paura": "Paura/Ansia",
+        "Rabbia": "Rabbia/Frustrazione",
+        "Tristezza": "Tristezza/Solitudine",
+        "Felicità": "Felicità/Gioia",
     }
     return theme_names.get(theme, theme)

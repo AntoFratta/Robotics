@@ -80,7 +80,7 @@ def _get_last_signals(state: DialogueState) -> dict[str, Any]:
     signals_list = state.get("signals", [])
     if not signals_list:
         return {
-            "emotion": "neutro/misto",
+            "emotion": "Neutralità",
             "intensity": "bassa",
             "themes": [],
             "confidence": 0.3
@@ -89,7 +89,7 @@ def _get_last_signals(state: DialogueState) -> dict[str, Any]:
     # Prendi l'ultimo
     last_signal = signals_list[-1]
     return last_signal.get("extracted", {
-        "emotion": "neutro/misto",
+        "emotion": "Neutralità",
         "intensity": "bassa",
         "themes": [],
         "confidence": 0.3
@@ -218,13 +218,14 @@ def node_save_current_answer(state: DialogueState) -> DialogueState:
     return state
 
 
-def node_extract_signals(state: DialogueState) -> DialogueState:
+def node_extract_emotion(state: DialogueState) -> DialogueState:
     """
-    Estrae segnali emotivi/tematici dall'ultima risposta.
-    Fast path per risposte corte (< 5 parole).
+    Nodo dedicato: estrae l'emozione dall'ultima risposta.
+    Output: emotion, intensity salvati nello state.
     """
-    # Ottieni ultima risposta
     if not state.get("qa_history"):
+        state["last_emotion"] = "Neutralità"
+        state["last_intensity"] = "bassa"
         return state
     
     last_qa = state["qa_history"][-1]
@@ -232,26 +233,84 @@ def node_extract_signals(state: DialogueState) -> DialogueState:
     question = last_qa.get("question", "")
     question_id = last_qa.get("question_id", 0)
     
-    # Fast path: skip LLM per risposte corte
+    # Rileva emozione: bilanciare keyword matching e LLM
+    keyword_emotion = detect_emotional_theme(answer)
+    
+    # Fast path per risposte corte
     if not should_extract_signals(answer):
         signals_data = get_default_signals()
     else:
-        # Estrazione LLM completa
         signals_data = extract_signals(answer, question)
     
-    # Aggiungi a state
+    # Strategia bilanciata:
+    # - Se keyword rileva E LLM conferma (stessa emozione o Neutralità) → usa keyword
+    # - Se keyword rileva MA LLM rileva emozione diversa CON alta confidence → usa LLM
+    # - Se solo keyword → usa keyword
+    # - Se solo LLM → usa LLM
+    llm_emotion = signals_data.get("emotion", "Neutralità")
+    llm_confidence = signals_data.get("confidence", 0.3)
+    
+    if keyword_emotion and llm_emotion != "Neutralità" and llm_emotion != keyword_emotion:
+        # Conflitto: keyword vs LLM
+        if llm_confidence > 0.7:
+            # LLM molto sicuro, usa LLM
+            final_emotion = llm_emotion
+            final_intensity = signals_data.get("intensity", "media")
+        else:
+            # LLM incerto, usa keyword (più affidabile per pattern noti)
+            final_emotion = keyword_emotion
+            final_intensity = "alta"
+    elif keyword_emotion:
+        # Solo keyword o LLM conferma
+        final_emotion = keyword_emotion
+        final_intensity = "alta"
+    else:
+        # Solo LLM
+        final_emotion = llm_emotion
+        final_intensity = signals_data.get("intensity", "bassa")
+    
+    # Salva segnali completi per logging
+    signals_data["emotion"] = final_emotion
+    signals_data["intensity"] = final_intensity
     state["signals"].append({
         "question_id": question_id,
         "extracted": signals_data
     })
+    
+    # Estrai solo emotion e intensity nello state (per prompt snello)
+    state["last_emotion"] = final_emotion
+    state["last_intensity"] = final_intensity
+    
+    return state
+
+
+def node_retrieve_health_context(state: DialogueState) -> DialogueState:
+    """
+    Nodo dedicato: recupera contesto di salute dal profilo tramite RAG.
+    Output: contesto rilevante salvato nello state.
+    """
+    retriever = state["retriever"]
+    
+    # Query basata su ultima risposta
+    last_a = ""
+    if state.get("qa_history"):
+        last_a = (state["qa_history"][-1].get("answer") or "").strip()
+    
+    if not last_a:
+        state["health_context"] = ""
+        return state
+    
+    # Recupera contesto rilevante
+    context = retrieve_profile_context(retriever, last_a)
+    state["health_context"] = context
     
     return state
 
 
 def node_empathy_bridge(state: DialogueState) -> DialogueState:
     """
-    LLM produce empatia PERSONALIZZATA guidata da profilo + segnali.
-    La risposta è adattata a: communication_needs, living_situation, health_goal, emotion/intensity.
+    Genera risposta empatica usando gli output dei nodi precedenti.
+    Prompt SNELLO ottimizzato per Small Language Model (Qwen).
     """
     if state.get("done"):
         state["assistant_reply"] = None
@@ -268,66 +327,75 @@ def node_empathy_bridge(state: DialogueState) -> DialogueState:
     # gender
     gender_lbl = gender_label(_get_profile_field(state, "gender", ""))
     
-    # Recupera dati profilo per personalizzazione
-    profile_data = _get_empathy_profile_data(state)
+    # Recupera emotion e intensity (output di node_extract_emotion)
+    # Se uscito da dialogo libero (branch_count > 0), usa emozione iniziale
+    if state.get("branch_count_for_current", 0) > 0 and state.get("initial_emotion"):
+        emotion = state.get("initial_emotion", "Neutralità")
+        intensity = state.get("initial_intensity", "bassa")
+    else:
+        emotion = state.get("last_emotion", "Neutralità")
+        intensity = state.get("last_intensity", "bassa")
     
-    # Recupera segnali emotivi/tematici
-    signals = _get_last_signals(state)
+    # Recupera contesto salute (output di node_retrieve_health_context)
+    health_context = state.get("health_context", "")
     
-    # IMPORTANTE: Se siamo in un follow-up, recupera il contesto della risposta originale
-    # per evitare che il LLM inventi interpretazioni positive per risposte brevi
+    # Ultimi 2 messaggi per contesto (ridotto per prompt snello)
+    recent_messages = ""
+    if state.get("qa_history") and len(state["qa_history"]) > 1:
+        last_few = state["qa_history"][-3:-1]  # Solo ultimi 2 (escludi corrente)
+        recent_messages = " | ".join([
+            f"{qa.get('answer', '')[:30]}..."
+            for qa in last_few
+        ])
+    
+    # Contesto follow-up
     original_context = ""
     branch_count = state.get("branch_count_for_current", 0)
     branch_type = state.get("current_branch_type", None)
     
     if branch_count > 0 and len(state.get("qa_history", [])) >= 2:
-        # Prendi la risposta precedente (quella che ha triggerato il follow-up)
         prev_qa = state["qa_history"][-2]
         prev_answer = prev_qa.get("answer", "").strip()
         if prev_answer:
-            original_context = f"Contesto: L'utente aveva risposto in precedenza '{prev_answer}'\n\n"
+            original_context = f"Contesto precedente: '{prev_answer}'\n\n"
             
-            # Se follow-up di tema negativo, aggiungi warning esplicito
             negative_themes = ["anxiety_panic", "loneliness", "fear", "sadness"]
             if branch_type in negative_themes:
-                original_context += (
-                    "IMPORTANTE: Questa è una risposta a follow-up su tema NEGATIVO (ansia/solitudine/paura).\n"
-                    "Il contesto originale era NEGATIVO. La risposta corrente NON è un evento positivo.\n\n"
-                    "ESEMPI CORRETTI:\n"
-                    "- Utente solo dice 'vedere i miei figli' → 'Comprendo quanto Le manchi il contatto con loro.'\n"
-                    "- NON dire: 'quanto sia stato bello vederli' (NON li ha visti!)\n"
-                    "- NON dire: 'che bello' o 'mi fa piacere' (il contesto è NEGATIVO)\n\n"
-                )
+                original_context += "ATTENZIONE: Tema NEGATIVO, non inventare eventi positivi.\n\n"
 
     llm = state["llm"]
     
-    # ===== FAST PATH 1: Fallback per risposte ultra-brevi (1 parola) =====
-    # Per risposte di 1 sola parola, usa template fisso invece di LLM
-    # L'LLM tende a inventare interpretazioni anche con istruzioni severe
+    # ===== FAST PATH: Fallback per risposte ultra-brevi (1 parola) =====
     if len(last_a.split()) == 1:
+        import random
         word = last_a.lower().strip()
         
-        # Parole positive generiche
         if word in ["bene", "beni", "buono", "buona", "ok", "si", "sì"]:
-            empathy = "Mi fa piacere sentirlo."
-        # Parole negative generiche
+            empathy = random.choice([
+                "Mi fa piacere sentirlo.",
+                "Che bello!",
+                "Sono contento."
+            ])
         elif word in ["male", "no", "niente", "nulla"]:
-            empathy = "Comprendo."
-        # Altro (tempi, nomi, ecc.)
+            empathy = random.choice([
+                "Comprendo.",
+                "Capisco.",
+                "Ti ascolto."
+            ])
         else:
-            empathy = "Capisco."
+            empathy = random.choice([
+                "Capisco.",
+                "Ti ascolto."
+            ])
         
-        # Aggiorna qa_history e ritorna senza chiamare LLM
-        if state.get("qa_history") and len(state["qa_history"]) > 0:
+        if state.get("qa_history"):
             state["qa_history"][-1]["assistant_reply"] = empathy
         
-        # Bridge alla prossima domanda
-        idx = state["current_index"]
-        questions = state["diary_questions"]
+        # Bridge prossima domanda
         if idx + 1 < len(questions):
-            gender_lbl_for_next = gender_label(_get_profile_field(state, "gender", ""))
-            raw_next_q = questions[idx + 1]["text"]
-            next_q = format_question_for_gender(raw_next_q, gender_lbl_for_next)
+            gender_lbl_next = gender_label(_get_profile_field(state, "gender", ""))
+            raw_next = questions[idx + 1]["text"]
+            next_q = format_question_for_gender(raw_next, gender_lbl_next)
             state["assistant_reply"] = f"{empathy}\n\nPer capire meglio: {next_q}"
             print("\nASSISTENTE:")
             print(state["assistant_reply"])
@@ -337,273 +405,78 @@ def node_empathy_bridge(state: DialogueState) -> DialogueState:
             print("\nASSISTENTE:")
             print(state["assistant_reply"])
             state["done"] = True
-        
         return state
     
-    # ===== FAST PATH 2: Template fissi per follow-up su temi negativi =====
-    # L'LLM confonde desideri con eventi anche con warning forti
-    # Usa template sicuri per follow-up di ansia/solitudine/paura
-    branch_count = state.get("branch_count_for_current", 0)
-    branch_type = state.get("current_branch_type", None)
-    negative_themes = ["anxiety_panic", "loneliness", "fear", "sadness"]
+    # ===== PROMPT ULTRA-SNELLO per Small LLM (Qwen) =====
     
-    if branch_count > 0 and branch_type in negative_themes:
-        # Template basati su pattern comuni
-        last_a_lower = last_a.lower()
-        
-        # Pattern 1: Menzione di persone care
-        persone_care = ["figli", "figlio", "figlia", "famiglia", "nipoti", "moglie", "marito", "amici", "parenti", "genitori"]
-        ha_persona = any(person in last_a_lower for person in persone_care)
-        
-        # Pattern 2: Verbi di contatto/desiderio
-        verbi_contatto = ["veder", "sentir", "parlar", "chiamar", "visita", "stare con", "parlare con"]
-        verbi_desiderio = ["vorrei", "mi piacerebbe", "desider", "spero", "voglio", "ho bisogno"]
-        
-        ha_verbo_contatto = any(verb in last_a_lower for verb in verbi_contatto)
-        ha_verbo_desiderio = any(verb in last_a_lower for verb in verbi_desiderio)
-        
-        # Pattern 3: Tempi della giornata (risposta a "quando/quale momento")
-        tempi_giornata = ["mattina", "mattino", "pomeriggio", "sera", "notte", "giorno", "tutto il giorno"]
-        ha_tempo = any(tempo in last_a_lower for tempo in tempi_giornata)
-        
-        # LOGICA PRIORITARIA:
-        # 1. Se risponde con tempo della giornata (risposta diretta alla domanda sul "quando")
-        if ha_tempo and len(last_a.split()) <= 8:
-            # Risposta breve con tempo = sta rispondendo alla domanda "quando è più difficile"
-            empathy = "Capisco quanto possa essere difficile."
-        # 2. Se SOLO menziona persone + desiderio (senza tempo, es: "vedere i miei figli")
-        elif ha_persona and (ha_verbo_contatto or ha_verbo_desiderio) and not ha_tempo:
-            empathy = "Comprendo quanto sia importante per Lei il contatto con i Suoi cari."
-        # 3. Se solo verbo senza persona
-        elif ha_verbo_contatto or ha_verbo_desiderio:
-            empathy = "Capisco quanto possa essere difficile."
-        # 4. Risposta breve generica
-        elif len(last_a.split()) <= 4:
-            empathy = "Capisco quanto possa essere difficile."
-        else:
-            # Risposta lunga e complessa, lascia al LLM con warning
-            empathy = None
-        
-        # Se abbiamo un template, usalo e ritorna
-        if empathy:
-            if state.get("qa_history") and len(state["qa_history"]) > 0:
-                state["qa_history"][-1]["assistant_reply"] = empathy
-            
-            idx = state["current_index"]
-            questions = state["diary_questions"]
-            if idx + 1 < len(questions):
-                gender_lbl_for_next = gender_label(_get_profile_field(state, "gender", ""))
-                raw_next_q = questions[idx + 1]["text"]
-                next_q = format_question_for_gender(raw_next_q, gender_lbl_for_next)
-                state["assistant_reply"] = f"{empathy}\n\nPer capire meglio: {next_q}"
-                print("\nASSISTENTE:")
-                print(state["assistant_reply"])
-                state["skip_question_print"] = True
-            else:
-                state["assistant_reply"] = empathy
-                print("\nASSISTENTE:")
-                print(state["assistant_reply"])
-                state["done"] = True
-            
-            return state
+    # Costruisci prompt minimalista
+    prompt_parts = [
+        "Assistente empatico per anziani. Rispondi con calore.",
+        f"Messaggio: {last_a}",
+        f"Emozione: {emotion}",
+    ]
+    
+    # Aggiungi solo info essenziali
+    if intensity == "alta":
+        prompt_parts.append("Intensità alta - tono supportivo")
+    
+    if recent_messages:
+        prompt_parts.append(f"Contesto: {recent_messages}")
+    
+    # Health context: solo se breve e rilevante
+    if health_context and "cammin" in last_a.lower():
+        health_summary = health_context[:80] if len(health_context) > 80 else health_context
+        prompt_parts.append(f"Salute: {health_summary}")
+    
+    if original_context:
+        prompt_parts.insert(2, original_context.strip()[:100])  # Max 100 char
+    
+    # Regole ultra-compatte
+    prompt_parts.append(f"Regole: genere {gender_lbl}, 1-2 frasi naturali, mantieni coerenza registro (Lei o tu)")
+    
+    system_prompt = "\n".join(prompt_parts)
+    
+    system = SystemMessage(content=system_prompt)
+    human = HumanMessage(content=f"Domanda: {last_q}\nRisposta: {last_a}")
 
-    # ===== BUILD PERSONALIZED PROMPT =====
-    
-    # Base rules (sempre presenti)
-    base_rules = (
-        "Sei un assistente empatico per pazienti anziani.\n"
-        "Scrivi UNA risposta breve e naturale che mostri comprensione.\n\n"
-        
-        "COME RISPONDERE:\n"
-        "1. Riconosci l'emozione o esperienza della persona\n"
-        "2. Riprendi 1 elemento concreto che ha detto (azione, emozione, dettaglio)\n"
-        "3. Mostra che è normale/comprensibile quello che sta provando\n\n"
-        
-        "ESEMPI DI BUONE RISPOSTE (varia lo stile):\n"
-        "- 'Che bello che abbia potuto vedere i suoi nipoti! Questi momenti sono davvero preziosi.'\n"
-        "- 'Gli attacchi di panico sono esperienze molto intense. Mi rendo conto di quanto possano essere difficili.'\n"
-        "- 'La felicità è un'emozione bellissima. È importante riconoscere quando ci sentiamo così.'\n\n"
-        
-        "VARIETÀ OBBLIGATORIA:\n"
-        "- Cambia il modo di iniziare: 'Che bello', 'Immagino', 'Mi rendo conto', '[Elemento concreto] può essere...'\n"
-        "- NON ripetere sempre 'Capisco che... È normale...'\n"
-        "- VARIA LA STRUTTURA: non seguire sempre lo stesso schema\n\n"
-        
-        "REGOLE CRITICHE:\n"
-        f"- Usa SEMPRE e SOLO 'Lei' (mai tu/ti/te/tuo/tua/tuoi/tue)\n"
-        f"- Genere: {gender_lbl} - usa accordi corretti\n"
-        "- NON fare domande\n"
-        "- NON usare etichette come 'Validazione:' o 'Riflesso:'\n"
-        "- NON dire 'Lei ha detto' o 'Lei ha risposto'\n"
-        "- NON usare il nome del paziente\n"
-        "- NON inventare eventi o dettagli non esplicitamente detti dall'utente\n"
-        "- Linguaggio caldo e naturale, non clinico\n"
-    )
-    
-    # PERSONALIZZAZIONE 1: Communication needs
-    comm_rules = ""
-    if profile_data["communication_needs"]:
-        comm_lower = profile_data["communication_needs"].lower()
-        if "sente poco" in comm_lower or "brevi" in comm_lower:
-            comm_rules = (
-                "\nCOMUNICAZIONE:\n"
-                "- Il paziente ha difficoltà uditive: usa frasi MOLTO BREVI (massimo 1 frase, 10-15 parole)\n"
-                "- Struttura semplice: soggetto-verbo-complemento\n"
-                "- Evita subordinate complesse\n"
-                "- Esempio: 'Immagino quanto sia stato difficile.' NON 'Immagino quanto sia stato difficile per Lei affrontare questa situazione complessa.'\n"
-            )
-    
-    # PERSONALIZZAZIONE 2: Emotional signals (emotion + intensity)
-    emotion_rules = ""
-    emotion = signals.get("emotion", "neutro/misto")
-    intensity = signals.get("intensity", "bassa")
-    
-    if emotion != "neutro/misto":
-        if emotion in ["ansia/panico", "tristezza", "paura", "sconforto/impotenza", "rabbia/frustrazione"]:
-            # Emozioni negative: tono più supportivo
-            if intensity == "alta":
-                emotion_rules = (
-                    f"\nEMOZIONE RILEVATA: {emotion} (intensità alta)\n"
-                    "- Usa tono calmo e rassicurante\n"
-                    "- Valida l'intensità dell'emozione ('molto intenso', 'davvero difficile')\n"
-                    "- Mostra comprensione profonda\n"
-                    "- NON interpretare risposte brevi come positive\n"
-                )
-            else:
-                emotion_rules = (
-                    f"\nEMOZIONE RILEVATA: {emotion}\n"
-                    "- Usa tono supportivo e validante\n"
-                    "- Riconosci la difficoltà dell'esperienza\n"
-                    "- NON interpretare risposte brevi come positive\n"
-                )
-        elif emotion in ["serenità", "speranza"]:
-            # Emozioni positive: tono caldo e incoraggiante
-            emotion_rules = (
-                f"\nEMOZIONE RILEVATA: {emotion}\n"
-                "- Celebra il momento positivo\n"
-                "- Usa tono caldo e incoraggiante\n"
-                "- Rinforza l'importanza di riconoscere questi momenti\n"
-            )
-    else:
-        # Neutro/misto: attenzione a non inventare
-        emotion_rules = (
-            "\nRISPOSTA NEUTRA/BREVE:\n"
-            "- Empatia sobria e validante\n"
-            "- NON inventare dettagli o interpretazioni positive non dette\n"
-            "- Se la risposta è solo una parola/tempo, limitati a riconoscere senza elaborare\n"
-            "- Esempi CORRETTI per 'bene': 'Mi fa piacere sentirlo.' NON 'quanto sia stato bello'\n"
-        )
-    
-    # PERSONALIZZAZIONE 3: Living situation + Health goal (contestuale, se rilevante)
-    context_hint = ""
-    living = profile_data["living_situation"]
-    goal = profile_data["health_goal"]
-    
-    if living or goal:
-        context_hint = "\nCONTESTO PERSONALE:\n"
-        if living:
-            context_hint += f"- Situazione abitativa: {living}\n"
-        if goal:
-            context_hint += f"- Obiettivo salute: {goal}\n"
-        context_hint += "→ Usa questi dati SOLO se pertinenti alla risposta (non forzare collegamento)\n"
-        
-        # Rendi esplicito quando il goal è pertinente
-        if goal and last_a:
-            last_a_lower = last_a.lower()
-            if any(word in last_a_lower for word in ["cammin", "passi", "minuti", "passeggia"]):
-                context_hint += f"NOTA: La risposta parla di movimento/camminata. L'obiettivo è: {goal}\n"
-    
-    # Lunghezza target (adattata a communication_needs)
-    length_target = "1-2 frasi"
-    if comm_rules:  # Se ha difficoltà uditive
-        length_target = "1 frase breve (max 15 parole)"
-    
-    # Combina prompt
-    system = SystemMessage(
-        content=(
-            base_rules + 
-            comm_rules + 
-            emotion_rules + 
-            context_hint + 
-            f"\nLUNGHEZZA TARGET: {length_target}\n"
-        )
-    )
-
-    # Gestione risposte brevi
-    short_hint = ""
-    if len(last_a.split()) <= 2:
-        short_hint = (
-            "NOTA: La risposta è molto breve. Sviluppa comunque una risposta empatica "
-            "riprendendo il contesto. NON inventare dettagli non detti.\n\n"
-        )
-
-    human = HumanMessage(
-        content=(
-            f"{short_hint}"
-            f"{original_context}"  # Include contesto risposta precedente se follow-up
-            f"Domanda:\n{last_q}\n\n"
-            f"Risposta dell'utente:\n{last_a}"
-        )
-    )
-
-    # Primo tentativo
+    # Invoca LLM
     result = llm.invoke([system, human])
     raw = (result.content or "").strip()
-
+    
     empathy = strip_questions(raw)
     empathy = strip_labels(empathy)
     empathy = trim_to_max_sentences(empathy, 3)
-    empathy = coerce_gender(empathy, gender_lbl)
-
-    # Se fallisce validazione formale, prova a rigenerare con prompt più esplicito
-    if empathy and not is_formal_ok(empathy):
-        # Tentativo 2: rigenera con avvertimento esplicito
-        strict_system = SystemMessage(
-            content=(
-                system.content + 
-                "\n\nATTENZIONE: Usa SOLO 'Lei', MAI 'tu/ti/te/tuo/tua'. "
-                "Controlla attentamente ogni frase prima di rispondere."
-            )
-        )
-        result = llm.invoke([strict_system, human])
-        raw = (result.content or "").strip()
-        empathy = strip_questions(raw)
-        empathy = strip_labels(empathy)
-        empathy = trim_to_max_sentences(empathy, 3)
-        empathy = coerce_gender(empathy, gender_lbl)
-
-    # Fallback contestuale solo se entrambi i tentativi falliscono
-    if (not empathy) or (not is_formal_ok(empathy)):
-        # Fallback più specifico basato sul tipo di risposta
-        if len(last_a.split()) <= 2:
-            empathy = "Comprendo. La ringrazio per averlo condiviso con me."
-        else:
-            empathy = "Capisco. La ringrazio per aver condiviso questa esperienza."
-
-    # IMPORTANTE: Aggiorna l'ultimo qa_history con l'assistant_reply generato
-    if state.get("qa_history") and len(state["qa_history"]) > 0:
+    
+    # Fallback vari per evitare ripetizione
+    if not empathy:
+        import random
+        fallbacks = [
+            "Capisco.",
+            "Ti ascolto.",
+            "Ti ringrazio per averlo condiviso.",
+            "Comprendo."
+        ]
+        empathy = random.choice(fallbacks)
+    
+    # Aggiorna qa_history
+    if state.get("qa_history"):
         state["qa_history"][-1]["assistant_reply"] = empathy
-
-    # Bridge alla prossima domanda
+    
+    # Bridge prossima domanda
     if idx + 1 < len(questions):
-        gender_lbl_for_next = gender_label(_get_profile_field(state, "gender", ""))
-        
-        raw_next_q = questions[idx + 1]["text"]
-        next_q = format_question_for_gender(raw_next_q, gender_lbl_for_next)
-        
+        gender_lbl_next = gender_label(_get_profile_field(state, "gender", ""))
+        raw_next = questions[idx + 1]["text"]
+        next_q = format_question_for_gender(raw_next, gender_lbl_next)
         state["assistant_reply"] = f"{empathy}\n\nPer capire meglio: {next_q}"
-
         print("\nASSISTENTE:")
         print(state["assistant_reply"])
-
-        # così node_ask_and_read non ristampa DOMANDA 2 ecc.
         state["skip_question_print"] = True
     else:
         state["assistant_reply"] = empathy
         print("\nASSISTENTE:")
         print(state["assistant_reply"])
         state["done"] = True
-
+    
     return state
 
 
@@ -623,90 +496,82 @@ def node_advance_to_next_question(state: DialogueState) -> DialogueState:
     state["branch_count_for_current"] = 0
     state["current_branch_type"] = None
     state["question_mode"] = "MAIN"
+    state["initial_emotion"] = None
+    state["initial_intensity"] = None
     
     return state
 
 
 # -----------------------------
-# Guided Path: Branching nodes
+# Nodo Dialogo Libero (sostituisce follow-up/deepening)
 # -----------------------------
-def node_follow_up_evasive(state: DialogueState) -> DialogueState:
+def node_free_dialogue(state: DialogueState) -> DialogueState:
     """
-    Prepara follow-up per risposte evasive ("niente", "non ricordo", etc.)
+    Nodo di dialogo libero con loop su sé stesso.
+    Gestisce follow-up evasivi e approfondimenti emotivi in modo unificato.
+    
+    Logica:
+    1. Rileva se serve approfondimento (risposta evasiva O emozione forte)
+    2. Genera domanda di approfondimento
+    3. Loop: continua finché non si raggiunge profondità sufficiente
+    4. Poi ritorna a empathy_bridge per passare alla domanda successiva
     """
+    # Ottieni ultima risposta
+    last_answer = ""
+    if state.get("qa_history"):
+        last_answer = state["qa_history"][-1].get("answer", "").strip()
+    
+    if not last_answer:
+        return state
+    
+    # Rileva tipo di approfondimento necessario
+    is_evasive = is_evasive_answer(last_answer)
+    emotion_theme = detect_emotional_theme(last_answer) if not is_evasive else None
+    
+    # Se né evasiva né emotiva, skip (non dovrebbe accadere se router funziona)
+    if not is_evasive and not emotion_theme:
+        return state
+    
     followup_data = _load_followup_questions()
-    templates = followup_data.get("evasive", [])
+    
+    # Scegli categoria
+    if is_evasive:
+        category = "evasive"
+        theme_display = "Risposta evasiva"
+    else:
+        category = emotion_theme
+        theme_display = get_theme_display_name(emotion_theme)
+    
+    templates = followup_data.get(category, [])
     
     if not templates:
         # Fallback: nessun follow-up disponibile
         return state
     
-    # Scegli random dalla categoria 'evasive'
+    # Scegli random dalla categoria
     chosen = random.choice(templates)
     followup_q = chosen["template"]
     
-    # Debug: mostra rilevamento
-    print("\n[DEBUG] Rilevata risposta evasiva → follow-up")
+    # Salva emozione iniziale solo alla primissima entrata (branch_count == 0)
+    # Non sovrascrivere mai durante il loop, anche se cambia categoria
+    branch_count = state.get("branch_count_for_current", 0)
+    if branch_count == 0 and not state.get("initial_emotion"):
+        state["initial_emotion"] = state.get("last_emotion", "Neutralità")
+        state["initial_intensity"] = state.get("last_intensity", "bassa")
     
     # Log branch per tracking
     if state.get("session_logger"):
         state["session_logger"].log_branch(
-            branch_type="evasive",
-            theme_display="Risposta evasiva",
+            branch_type=category,
+            theme_display=theme_display,
             followup_question=followup_q
         )
     
-    # Imposta nello state
+    # Imposta pending_question per ask_and_read
     state["pending_question"] = followup_q
-    state["question_mode"] = "FOLLOWUP"
+    state["question_mode"] = "DEEPENING"  # Modalità dialogo libero
     state["branch_count_for_current"] = state.get("branch_count_for_current", 0) + 1
-    state["current_branch_type"] = "evasive"
-    
-    return state
-
-
-def node_emotional_deepening(state: DialogueState) -> DialogueState:
-    """
-    Prepara domanda di approfondimento per temi emotivi forti.
-    IMPORTANTE: Rileva il tema dalla risposta utente, perché i router non possono modificare lo state.
-    """
-    # Rileva il tema dalla risposta dell'utente (ultima risposta in qa_history)
-    theme = None
-    if state.get("qa_history"):
-        last_answer = state["qa_history"][-1].get("answer", "").strip()
-        theme = detect_emotional_theme(last_answer)
-    
-    if not theme:
-        # Fallback: nessun tema rilevato, skip
-        return state
-    
-    followup_data = _load_followup_questions()
-    templates = followup_data.get(theme, [])
-    
-    if not templates:
-        # Fallback: nessun follow-up disponibile per questo tema
-        return state
-    
-    chosen = random.choice(templates)
-    followup_q = chosen["template"]
-    
-    # Debug: mostra rilevamento
-    theme_name = get_theme_display_name(theme)
-    print(f"\n[DEBUG] Rilevato tema emotivo: {theme_name} → approfondimento")
-    
-    # Log branch per tracking
-    if state.get("session_logger"):
-        state["session_logger"].log_branch(
-            branch_type=theme,
-            theme_display=theme_name,
-            followup_question=followup_q
-        )
-    
-    # Imposta nello state
-    state["pending_question"] = followup_q
-    state["question_mode"] = "DEEPENING"
-    state["branch_count_for_current"] = state.get("branch_count_for_current", 0) + 1
-    state["current_branch_type"] = theme  # Salva per tracking
+    state["current_branch_type"] = category
     
     return state
 
@@ -724,29 +589,51 @@ def route_after_ask(state: DialogueState) -> str:
 
 def route_answer_type(state: DialogueState) -> str:
     """
-    Router intelligente: decide se fare follow-up, deepening o procedere normale.
+    Router intelligente: decide se entrare in dialogo libero o procedere normale.
+    
+    NOTA: Usa detect_emotional_theme (keyword) per decisione router.
+    Keyword matching può mancare sinonimi, ma è veloce per decisione routing.
+    L'estrazione completa (con LLM) avviene in node_extract_emotion.
     
     Logica:
-    1. Se già in FOLLOWUP/DEEPENING mode → empathy_bridge (skip classification)
-    2. Se già fatto 1 follow-up per questa domanda → empathy_bridge
-    3. Se risposta evasiva → follow_up_evasive
-    4. Se tema emotivo → emotional_deepening
-    5. Altrimenti → empathy_bridge
+    1. Se già in DEEPENING mode → loop o uscita da free_dialogue
+    2. Se già fatto 2+ interazioni → empathy_bridge (forza uscita)
+    3. Se risposta evasiva O emozione forte → free_dialogue
+    4. Altrimenti → empathy_bridge
     """
     if state.get("done"):
         return END
     
-    # IMPORTANTE: Se siamo già in FOLLOWUP/DEEPENING, non riclassificare
-    # La risposta è a un follow-up, quindi procedi sempre a empathy_bridge
+    # Se già in DEEPENING, controlla se continuare il loop
     mode = state.get("question_mode", "MAIN")
-    if mode in ["FOLLOWUP", "DEEPENING"]:
-        # Reset mode a MAIN per la prossima domanda del diario
-        state["question_mode"] = "MAIN"
-        return "empathy_bridge"
+    if mode == "DEEPENING":
+        # Controlla contatore branch
+        branch_count = state.get("branch_count_for_current", 0)
+        
+        # Limite max: 2 interazioni di dialogo libero
+        if branch_count >= 2:
+            # Forza uscita: reset mode e vai a empathy_bridge
+            state["question_mode"] = "MAIN"
+            return "empathy_bridge"
+        
+        # Ottieni ultima risposta
+        last_answer = ""
+        if state.get("qa_history"):
+            last_answer = state["qa_history"][-1].get("answer", "").strip()
+        
+        # Se risposta ancora evasiva O emozione ancora forte, continua loop
+        if is_evasive_answer(last_answer):
+            return "free_dialogue"
+        elif detect_emotional_theme(last_answer):
+            return "free_dialogue"
+        else:
+            # Risposta soddisfacente, esci dal loop
+            state["question_mode"] = "MAIN"
+            return "empathy_bridge"
     
-    # Limite max 1 follow-up per domanda
+    # Prima volta: controlla se serve dialogo libero
     branch_count = state.get("branch_count_for_current", 0)
-    if branch_count >= 1:
+    if branch_count >= 1:  # Max 1 entrata in free_dialogue per domanda
         return "empathy_bridge"
     
     # Ottieni ultima risposta
@@ -757,24 +644,16 @@ def route_answer_type(state: DialogueState) -> str:
     if not last_answer:
         return "empathy_bridge"
     
-    # 1. Check risposta evasiva (priorità alta)
+    # Check risposta evasiva O emozione forte
     if is_evasive_answer(last_answer):
-        return "follow_up_evasive"
+        return "free_dialogue"
     
-    # 2. Check tema emotivo
-    theme = detect_emotional_theme(last_answer)
-    if theme:
-        # Nota: Il tema verrà ri-rilevato in node_emotional_deepening
-        # (i router non possono mutare lo state in LangGraph)
-        return "emotional_deepening"
+    emotion = detect_emotional_theme(last_answer)
+    if emotion:
+        return "free_dialogue"
     
-    # 3. Nessuna diramazione → normale
+    # Risposta normale
     return "empathy_bridge"
-
-
-# DEPRECATO: ora usiamo route_answer_type come router dopo save
-# def route_after_save(state: DialogueState) -> str:
-#     return END if state.get("done") else "empathy_bridge"
 
 
 def route_after_bridge(state: DialogueState) -> str:
@@ -792,12 +671,12 @@ def build_graph():
     builder.add_node("empathy_bridge", node_empathy_bridge)
     builder.add_node("advance_to_next_question", node_advance_to_next_question)
     
-    # NUOVI nodi per guided path
-    builder.add_node("follow_up_evasive", node_follow_up_evasive)
-    builder.add_node("emotional_deepening", node_emotional_deepening)
+    # Nodi per separazione task
+    builder.add_node("extract_emotion", node_extract_emotion)
+    builder.add_node("retrieve_health_context", node_retrieve_health_context)
     
-    # NUOVO nodo per signal extraction
-    builder.add_node("extract_signals", node_extract_signals)
+    # Nodo dialogo libero unificato (sostituisce follow_up_evasive e emotional_deepening)
+    builder.add_node("free_dialogue", node_free_dialogue)
 
     # Edges
     builder.add_edge(START, "select_question")
@@ -806,13 +685,13 @@ def build_graph():
     builder.add_edge("profile_context", "ask_and_read")
     builder.add_conditional_edges("ask_and_read", route_after_ask)
 
-    # NUOVO flusso: save → extract → router
-    builder.add_edge("save_current_answer", "extract_signals")
-    builder.add_conditional_edges("extract_signals", route_answer_type)
+    # Flusso: save → extract_emotion → retrieve_health_context → router
+    builder.add_edge("save_current_answer", "extract_emotion")
+    builder.add_edge("extract_emotion", "retrieve_health_context")
+    builder.add_conditional_edges("retrieve_health_context", route_answer_type)
     
-    # Follow-up e deepening ritornano ad ask_and_read
-    builder.add_edge("follow_up_evasive", "ask_and_read")
-    builder.add_edge("emotional_deepening", "ask_and_read")
+    # Free dialogue: può loopare su sé stesso O andare ad ask_and_read
+    builder.add_edge("free_dialogue", "ask_and_read")
     
     builder.add_conditional_edges("empathy_bridge", route_after_bridge)
     builder.add_edge("advance_to_next_question", "select_question")

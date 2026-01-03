@@ -13,9 +13,9 @@
             "placeholders": []
         }
     ],
-    "ansia_panico": [
+    "Paura": [
         {
-            "template": "Quando avverte ansia o panico, cosa nota per primo nel Suo corpo?",
+            "template": "Quando avverte paura o ansia, cosa nota per primo?",
             "placeholders": []
         },
         {
@@ -27,45 +27,45 @@
             "placeholders": []
         }
     ],
-    "dolore_fisico": [
+    "Rabbia": [
         {
-            "template": "Può dirmi in quale parte del corpo sente più fastidio o dolore?",
+            "template": "Cosa ha scatenato questa sensazione di frustrazione?",
             "placeholders": []
         },
         {
-            "template": "Questo disagio fisico influenza le Sue attività quotidiane? In che modo?",
+            "template": "C'è qualcosa che potrebbe aiutarLa a sentirsi meno irritato?",
             "placeholders": []
         },
         {
-            "template": "Ha notato se c'è qualcosa che migliora o peggiora questa sensazione fisica?",
+            "template": "Questa sensazione influisce su come si sente durante la giornata?",
             "placeholders": []
         }
     ],
-    "solitudine": [
+    "Tristezza": [
         {
-            "template": "Quando si sente solo, c'è qualcuno con cui Le piacerebbe parlare o passare del tempo?",
+            "template": "Quando si sente triste, riesce a identificare un motivo specifico?",
             "placeholders": []
         },
         {
-            "template": "Ci sono momenti della giornata in cui questa sensazione di solitudine è più forte?",
-            "placeholders": []
-        },
-        {
-            "template": "Ha qualche attività o pensiero che La aiuta quando si sente così?",
-            "placeholders": []
-        }
-    ],
-    "tristezza": [
-        {
-            "template": "Quando si sente triste o scoraggiato, riesce a identificare un motivo specifico?",
-            "placeholders": []
-        },
-        {
-            "template": "Questa sensazione di tristezza è presente durante tutta la giornata o va e viene?",
+            "template": "Questa sensazione è presente durante tutta la giornata o va e viene?",
             "placeholders": []
         },
         {
             "template": "C'è qualche momento recente in cui si è sentito un po' meglio, anche solo per poco?",
+            "placeholders": []
+        }
+    ],
+    "Felicità": [
+        {
+            "template": "Cosa ha contribuito a farLa sentire così bene?",
+            "placeholders": []
+        },
+        {
+            "template": "Ci sono altre cose che Le danno questa stessa sensazione positiva?",
+            "placeholders": []
+        },
+        {
+            "template": "Come Le piacerebbe mantenere o coltivare questa sensazione?",
             "placeholders": []
         }
     ]

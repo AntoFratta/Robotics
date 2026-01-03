@@ -14,35 +14,30 @@ from langchain_core.messages import SystemMessage, HumanMessage
 
 
 # ===========================
-# Categorie
+# Categorie (Modello di Ekman)
 # ===========================
 
 EMOTIONS = [
-    "ansia/panico",
-    "tristezza",
-    "paura",
-    "rabbia/frustrazione",
-    "sconforto/impotenza",
-    "serenità",
-    "speranza",
-    "neutro/misto"
+    "Rabbia",
+    "Paura",
+    "Tristezza",
+    "Felicità",
+    "Sorpresa",
+    "Disgusto",
+    "Neutralità"
 ]
 
 INTENSITY_LEVELS = ["bassa", "media", "alta"]
 
 THEMES = [
-    "autonomia/mobilità",
-    "dolore/malessere fisico",
-    "farmaci/terapie",
-    "sonno/fatica",
-    "ansia/panico/respirazione",
-    "memoria/cognizione",
-    "famiglia/visite",
-    "solitudine/supporto sociale",
-    "routine/attività quotidiane",
-    "paure sul futuro",
-    "alimentazione/appetito",
-    "sicurezza/cadute"
+    "salute fisica",
+    "mobilità",
+    "sonno",
+    "famiglia",
+    "solitudine",
+    "routine quotidiana",
+    "memoria",
+    "futuro"
 ]
 
 
@@ -79,13 +74,13 @@ def should_extract_signals(answer: str) -> bool:
 def get_default_signals() -> Dict[str, Any]:
     """
     Output default per risposte corte (fast path).
-    Bassa confidenza, neutro/misto.
+    Bassa confidenza, Neutralità.
     
     Returns:
         Dict con emotion, intensity, themes, confidence
     """
     return {
-        "emotion": "neutro/misto",
+        "emotion": "Neutralità",
         "intensity": "bassa",
         "themes": [],
         "confidence": 0.3
@@ -133,7 +128,7 @@ def extract_signals(answer: str, question: str) -> Dict[str, Any]:
             "- Scegli SOLO dalle categorie sopra\n"
             "- themes: lista (max 3 temi più rilevanti)\n"
             "- confidence: stima accuratezza (0.0-1.0)\n"
-            "- Se incerto: usa 'neutro/misto' e confidence bassa\n"
+            "- Se incerto: usa 'Neutralità' e confidence bassa\n"
         )
     )
     
@@ -186,8 +181,7 @@ def extract_signals(answer: str, question: str) -> Dict[str, Any]:
         except Exception:
             pass
         
-        # Fallback: default con nota di errore
-        print(f"[WARNING] Signal extraction failed, using default. Error: {e}")
+        # Fallback su default
         return get_default_signals()
 
 

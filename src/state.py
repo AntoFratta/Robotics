@@ -38,15 +38,15 @@ class DialogueState(TypedDict):
     # Se True, non ristampare il numero della domanda perché già mostrata dall'assistente
     skip_question_print: bool
 
-    # Campi per branching (follow-up/deepening)
+    # Campi per branching (follow-up e approfondimenti emotivi)
     question_mode: str  # "MAIN", "FOLLOWUP", "DEEPENING"
-    pending_question: Optional[str]  # Override domanda da porre
-    branch_count_for_current: int  # Contatore branch per domanda corrente (max 1)
+    pending_question: Optional[str]  # Domanda di override da porre
+    branch_count_for_current: int  # Contatore branch per domanda corrente (massimo 2 iterazioni)
 
-    # Tipo di diramazione attiva (se presente): "evasive", "ansia_panico", etc.
+    # Tipo di diramazione attiva (es: "evasive", "Paura", "Rabbia", "Tristezza")
     current_branch_type: Optional[str]
 
-    # Backup dell'indice originale (per debug/tracking)
+    # Indice originale della domanda (per tracking)
     original_question_index: int
 
     # Session logger (per tracking branches)
@@ -54,3 +54,14 @@ class DialogueState(TypedDict):
 
     # Signals estratti dalle risposte (emotion/theme extraction)
     signals: List[Dict[str, Any]]
+    
+    # Emozione e intensità estratte dall'ultima risposta
+    last_emotion: Optional[str]
+    last_intensity: Optional[str]
+    
+    # Emozione iniziale (salvata all'entrata del loop di dialogo libero)
+    initial_emotion: Optional[str]
+    initial_intensity: Optional[str]
+    
+    # Contesto salute recuperato via RAG
+    health_context: Optional[str]

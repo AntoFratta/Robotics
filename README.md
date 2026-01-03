@@ -7,8 +7,8 @@ Sistema di dialogo guidato basato su LangGraph e Ollama per la raccolta di dati 
 Questo progetto implementa un assistente conversazionale progettato per interagire con pazienti anziani durante la compilazione di un diario clinico quotidiano. Il sistema utilizza:
 
 - **Empatia Personalizzata**: Risposte adattate al profilo del paziente (età, genere, condizioni di salute, bisogni comunicativi)
-- **Analisi Emotiva**: Rilevamento automatico di segnali emotivi (ansia, tristezza, serenità) e temi sensibili
-- **Branching Intelligente**: Follow-up automatici per risposte evasive o temi critici (dolore, solitudine, panico)
+- **Analisi Emotiva**: Rilevamento automatico basato su modello di Ekman (Rabbia, Paura, Tristezza, Felicità, Sorpresa, Disgusto, Neutralità)
+- **Branching Intelligente**: Follow-up automatici per risposte evasive o emozioni forti con dialogo libero adattivo (max 2 iterazioni)
 - **RAG con ChromaDB**: Recupero contestuale di informazioni dal profilo paziente tramite embeddings
 - **Logging Strutturato**: Salvataggio sessioni in CSV/JSON per analisi successive
 
@@ -139,15 +139,15 @@ python -m src.app
    Mi fa piacere sentirlo.
    ```
 
-3. **Follow-up Automatici**: Se rileva risposte evasive o temi critici
+3. **Follow-up Automatici**: Se rileva risposte evasive o emozioni forti
    ```
    DOMANDA 5: C'è stato un momento di difficoltà oggi?
-   Risposta: Quando ho avuto il panico
+   Risposta: Ho paura di cadere quando esco
    
    ASSISTENTE:
-   Gli attacchi di panico sono esperienze molto intense.
+   Capisco la sua preoccupazione.
    
-   Può dirmi di più su cosa ha provato durante l'attacco?
+   Quando si sente in questo modo, riesce a capire cosa ha scatenato quella sensazione?
    ```
 
 4. **Uscita**: Scrivi `Q` per terminare
@@ -187,21 +187,22 @@ Modifica `data/diary_questions.json`:
 
 ### Personalizzare Follow-up
 
-Modifica `data/follow_up_questions.json` per aggiungere follow-up per nuovi temi:
+Modifica `data/follow_up_questions.json` per aggiungere follow-up per emozioni Ekman:
 ```json
 {
-  "nuovo_tema": [
-    "Domanda follow-up 1?",
-    "Domanda follow-up 2?"
-  ]
+  "evasive": ["Domanda per risposte evasive?"],
+  "Paura": ["Domanda per paura?"],
+  "Rabbia": ["Domanda per rabbia?"],
+  "Tristezza": ["Domanda per tristezza?"],
+  "Felicità": ["Domanda per felicità?"]
 }
 ```
 
 ## Caratteristiche Tecniche
 
 ### Gestione Empatia Personalizzata
-- **Communication Needs**: Adatta lunghezza risposte (max 15 parole se difficoltà uditive)
-- **Emozioni Rilevate**: Tono diverso per ansia/tristezza vs serenità/speranza
+- **Communication Needs**: Adatta risposte in base a bisogni comunicativi del profilo
+- **Emozioni Rilevate**: Tono adattato secondo modello Ekman (7 emozioni base)
 - **Contesto Personale**: Usa living_situation e health_goal quando pertinenti
 - **Genere**: Accordi grammaticali corretti automatici
 
@@ -210,14 +211,17 @@ Modifica `data/follow_up_questions.json` per aggiungere follow-up per nuovi temi
 - **Follow-up negativi**: Pattern matching per contesto negativo (es: "vorrei vedere i miei figli")
 
 ### Classificazione Risposte
-- **Evasive**: "no", "niente", "non ricordo" → follow-up generico
-- **Temi Forti**: ansia/panico, dolore fisico, solitudine, tristezza → follow-up specifico
-- **Priorità**: 1 branch max per domanda (max 1 follow-up)
+- **Evasive**: "no", "niente", "non ricordo" → dialogo libero con approfondimento
+- **Emozioni Forti**: Paura, Rabbia, Tristezza, Felicità → dialogo libero mirato
+- **Dialogo Libero**: Massimo 2 iterazioni per domanda, poi passaggio automatico alla successiva
+- **Balanced Detection**: Keyword matching + LLM (conflitto risolto con confidence threshold 0.7)
 
 ### Estrazione Segnali
+- **Approccio Bilanciato**: Keyword matching deterministico + LLM per copertura sinonimi
+- **Conflict Resolution**: Se keyword e LLM discordano, usa LLM solo se confidence > 0.7
 - **LLM Leggero**: qwen2.5:3b per velocità e stabilità (temperature=0)
-- **Output JSON**: emotion, intensity, themes, confidence
-- **Fallback**: Se parsing fallisce, usa default (neutro/misto, confidence 0.3)
+- **Output JSON**: emotion (Ekman), intensity, themes, confidence
+- **Fallback**: Se parsing fallisce, usa default (Neutralità, confidence 0.3)
 
 ## Troubleshooting
 
@@ -261,7 +265,8 @@ Ogni sessione genera 3 file in `runtime/sessions/P_<patient_id>/`:
 
 ## Limitazioni Note
 
-- **1 Follow-up per Domanda**: Sistema limita a 1 branch per domanda principale
+- **Max 2 Iterazioni Dialogo**: Sistema limita dialogo libero a 2 iterazioni per domanda
 - **Genere Binario**: Supporta solo M/F per accordi grammaticali
 - **Lingua**: Italiano (prompts hardcoded)
 - **LLM Locale**: Richiede Ollama in esecuzione (non cloud)
+- **Modello Ekman**: Supporta solo 7 emozioni base (no emozioni complesse o miste)
