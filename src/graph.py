@@ -372,20 +372,26 @@ def node_empathy_bridge(state: DialogueState) -> DialogueState:
         
         if word in ["bene", "beni", "buono", "buona", "ok", "si", "sì"]:
             empathy = random.choice([
-                "Mi fa piacere sentirlo.",
-                "Che bello!",
-                "Sono contento."
+                "Che bello sentirlo, mi fa davvero piacere.",
+                "Sono contento che vada bene.",
+                "Mi rallegra sentire che va bene.",
+                "Che bella notizia!",
+                "Mi fa piacere saperlo."
             ])
         elif word in ["male", "no", "niente", "nulla"]:
             empathy = random.choice([
-                "Comprendo.",
-                "Capisco.",
-                "Ti ascolto."
+                "Capisco, mi dispiace sentirlo.",
+                "Ti ascolto, sono qui per te.",
+                "Comprendo, grazie per avermelo detto.",
+                "Mi dispiace, ti ascolto.",
+                "Capisco come ti senti."
             ])
         else:
             empathy = random.choice([
-                "Capisco.",
-                "Ti ascolto."
+                "Ti ascolto con attenzione.",
+                "Capisco, grazie per averlo condiviso.",
+                "Ti ascolto.",
+                "Comprendo."
             ])
         
         if state.get("qa_history"):
@@ -411,28 +417,27 @@ def node_empathy_bridge(state: DialogueState) -> DialogueState:
     
     # Costruisci prompt minimalista
     prompt_parts = [
-        "Assistente empatico per anziani. Rispondi con calore.",
-        f"Messaggio: {last_a}",
-        f"Emozione: {emotion}",
+        f"Sei un assistente per il supporto emotivo delle persone anziane. Rispondi in modo breve e empatico a questo messaggio: \"{last_a}\"",
+        f"- Emozione rilevata: {emotion}",
     ]
     
     # Aggiungi solo info essenziali
     if intensity == "alta":
-        prompt_parts.append("Intensità alta - tono supportivo")
+        prompt_parts.append("- Intensità rilevata: alta - Tono da usare: tono supportivo e rassicurante")
     
     if recent_messages:
-        prompt_parts.append(f"Contesto: {recent_messages}")
+        prompt_parts.append(f"- Messaggi recenti: {recent_messages}")
     
     # Health context: solo se breve e rilevante
     if health_context and "cammin" in last_a.lower():
         health_summary = health_context[:80] if len(health_context) > 80 else health_context
-        prompt_parts.append(f"Salute: {health_summary}")
+        prompt_parts.append(f"- Informazioni sulla salute: {health_summary}")
     
     if original_context:
         prompt_parts.insert(2, original_context.strip()[:100])  # Max 100 char
     
     # Regole ultra-compatte
-    prompt_parts.append(f"Regole: genere {gender_lbl}, 1-2 frasi naturali, mantieni coerenza registro (Lei o tu)")
+    prompt_parts.append(f"Regole: genere {gender_lbl}, 1-2 frasi naturali e calde")
     
     system_prompt = "\n".join(prompt_parts)
     
@@ -445,16 +450,20 @@ def node_empathy_bridge(state: DialogueState) -> DialogueState:
     
     empathy = strip_questions(raw)
     empathy = strip_labels(empathy)
-    empathy = trim_to_max_sentences(empathy, 3)
+    empathy = trim_to_max_sentences(empathy, 2)
     
     # Fallback vari per evitare ripetizione
     if not empathy:
         import random
         fallbacks = [
-            "Capisco.",
-            "Ti ascolto.",
-            "Ti ringrazio per averlo condiviso.",
-            "Comprendo."
+            "Ti ascolto con attenzione.",
+            "Grazie per averlo condiviso con me.",
+            "Capisco, sono qui per te.",
+            "Ti ringrazio per la tua sincerità.",
+            "Grazie per avermelo detto.",
+            "Ti ascolto, continua pure.",
+            "Sono qui ad ascoltarti.",
+            "Capisco quello che mi dici."
         ]
         empathy = random.choice(fallbacks)
     
