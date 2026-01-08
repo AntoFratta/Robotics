@@ -173,7 +173,7 @@ def node_ask_and_read(state: DialogueState) -> DialogueState:
     # Stampa diversa in base al mode
     if mode == "MAIN":
         if not state.get("skip_question_print", False):
-            print(f"\nDOMANDA {state['current_index'] + 1}: {q}")
+            print(f"\n{q}")
     else:
         # Follow-up o deepening: senza numero, come se fosse assistente
         print(f"\n{q}")
@@ -402,7 +402,7 @@ def node_empathy_bridge(state: DialogueState) -> DialogueState:
             gender_lbl_next = gender_label(_get_profile_field(state, "gender", ""))
             raw_next = questions[idx + 1]["text"]
             next_q = format_question_for_gender(raw_next, gender_lbl_next)
-            state["assistant_reply"] = f"{empathy}\n\nPer capire meglio: {next_q}"
+            state["assistant_reply"] = f"{empathy}\n\n{next_q}"
             print("\nASSISTENTE:")
             print(state["assistant_reply"])
             state["skip_question_print"] = True
@@ -476,7 +476,7 @@ def node_empathy_bridge(state: DialogueState) -> DialogueState:
         gender_lbl_next = gender_label(_get_profile_field(state, "gender", ""))
         raw_next = questions[idx + 1]["text"]
         next_q = format_question_for_gender(raw_next, gender_lbl_next)
-        state["assistant_reply"] = f"{empathy}\n\nPer capire meglio: {next_q}"
+        state["assistant_reply"] = f"{empathy}\n\n{next_q}"
         print("\nASSISTENTE:")
         print(state["assistant_reply"])
         state["skip_question_print"] = True

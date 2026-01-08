@@ -1,29 +1,29 @@
 {
     "evasive": [
         {
-            "template": "Capisco. A volte può essere difficile ricordare. C'è qualche piccolo dettaglio che Le viene in mente?",
+            "template": "Capisco. A volte può essere difficile ricordare. C'è qualche piccolo dettaglio che ti viene in mente?",
             "placeholders": []
         },
         {
-            "template": "Va bene. Provi a pensare anche solo a una sensazione o un pensiero che ha avuto in questi giorni.",
+            "template": "Va bene. Prova a pensare anche solo a una sensazione o un pensiero che hai avuto in questi giorni.",
             "placeholders": []
         },
         {
-            "template": "Non si preoccupi. A volte aiuta pensare a momenti specifici della giornata: la mattina, il pomeriggio, la sera. Le viene in mente qualcosa?",
+            "template": "Non ti preoccupare. A volte aiuta pensare a momenti specifici della giornata: la mattina, il pomeriggio, la sera. Ti viene in mente qualcosa?",
             "placeholders": []
         }
     ],
     "Paura": [
         {
-            "template": "Quando avverte paura o ansia, cosa nota per primo?",
+            "template": "Quando avverti paura o ansia, cosa noti per primo?",
             "placeholders": []
         },
         {
-            "template": "Può dirmi in quale momento della giornata Le capita più spesso di sentirsi così?",
+            "template": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?",
             "placeholders": []
         },
         {
-            "template": "Quando si sente in questo modo, riesce a capire cosa ha scatenato quella sensazione?",
+            "template": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
             "placeholders": []
         }
     ],
@@ -33,17 +33,17 @@
             "placeholders": []
         },
         {
-            "template": "C'è qualcosa che potrebbe aiutarLa a sentirsi meno irritato?",
+            "template": "C'è qualcosa che potrebbe aiutarti a sentirti meno irritato?",
             "placeholders": []
         },
         {
-            "template": "Questa sensazione influisce su come si sente durante la giornata?",
+            "template": "Questa sensazione influisce su come ti senti durante la giornata?",
             "placeholders": []
         }
     ],
     "Tristezza": [
         {
-            "template": "Quando si sente triste, riesce a identificare un motivo specifico?",
+            "template": "Quando ti senti triste, riesci a identificare un motivo specifico?",
             "placeholders": []
         },
         {
@@ -51,21 +51,21 @@
             "placeholders": []
         },
         {
-            "template": "C'è qualche momento recente in cui si è sentito un po' meglio, anche solo per poco?",
+            "template": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?",
             "placeholders": []
         }
     ],
     "Felicità": [
         {
-            "template": "Cosa ha contribuito a farLa sentire così bene?",
+            "template": "Cosa ha contribuito a farti sentire così bene?",
             "placeholders": []
         },
         {
-            "template": "Ci sono altre cose che Le danno questa stessa sensazione positiva?",
+            "template": "Ci sono altre cose che ti danno questa stessa sensazione positiva?",
             "placeholders": []
         },
         {
-            "template": "Come Le piacerebbe mantenere o coltivare questa sensazione?",
+            "template": "Come ti piacerebbe mantenere o coltivare questa sensazione?",
             "placeholders": []
         }
     ]

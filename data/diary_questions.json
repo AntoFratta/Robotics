@@ -1,58 +1,58 @@
 [
   {
     "id": 1,
-    "text": "In questa settimana Le è capitato un momento in cui si è sentito davvero bene?"
+    "text": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?"
   },
   {
     "id": 2,
-    "text": "Per quale motivo pensa di essersi sentito così?"
+    "text": "Per quale motivo pensi di esserti sentito così?"
   },
   {
     "id": 3,
-    "text": "Se dovesse descrivere quella sensazione con una parola, quale userebbe?"
+    "text": "Se dovessi descrivere quella sensazione con una parola, quale useresti?"
   },
   {
     "id": 4,
-    "text": "Può raccontarmi una situazione recente in cui si è sentito in difficoltà o particolarmente preoccupato?"
+    "text": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupato?"
   },
   {
     "id": 5,
-    "text": "Che cosa ha provato in quel momento, sia nel corpo sia nei pensieri?"
+    "text": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?"
   },
   {
     "id": 6,
-    "text": "È riuscito a ritrovare un po’ di calma? Se sì, che cosa l’ha aiutata? Se no, che cosa glielo ha reso difficile?"
+    "text": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?"
   },
   {
     "id": 7,
-    "text": "Se il Suo umore oggi fosse un colore, quale sarebbe?"
+    "text": "Se il tuo umore oggi fosse un colore, quale sarebbe?"
   },
   {
     "id": 8,
-    "text": "Per quale motivo sceglierebbe proprio questo colore?"
+    "text": "Per quale motivo sceglieresti proprio questo colore?"
   },
   {
     "id": 9,
-    "text": "Mi racconti un episodio recente che, secondo Lei, spiega bene questo colore e come si è sentito."
+    "text": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito."
   },
   {
     "id": 10,
-    "text": "Chi o che cosa l’aiuta, di solito, a stare un po’ meglio?"
+    "text": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?"
   },
   {
     "id": 11,
-    "text": "In questa settimana è riuscito, per quanto possibile, a portare a termine ciò che aveva programmato per la Sua giornata o settimana?"
+    "text": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?"
   },
   {
     "id": 12,
-    "text": "In questa settimana è riuscito, per quanto le è stato possibile, a seguire le indicazioni che riguardano la Sua salute (ad esempio farmaci, controlli, movimento, riposo)?"
+    "text": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?"
   },
   {
     "id": 13,
-    "text": "In che modo si è preso cura di sé questa settimana?"
+    "text": "In che modo ti sei preso cura di te questa settimana?"
   },
   {
     "id": 14,
-    "text": "C’è qualcosa, riguardo alla Sua salute o alla Sua vita quotidiana, che in questo periodo La preoccupa in modo particolare?"
+    "text": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?"
   }
 ]
