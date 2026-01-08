@@ -4,23 +4,39 @@ Sistema di dialogo guidato basato su LangGraph e Ollama per la raccolta di dati 
 
 ## Descrizione
 
-Questo progetto implementa un assistente conversazionale progettato per interagire con pazienti anziani durante la compilazione di un diario clinico quotidiano. Il sistema utilizza:
+Questo progetto implementa un assistente conversazionale progettato per interagire con pazienti anziani durante la compilazione di un diario clinico quotidiano. L'obiettivo principale è creare un'esperienza conversazionale naturale ed empatica che:
+
+- Faciliti la raccolta di informazioni cliniche rilevanti attraverso domande guidate
+- Adatti il tono e il contenuto delle risposte al profilo specifico del paziente
+- Rilevi automaticamente segnali emotivi per approfondimenti mirati
+- Mantenga un registro informale e amichevole per favorire l'apertura del paziente
+
+Il sistema utilizza:
 
 - **Empatia Personalizzata**: Risposte adattate al profilo del paziente (età, genere, condizioni di salute, bisogni comunicativi)
 - **Analisi Emotiva**: Rilevamento automatico basato su modello di Ekman (Rabbia, Paura, Tristezza, Felicità, Sorpresa, Disgusto, Neutralità)
-- **Branching Intelligente**: Follow-up automatici per risposte evasive o emozioni forti con dialogo libero adattivo (max 2 iterazioni)
-- **RAG con ChromaDB**: Recupero contestuale di informazioni dal profilo paziente tramite embeddings
-- **Logging Strutturato**: Salvataggio sessioni in CSV/JSON per analisi successive
+- **Branching Intelligente**: Follow-up automatici per risposte evasive o emozioni forti con dialogo libero adattivo (max 2 iterazioni per domanda)
+- **RAG con ChromaDB**: Recupero contestuale di informazioni dal profilo paziente tramite embeddings per arricchire le risposte
+- **Logging Strutturato**: Salvataggio sessioni in formato CSV/JSON per analisi cliniche successive
 
 ### Architettura
 
-Il sistema usa **LangGraph** per la gestione dello stato dialogico con nodi specializzati:
-- Recupero profilo (RAG)
-- Input utente
-- Classificazione risposta
-- Estrazione segnali emotivi
-- Generazione empatia personalizzata
-- Routing condizionale (follow-up vs prossima domanda)
+Il sistema usa **LangGraph** per la gestione dello stato dialogico attraverso una macchina a stati con nodi specializzati:
+
+1. **node_retrieve_profile**: Carica il profilo del paziente e inizializza il retriever RAG con ChromaDB
+2. **node_ask_and_read**: Gestisce l'input dell'utente distinguendo tra domande principali e follow-up
+3. **node_save_current_answer**: Salva la risposta nella qa_history e prepara per l'analisi
+4. **node_extract_emotion**: Estrae segnali emotivi (emozione, intensità, temi) usando keyword matching + LLM
+5. **node_empathy_bridge**: Genera risposta empatica personalizzata e introduce la prossima domanda
+6. **node_free_dialogue**: Gestisce follow-up per risposte evasive o emozioni forti (max 2 iterazioni)
+7. **route_answer_type**: Routing condizionale che decide se continuare con follow-up o passare alla domanda successiva
+
+**Scelte Progettuali Chiave**:
+- **Modelli LLM Separati**: qwen2.5:7b per empatia (maggiore qualità), qwen2.5:3b per estrazione segnali (velocità)
+- **Hybrid Emotion Detection**: Keyword matching deterministico + LLM con conflict resolution (confidence > 0.7)
+- **Fast Paths**: Template statici per risposte monosillabiche per evitare interpretazioni errate
+- **Prompt Ottimizzati**: Prompt minimalisti e diretti per garantire risposte brevi e naturali (max 2 frasi)
+- **Registro Informale**: Tutte le domande e risposte usano "tu" per favorire confidenza e apertura
 
 ## Requisiti
 
@@ -223,6 +239,42 @@ Modifica `data/follow_up_questions.json` per aggiungere follow-up per emozioni E
 - **Output JSON**: emotion (Ekman), intensity, themes, confidence
 - **Fallback**: Se parsing fallisce, usa default (Neutralità, confidence 0.3)
 
+## Dettagli Implementativi
+
+### Generazione Risposte Empatiche
+
+Il nodo `node_empathy_bridge` implementa un sistema a due livelli:
+
+1. **Fast Path (Template)**: Per risposte monosillabiche ("bene", "male", "sì", "no") usa template predefiniti con varianti casuali per evitare ripetizioni
+2. **LLM Path**: Per risposte articolate, genera risposta empatica usando:
+   - Contesto dal profilo (via RAG)
+   - Emozione e intensità rilevate
+   - Messaggi recenti della conversazione
+   - Informazioni sanitarie pertinenti (es: mobilità se si parla di camminare)
+
+**Controllo Lunghezza**: Le risposte vengono limitate a massimo 2 frasi tramite `trim_to_max_sentences()` per mantenere naturalezza e brevità.
+
+### Sistema di Follow-up
+
+Il sistema di dialogo libero (`node_free_dialogue`) si attiva quando:
+- Risposta evasiva rilevata ("no", "niente", "non ricordo")
+- Emozione forte rilevata (Paura, Rabbia, Tristezza con intensità media/alta)
+
+**Limitazioni**:
+- Max 1 entrata in free_dialogue per domanda (evita loop infiniti)
+- Max 2 iterazioni totali di approfondimento
+- Dopo il limite, passa automaticamente alla domanda successiva
+
+### Retrieval-Augmented Generation (RAG)
+
+Il profilo del paziente viene:
+1. Chunked in sezioni semanticamente coerenti (dati anagrafici, condizioni di salute, routine, etc.)
+2. Convertito in embeddings tramite `mxbai-embed-large`
+3. Indicizzato in ChromaDB per ricerca per similarità
+4. Recuperato dinamicamente durante la conversazione in base alla domanda corrente
+
+**Ottimizzazione**: Solo le top-3 sezioni più rilevanti vengono inserite nel contesto LLM per evitare overflow.
+
 ## Troubleshooting
 
 ### Ollama non risponde
@@ -259,14 +311,44 @@ python src/app.py  # ✗ Errore import
 
 Ogni sessione genera 3 file in `runtime/sessions/P_<patient_id>/`:
 
-1. **CSV** (`YYYY-MM-DD_HH-MM-SS.csv`): Log conversazione tabellare
-2. **Metadata** (`YYYY-MM-DD_HH-MM-SS_meta.json`): Info sessione (durata, profilo)
-3. **JSON Completo** (`YYYY-MM-DD_HH-MM-SS.json`): qa_history, branches, signals
+1. **CSV** (`YYYY-MM-DD_HH-MM-SS.csv`): Log conversazione tabellare con timestamp, domande, risposte e reply dell'assistente
+2. **Metadata** (`YYYY-MM-DD_HH-MM-SS_meta.json`): Info sessione (durata, profilo, data/ora inizio/fine)
+3. **JSON Completo** (`YYYY-MM-DD_HH-MM-SS.json`): qa_history completa, branch_history, segnali emotivi estratti
+
+**Utilizzo Clinico**: I file di log possono essere analizzati per:
+- Identificare pattern emotivi ricorrenti
+- Valutare efficacia del dialogo empatico
+- Estrarre insight per adattamento della terapia
+- Monitorare evoluzione dello stato emotivo nel tempo
+
+## Privacy e Sicurezza
+
+- **Esecuzione Locale**: Tutti i modelli LLM sono eseguiti localmente tramite Ollama, nessun dato viene inviato a servizi cloud
+- **Database Locale**: ChromaDB archivia embeddings solo su filesystem locale
+- **Anonimizzazione**: I Patient ID sono generati automaticamente e non contengono informazioni identificative
+- **GDPR Ready**: Tutti i dati sono archiviati localmente e possono essere eliminati completamente rimuovendo la cartella `runtime/`
 
 ## Limitazioni Note
 
-- **Max 2 Iterazioni Dialogo**: Sistema limita dialogo libero a 2 iterazioni per domanda
-- **Genere Binario**: Supporta solo M/F per accordi grammaticali
-- **Lingua**: Italiano (prompts hardcoded)
-- **LLM Locale**: Richiede Ollama in esecuzione (non cloud)
-- **Modello Ekman**: Supporta solo 7 emozioni base (no emozioni complesse o miste)
+- **Max 2 Iterazioni Dialogo**: Sistema limita dialogo libero a 2 iterazioni per domanda per evitare conversazioni troppo lunghe
+- **Genere Binario**: Supporta solo M/F per accordi grammaticali (possibile estensione futura per genere neutro)
+- **Lingua**: Italiano (prompts, keyword matching e domande hardcoded - richiede refactoring per altre lingue)
+- **LLM Locale**: Richiede Ollama in esecuzione (non cloud) e GPU/CPU sufficientemente potente per modelli 3B-7B
+- **Modello Ekman**: Supporta solo 7 emozioni base (no emozioni complesse, miste o sfumature)
+- **Contesto Limitato**: RAG limitato a top-3 chunks per evitare context overflow con LLM piccoli
+- **Keyword Matching Italiano**: Detection emozioni ottimizzata per italiano, potrebbe non funzionare con dialetti o linguaggio colloquiale estremo
+
+## Requisiti Hardware Consigliati
+
+**Minimi**:
+- CPU: Quad-core moderno
+- RAM: 8 GB
+- Spazio disco: 10 GB per modelli + runtime
+
+**Consigliati per Performance Ottimali**:
+- CPU: 8-core o superiore
+- RAM: 16 GB
+- GPU: NVIDIA con 8+ GB VRAM (CUDA support)
+- Spazio disco: 15 GB
+
+**Note**: Con GPU, il sistema risponde in 1-3 secondi. Solo CPU: 5-10 secondi per risposta.
