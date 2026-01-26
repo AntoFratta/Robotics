@@ -1,0 +1,23 @@
+{
+  "name": "Giorgio",
+  "age": 85,
+  "gender": "M",
+  "living_situation": "Con badante convivente",
+  "communication_needs": "Difficoltà a parlare dopo ictus, comunica per cenni e parole singole. La badante traduce.",
+  "main_condition": "Esiti di ictus ischemico",
+  "condition_since": "Da 1 anno",
+  "current_therapies": "Anticoagulante, antiipertensivo, logopedia 2 volte a settimana",
+  "most_bothersome_symptom": "Non riuscire a parlare e farsi capire, frustrazione comunicativa",
+  "symptoms_worse_when": "Quando è stanco o nervoso peggiora tutto",
+  "main_health_concern": "Secondo la badante: paura di un altro ictus",
+  "other_conditions": "Ipertensione, disfagia lieve",
+  "wakes_up_at": "07:30",
+  "goes_to_sleep_at": "21:30",
+  "main_daily_activities": "La badante lo aiuta con tutto: colazione, igiene, esercizi di riabilitazione, passeggiate assistite",
+  "illness_impact": "Dipendenza totale per comunicazione e molte attività quotidiane",
+  "main_difficulty": "Secondo la badante: non riesce ad esprimere bisogni e desideri, questo lo fa arrabbiare",
+  "support_person": "Badante Irina che vive con lui, figlio che viene nel weekend",
+  "health_goal": "Secondo la badante: vorrebbe parlare meglio e essere più indipendente",
+  "autonomy_level_adl": "Bisogno di assistenza per vestirsi, lavarsi, cucinare. Cammina con deambulatore assistito.",
+  "emotional_impact": "Secondo la badante: molto frustrato, a volte depresso, fatica ad accettare la dipendenza"
+}

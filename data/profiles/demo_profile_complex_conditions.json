@@ -1,0 +1,23 @@
+{
+  "name": "Rosa",
+  "age": 84,
+  "gender": "F",
+  "living_situation": "Con mia figlia",
+  "communication_needs": "Vista molto debole, serve ingrandire testi",
+  "main_condition": "BPCO (broncopneumopatia cronica ostruttiva)",
+  "condition_since": "Da 10 anni",
+  "current_therapies": "Uso broncodilatatore (Spiriva), cortisone inalatorio, prendo Lasix per il cuore, Metformina per il diabete, Cardioaspirina, Ramipril per la pressione, e Atorvastatina per il colesterolo",
+  "most_bothersome_symptom": "Affanno anche per sforzi minimi",
+  "symptoms_worse_when": "Mattina presto e sera tardi",
+  "main_health_concern": "Paura di non respirare bene e dover tornare in ospedale",
+  "other_conditions": "Diabete tipo 2, scompenso cardiaco lieve, ipertensione, colesterolo alto",
+  "wakes_up_at": "05:30",
+  "goes_to_sleep_at": "21:30",
+  "main_daily_activities": "Aerosol mattina e sera, brevi passeggiate in casa, cucito",
+  "illness_impact": "Non riesco più a uscire da sola, dipendo da mia figlia per tutto",
+  "main_difficulty": "Gestire tutti i farmaci negli orari giusti, alcuni a stomaco vuoto altri a stomaco pieno",
+  "support_person": "Mia figlia Carla",
+  "health_goal": "Riuscire a respirare meglio e ridurre le crisi",
+  "autonomy_level_adl": "Autonoma per lavarmi e vestirmi ma lenta, serve aiuto per cucinare e pulizie",
+  "emotional_impact": "Mi sento un peso per mia figlia e questo mi fa stare male"
+}

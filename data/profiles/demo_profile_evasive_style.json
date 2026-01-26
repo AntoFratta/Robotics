@@ -1,0 +1,12 @@
+{
+  "name": "Pietro",
+  "age": 80,
+  "gender": "M",
+  "living_situation": "Con la moglie",
+  "communication_needs": "Risponde a monosillabi, poco loquace",
+  "main_condition": "Diabete",
+  "current_therapies": "Metformina",
+  "wakes_up_at": "07:00",
+  "goes_to_sleep_at": "22:00",
+  "health_goal": "Stare meglio"
+}

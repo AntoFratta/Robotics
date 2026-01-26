@@ -1,0 +1,23 @@
+{
+  "name": "Antonio",
+  "age": 80,
+  "gender": "M",
+  "living_situation": "Con mia moglie",
+  "communication_needs": "Nessuna",
+  "main_condition": "Ipertrofia prostatica benigna e artrosi",
+  "condition_since": "Prostata da 5 anni, artrosi da molto più tempo",
+  "current_therapies": "Tamsulosina per la prostata, paracetamolo per il dolore",
+  "most_bothersome_symptom": "Devo alzarmi 4-5 volte per notte per urinare",
+  "symptoms_worse_when": "Tutta la notte, ogni 2 ore circa, e poi dolore alla schiena quando mi alzo dal letto",
+  "main_health_concern": "Non riesco a dormire bene, sono sempre stanco",
+  "other_conditions": "Disturbi del sonno",
+  "wakes_up_at": "06:30 (ma già alzato più volte di notte)",
+  "goes_to_sleep_at": "22:00",
+  "main_daily_activities": "Sonnellino dopo pranzo 14:00-15:30, piccole commissioni, altro sonnellino verso le 17:00",
+  "illness_impact": "Sempre stanco, poca energia, a volte confondo gli orari delle medicine perché sonnecchio",
+  "main_difficulty": "La stanchezza cronica e a volte non ricordo se ho già preso la medicina",
+  "support_person": "Mia moglie mi sveglia per le medicine",
+  "health_goal": "Riuscire a dormire almeno 4 ore di fila senza alzarmi",
+  "autonomy_level_adl": "Autonomo ma rallentato dalla stanchezza",
+  "emotional_impact": "Irritabile per la mancanza di sonno, frustrato"
+}

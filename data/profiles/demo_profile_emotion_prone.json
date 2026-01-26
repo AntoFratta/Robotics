@@ -1,0 +1,23 @@
+{
+  "name": "Carlo",
+  "age": 76,
+  "gender": "M",
+  "living_situation": "Da solo da tre mesi, vedovo recente",
+  "communication_needs": "Nessuna difficoltà particolare",
+  "main_condition": "Artrosi diffusa",
+  "condition_since": "Da anni",
+  "current_therapies": "Antinfiammatori quando serve, fisioterapia una volta a settimana",
+  "most_bothersome_symptom": "Dolore alle anche e difficoltà a muovermi",
+  "symptoms_worse_when": "Mattina appena sveglio, rigidità molto forte",
+  "main_health_concern": "Paura di cadere e farmi male vivendo solo",
+  "other_conditions": "Ansia dopo lutto",
+  "wakes_up_at": "07:30",
+  "goes_to_sleep_at": "23:00",
+  "main_daily_activities": "Poca routine fissa, cucino poco, guardo molta TV",
+  "illness_impact": "Mi muovo poco e ho perso interesse nelle cose che mi piacevano prima",
+  "main_difficulty": "La solitudine e la mancanza di mia moglie che si occupava di molte cose",
+  "support_person": "Mio figlio che passa due volte a settimana",
+  "health_goal": "Riuscire a uscire di più e riprendere qualche interesse",
+  "autonomy_level_adl": "Completamente autonomo ma faccio fatica a organizzarmi",
+  "emotional_impact": "Molto triste, a volte non ho voglia di fare niente. Mi sento perso senza mia moglie."
+}
