@@ -30,31 +30,87 @@ pip install -r requirements.txt
 
 ## Running the assistant
 
-Start an interactive session:
+The system can be used in two modes: interactive (manual conversation) or automated (evaluation with simulated users).
+
+### Interactive mode (manual)
+
+Start an interactive session for real user conversations:
 
 ```bash
 python -m src.app
 ```
 
-At startup, you''ll select a patient profile from `data/profiles/`. The profile is indexed into ChromaDB (`runtime/chroma_profile_db/`) and reused across sessions. During conversation, the system writes artifacts to `runtime/sessions/` with one folder per patient ID, containing JSON (full session state), CSV (conversation log), and metadata files.
+**Workflow:**
+
+1. **Profile selection:** At startup, the system lists available profiles from `data/profiles/`. You can select by number, type "nuovo" to create a new profile, or press Enter to reload the last used profile.
+
+2. **Conversation flow:** The assistant asks the 8 diary questions sequentially. For each question:
+   - The system displays the question
+   - You type your answer
+   - The assistant generates an empathic response
+   - If your answer is evasive or shows strong emotion, the system may ask 1-2 follow-up questions before moving to the next main question
+   - Type "Q" at any time to quit
+
+3. **Session output:** When complete, the system saves three files to `runtime/sessions/P_<patient_id>/`:
+   - `YYYY-MM-DD_HH-MM-SS.json` - Full session with all Q&A, signals, branches
+   - `YYYY-MM-DD_HH-MM-SS.csv` - Conversation log in tabular format
+   - `YYYY-MM-DD_HH-MM-SS_meta.json` - Session metadata
+
+The profile you select is indexed into ChromaDB (`runtime/chroma_profile_db/`) on first use and reused in subsequent sessions for fast RAG retrieval.
 
 ## Evaluation system
 
-The repository includes an automatic evaluation harness for ablation studies comparing two configurations: **FULL** (with routing and follow-ups enabled) and **NO-ROUTING** (routing disabled, always using standard empathic bridge).
+The repository includes an automatic evaluation harness for ablation studies. Unlike interactive mode where you type answers manually, this uses an LLM to simulate user responses, allowing you to generate multiple test sessions automatically and compare different system configurations.
+
+### Running automated evaluation
 
 Generate evaluation sessions using an LLM-based user simulator:
 
 ```bash
-python generate_evaluation_sessions.py
+python -m src.generate_evaluation_sessions
 ```
 
-Compute aggregate metrics:
+This creates 20 sessions (10 FULL + 10 NO-ROUTING) using diverse patient profiles and saves them to `evaluation_results/sessions/`.
+
+Compute aggregate metrics across all generated sessions:
 
 ```bash
-python compute_metrics.py
+python -m src.compute_metrics
 ```
 
-Results go to `evaluation_results/` with per-session CSVs, aggregated JSON, and a comparison table.
+Results are written to `evaluation_results/`:
+- `manifest.json` - Metadata for all sessions
+- `metrics_per_session.csv` - Individual session metrics
+- `metrics_aggregated.json` - Mean ± std per configuration
+- `metrics_comparison.csv` - Side-by-side comparison table
+
+### Customizing evaluation parameters
+
+Edit `src/generate_evaluation_sessions.py` to modify test parameters:
+
+**Number of sessions:**
+```python
+NUM_SESSIONS_PER_CONFIG = 10  # Change to 20 for 40 total sessions
+```
+
+**Profiles to test:**
+```python
+PROFILES_TO_USE = [
+    "demo_profile_01",
+    "demo_profile_02",
+    # Add or remove profiles here
+]
+```
+
+**User simulator behavior:**
+```python
+SIMULATOR_MODEL = "qwen2.5:3b"      # LLM model for simulating users
+SIMULATOR_TEMPERATURE = 0.7         # 0.0 = deterministic, 1.0 = creative
+SEED = 42                           # Change for different simulated responses
+```
+
+**Test configurations:**
+The script tests two configurations by default (FULL and NO-ROUTING). To add custom configurations, modify the `configs_to_test` list and adjust the routing parameters in the state initialization.
 
 **Evaluation language note:** Since `data/diary_questions.json` and `data/follow_up_questions.json` are in Italian, the evaluation produces Italian conversations. Metrics like completion rate and branch rate are language-independent, but answer length metrics are sensitive to tokenization and will differ when switching languages.
 
