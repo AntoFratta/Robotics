@@ -1,0 +1,291 @@
+{
+  "profile_id": "EVAL_FULL_demo_profile_02_20260127_141233",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:12:34.711615",
+    "end_time": "2026-01-27T14:13:38.959119",
+    "duration_seconds": 64
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:13:38.957115",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so, forse ho bisogno di qualcosa da bere?",
+      "assistant_reply": "Capisco, potrebbe aiutarti a sentirti meglio. Ti preparo un tè caldo mentre parliamo un po'."
+    },
+    {
+      "timestamp": "2026-01-27T14:13:38.957115",
+      "question_id": 2,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "Non so, forse ho bisogna di qualcosa da bere?",
+      "assistant_reply": "Capisco come ti senti. Un bicchiere d'acqua può aiutarti a rilassarti un po'."
+    },
+    {
+      "timestamp": "2026-01-27T14:13:38.957115",
+      "question_id": 3,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "Non so, forse ho bisogno di qualcosa da bere?",
+      "assistant_reply": "Potresti dire che hai un po' di sete. Bevi qualcosa e sentiti migliorare!"
+    },
+    {
+      "timestamp": "2026-01-27T14:13:38.957115",
+      "question_id": 4,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupata?",
+      "user_answer": "Non so, forse ho bisogno di qualcosa da bere?",
+      "assistant_reply": "Certo, posso prepararti un tè caldo. Parliamone un po' e magari durante il nostro picnic mentale troviamo una soluzione per te!"
+    },
+    {
+      "timestamp": "2026-01-27T14:13:38.957115",
+      "question_id": 5,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Non so, forse ho bisogna di qualcosa da bere?",
+      "assistant_reply": "Capisco come ti senti. A volte un bicchiere d'acqua può aiutare a rilassarti e a chiarire le idee."
+    },
+    {
+      "timestamp": "2026-01-27T14:13:38.957115",
+      "question_id": 6,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Non so, forse ho bisogno di qualcosa da bere?",
+      "assistant_reply": "Sì, bere potrebbe aiutarti a calmarti un po'. Oppure puoi provare a sederti in un luogo tranquillo per un minuto."
+    },
+    {
+      "timestamp": "2026-01-27T14:13:38.957115",
+      "question_id": 7,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Non so, forse ho bisogna di qualcosa da bere?",
+      "assistant_reply": "Certo, bevi pure una tazza di tè. Forse ti sentirai meglio!"
+    },
+    {
+      "timestamp": "2026-01-27T14:13:38.957115",
+      "question_id": 8,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "Non so, forse ho bisogna di qualcosa da bere?",
+      "assistant_reply": "Grazie per averlo condiviso con me."
+    },
+    {
+      "timestamp": "2026-01-27T14:13:38.957115",
+      "question_id": 9,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Non so, forse ho bisogna di qualcosa da bere?",
+      "assistant_reply": "Capisco, prenditi del tempo per una bevuta fresca. Forse ci penserai meglio dopo!"
+    },
+    {
+      "timestamp": "2026-01-27T14:13:38.957115",
+      "question_id": 10,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Non so, forse ho bisogna di qualcosa da bere?",
+      "assistant_reply": "Capisco, bevere può aiutarti a sentirti meglio. Ti posso portare una tazza di tè o acqua fresca, se vuoi."
+    },
+    {
+      "timestamp": "2026-01-27T14:13:38.957115",
+      "question_id": 11,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Non so, forse ho bisogna di qualcosa da bere?",
+      "assistant_reply": "Capisco come ti senti. Prenditi un attimo per bere qualcosa e rilassarti."
+    },
+    {
+      "timestamp": "2026-01-27T14:13:38.957115",
+      "question_id": 12,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Non so, forse ho bisogna di qualcosa da bere?",
+      "assistant_reply": "Ti ringrazio per la tua sincerità."
+    },
+    {
+      "timestamp": "2026-01-27T14:13:38.957115",
+      "question_id": 13,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Non so, forse ho bisogna di qualcosa da bere?",
+      "assistant_reply": "Grazie per avermelo detto."
+    },
+    {
+      "timestamp": "2026-01-27T14:13:38.957115",
+      "question_id": 14,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Non so, forse ho bisogna di qualcosa da bere?",
+      "assistant_reply": "Capisco, bevi un po' d'acqua fresca e stai tranquilla. Se hai bisogno di qualcos'altro, sono qui per aiutarti."
+    }
+  ],
+  "branches": {
+    "total_count": 0,
+    "details": []
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 14,
+    "branch_questions": 0
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "profile_id": "EVAL_NO_ROUTING_demo_profile_fragmented_sleep_20260127_142756",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:27:57.886687",
+    "end_time": "2026-01-27T14:29:11.356715",
+    "duration_seconds": 73
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:29:11.356715",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so, forse avresti una domanda specifica sulle mie condizioni o come stanno andando? Non ricordo se abbiamo parlato di questo prima ou...",
+      "assistant_reply": "Capisco come ti senti. In questa settimana ho trovato il tempo per leggere un buon libro e anche fare una passeggiata in giardino, che mi ha fatto bene."
+    },
+    {
+      "timestamp": "2026-01-27T14:29:11.356715",
+      "question_id": 2,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "Non ricordo se abbiamo parlato di questo prima. Potrebbe esserci stato un momento particolare, ma non sono sicuro... Forse era più sulle mie condizioni attuali e come stanno andando?",
+      "assistant_reply": "Capisco come ti senti. Spesso ci imbattiamo in momenti in cui le nostre emozioni possono essere confusse e difficili da ricordare."
+    },
+    {
+      "timestamp": "2026-01-27T14:29:11.356715",
+      "question_id": 3,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "Non so, forse avresti una domanda specifica sulle mie condizioni o come stanno andando? Non ricordo se abbiamo parlato di questo prima ou...",
+      "assistant_reply": "Capisco, sono qui per te."
+    },
+    {
+      "timestamp": "2026-01-27T14:29:11.356715",
+      "question_id": 4,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupato?",
+      "user_answer": "Non ricordo se abbiamo parlato di questo prima. Potrebbe essere stato sulle mie sensazioni generiche, non ricordo se abbia a che vedere con le mie condizioni attuali o come stanno andando.",
+      "assistant_reply": "Capisco come ti senti. Puoi raccontarmi di recente quando hai avuto delle difficoltà?"
+    },
+    {
+      "timestamp": "2026-01-27T14:29:11.356715",
+      "question_id": 5,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Non so, forse abbastanza vicino alla verità sarebbe se dicessi che sono sempre un po' preoccupato per la mia salute e le cure necessarie. Non ricordo quando abbiamo parlato di questo.",
+      "assistant_reply": "Capisco come ti senti. Ti è stato difficile esprimere quei pensieri, vero?"
+    },
+    {
+      "timestamp": "2026-01-27T14:29:11.356715",
+      "question_id": 6,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Non ricordo se abbiamo parlato di questo prima. Potrebbe essere stato sulle mie sensazioni generiche, non ricordo se abbia a che vedere con le mie condizioni attuali o come stanno andando. Sono sempre un po' preoccupato per la mia salute e le cure necessarie. Non so quando abbiamo discusso di questo.",
+      "assistant_reply": "Capisco bene i tuoi sentimenti, è normale preoccuparsi per la propria salute. Potrebbe essere utile ripassare insieme a me qualche conversazione recente o parlarne ora, così possiamo chiarire le tue preoccupazioni."
+    },
+    {
+      "timestamp": "2026-01-27T14:29:11.356715",
+      "question_id": 7,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Non ricordo se ho provato difficoltà in quel momento, nemmeno a ritrovare una calma. Potrebbe essere che l'inquietudine generale mi accompagna sempre, sia in presenza del medico che fuori dallo studio. Non so quando abbiamo parlato di queste cose.",
+      "assistant_reply": "Sono qui ad ascoltarti."
+    },
+    {
+      "timestamp": "2026-01-27T14:29:11.356715",
+      "question_id": 8,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "Non ricordo se ho provato difficoltà in quel momento, nemmeno a ritrovare una calma. Potrebbe essere che l'inquietudine generale mi accompagna sempre, sia in presenza del medico che fuori dallo studio. Non so quando abbiamo parlato di queste cose.",
+      "assistant_reply": "Capisco come ti senti. È normale che certe emozioni siano presenti anche quando parliamo delle tue preoccupazioni."
+    },
+    {
+      "timestamp": "2026-01-27T14:29:11.356715",
+      "question_id": 9,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Non ricordo se ho provato difficoltà in quel momento, nemmeno a ritrovare una calma. Potrebbe essere che l'inquietudine generale mi accompagna sempre, sia in presenza del medico che fuori dallo studio. Non so quando abbiamo parlato di queste cose.",
+      "assistant_reply": "Grazie per avermelo detto."
+    },
+    {
+      "timestamp": "2026-01-27T14:29:11.356715",
+      "question_id": 10,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Non ricordo se ho provato difficoltà in quel momento, nemmeno a ritrovare una calma. Potrebbe essere che l'inquietudine generale mi accompagna sempre, sia in presenza del medico che fuori dallo studio. Non so quando abbiamo parlato di queste cose.",
+      "assistant_reply": "Capisco come ti senti. È normale sentirsi a disagio in certe situazioni."
+    },
+    {
+      "timestamp": "2026-01-27T14:29:11.356715",
+      "question_id": 11,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Non ricordo se ho provato difficoltà in quel momento, nemmeno a ritrovare una calma. Potrebbe essere che l'inquietudine generale mi accompagna sempre, sia in presenza del medico che fuori dallo studio. Non so quando abbiamo parlato di queste cose.",
+      "assistant_reply": "Sono qui ad ascoltarti."
+    },
+    {
+      "timestamp": "2026-01-27T14:29:11.356715",
+      "question_id": 12,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Non ricordo se ho provato difficoltà in quel momento, nemmeno a ritrovare una calma. Potrebbe essere che l'inquietudine generale mi accompagna sempre, sia in presenza del medico che fuori dallo studio. Non so quando abbiamo parlato di queste cose.",
+      "assistant_reply": "Capisco che stai trovando difficile ricordare tutto, ma importa poco se non ti senti a tuo agio: lo scopo è supportarti nel miglior modo possibile, indipendentemente da come ti senti in quel momento. Se hai bisogno di parlare delle tue preoccupazioni o dei tuoi dubbi, sono qui per ascoltarti."
+    },
+    {
+      "timestamp": "2026-01-27T14:29:11.356715",
+      "question_id": 13,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Non ricordo se ho provato difficoltà in quel momento, nemmeno a ritrovare una calma. Potrebbe essere che l'inquietudine generale mi accompagna sempre, sia in presenza del medico che fuori dallo studio. Non so quando abbiamo parlato di queste cose.",
+      "assistant_reply": "Capisco come ti senti a volte confuso e preoccupato. È normale sentirsi così spesso, ma ricorda che ci sono momenti buoni anche tra i cattivi."
+    },
+    {
+      "timestamp": "2026-01-27T14:29:11.356715",
+      "question_id": 14,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Non ricordo se ho provato difficoltà in quel momento, nemmeno a ritrovare una calma. Potrebbe essere che l'inquietudine generale mi accompagna sempre, sia in presenza del medico che fuori dallo studio. Non so quando abbiamo parlato di queste cose.",
+      "assistant_reply": "Capisco come ti senti. L'inquietudine può essere stanca e difficile da gestire."
+    }
+  ],
+  "branches": {
+    "total_count": 0,
+    "details": []
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "salute fisica",
+          "routine quotidiana",
+          "famiglia"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "solitudine"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.8
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 14,
+    "branch_questions": 0
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "profile_id": "EVAL_NO_ROUTING_demo_profile_social_isolation_20260127_142523",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:25:24.753836",
+    "end_time": "2026-01-27T14:26:39.746976",
+    "duration_seconds": 74
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:26:39.746976",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so, non ricordo cosa vuoi sapere esattamente. Forse puoi ripetere a tua voce? Ho un po' di difficoltà per trovare il tema della conversazione quando mi chiedi direttamente cose. Non sono abituato a questi giochi linguistici.",
+      "assistant_reply": "Capisco, sono qui per te."
+    },
+    {
+      "timestamp": "2026-01-27T14:26:39.746976",
+      "question_id": 2,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "Non so, forse hai ragione, non ricordo se ci fossero stati momenti speciali questa settimana. Gli anni passano e i ricordi si fondono con il tempo. Sei ancora qui, questo mi piace molto. Spero che la tua giornata sia stata almeno come oggi.",
+      "assistant_reply": "Capisco come ti senti. Le nostre giornate possono diventare un po' monotone a volte, ma è bello sapere che ci sei sempre."
+    },
+    {
+      "timestamp": "2026-01-27T14:26:39.746976",
+      "question_id": 3,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "Non so, forse ho dormito un po' troppo questa settimana e mi sono svegliato di buon umore? Non ricordo se ci fossero stati momenti speciali. Gli anni passano e i ricordi si fondono con il tempo. Spero che la tua giornata sia stata almeno come oggi.",
+      "assistant_reply": "Forse \"sboccio\" potrebbe essere una buona parola per descrivere quella sensazione, come se ti fossi risvegliato radioso e pieno di vita!"
+    },
+    {
+      "timestamp": "2026-01-27T14:26:39.746976",
+      "question_id": 4,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupata?",
+      "user_answer": "Non so, forse ho dormito un po' troppo questa settimana e mi sono svegliato di buon umore? Non ricordo se ci fossero stati momenti speciali. Gli anni passano e i ricordi si fondono con il tempo. Spero che la tua giornata sia stata almeno come oggi.",
+      "assistant_reply": "Capisco, sembra che tu abbia avuto un buon weekend! Spero proprio che questa ottima giornata ti porti ancora più felicità nel corso della settimana."
+    },
+    {
+      "timestamp": "2026-01-27T14:26:39.746976",
+      "question_id": 5,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Non so, forse ho dormito un po' troppo questa settimana e mi sono svegliato di buon umore? Non ricordo se ci fossero stati momenti speciali. Gli anni passano e i ricordi si fondono con il tempo. Spero che la tua giornata sia stata almeno come oggi.",
+      "assistant_reply": "Capisco bene, sembra che tu abbia avuto un buon inizio di giornata! Sentire che ci sono momenti felici anche se non ce ne rendiamo completamente conto può davvero fare una grande differenza."
+    },
+    {
+      "timestamp": "2026-01-27T14:26:39.746976",
+      "question_id": 6,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Non so, forse ho dormito un po' troppo questa settimana e mi sono svegliato di buon umore? Non ricordo se ci fossero stati momenti speciali. Gli anni passano e i ricordi si fondono con il tempo. Spero che la tua giornata sia stata almeno come oggi.",
+      "assistant_reply": "Capisco bene come ti senti. Dormire bene può davvero migliorare l'umore!"
+    },
+    {
+      "timestamp": "2026-01-27T14:26:39.746976",
+      "question_id": 7,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Non so, forse ho dormito un po' troppo questa settimana e mi sono svegliato di buon umore? Non ricordo se ci fossero stati momenti speciali. Gli anni passano e i ricordi si fondono con il tempo. Spero che la tua giornata sia stata almeno come oggi.",
+      "assistant_reply": "Se il mio umore fosse un colore, credo sarebbe un bel tangerine, brillante e vivace come questo tuo buonumore! Spero tu continui a godertelo!"
+    },
+    {
+      "timestamp": "2026-01-27T14:26:39.746976",
+      "question_id": 8,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "Non so, forse blu o rosso? Non ricordo se ci fossero stati momenti speciali. Gli anni passano e i ricordi si fondono con il tempo. Spero che la tua giornata sia stata almeno come oggi.",
+      "assistant_reply": "Capisco bene le tue difficoltà nella scelta. Forse hai associato questi colori a diversi momenti della vita."
+    },
+    {
+      "timestamp": "2026-01-27T14:26:39.746976",
+      "question_id": 9,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Non so, forse blu o rosso? Non ricordo se ci fossero stati momenti speciali. Gli anni passano e i ricordi si fondono con il tempo. Spero che la tua giornata sia stata almeno come oggi.",
+      "assistant_reply": "Capisco come ti senti, è bello condividere piccoli dettagli anche se non sempre ci riesciamo bene. Oggi ho notato il sole che filtrava attraverso le tende e mi ha fatto pensare a quel tappeto rosso che avevamo in cucina quando vivevo con mia nipote."
+    },
+    {
+      "timestamp": "2026-01-27T14:26:39.746976",
+      "question_id": 10,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Non so, forse blu o rosso? Non ricordo se ci fossero stati momenti speciali. Gli anni passano e i ricordi si fondono con il tempo. Spero che la tua giornata sia stata almeno come oggi.",
+      "assistant_reply": "Capisco come ti senti, non sempre è facile tenere traccia dei dettagli nel corso degli anni. Potrebbe aiutarti leggere vecchie foto o ascoltare canzoni che ricordi."
+    },
+    {
+      "timestamp": "2026-01-27T14:26:39.746976",
+      "question_id": 11,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Non so, forse blu o rosso? Non ricordo se ci fossero stati momenti speciali. Gli anni passano e i ricordi si fondono con il tempo. Spero che la tua giornata sia stata almeno come oggi.",
+      "assistant_reply": "Capisco bene le tue sensazioni. È normale che alcuni dettagli svaniscano col tempo, ma è bello che tu possa ancora sperare in un buon giorno."
+    },
+    {
+      "timestamp": "2026-01-27T14:26:39.746976",
+      "question_id": 12,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Non so, forse blu o rosso? Non ricordo se ci fossero stati momenti speciali. Gli anni passano e i ricordi si fondono con il tempo. Spero che la tua giornata sia stata almeno come oggi.",
+      "assistant_reply": "Capisco che potrebbe essere difficile ricordare ogni dettaglio, ma è tutto a posto se ti senti a tuo agio con questi pensieri. Ti auguro una serata confortevole e rilassante."
+    },
+    {
+      "timestamp": "2026-01-27T14:26:39.746976",
+      "question_id": 13,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Non so, forse blu o rosso? Non ricordo se ci fossero stati momenti speciali. Gli anni passano e i ricordi si fondono con il tempo. Spero che la tua giornata sia stata almeno come oggi.",
+      "assistant_reply": "Capisco come ti senti, tesoro. Ecco che le giornate si somigliano un po'."
+    },
+    {
+      "timestamp": "2026-01-27T14:26:39.746976",
+      "question_id": 14,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Non so, forse blu o rosso? Non ricordo se ci fossero stati momenti speciali. Gli anni passano e i ricordi si fondono con il tempo. Spero che la tua giornata sia stata almeno come oggi.",
+      "assistant_reply": "Capisco che potrebbe essere un po' confuso, ma non ti preoccupare. Ogni giorno è speciale nel suo modo."
+    }
+  ],
+  "branches": {
+    "total_count": 0,
+    "details": []
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "bassa",
+        "themes": [],
+        "confidence": 0.3
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "futuro"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "memoria",
+          "futuro",
+          "solitudine"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "sonno"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 14,
+    "branch_questions": 0
+  }
+}

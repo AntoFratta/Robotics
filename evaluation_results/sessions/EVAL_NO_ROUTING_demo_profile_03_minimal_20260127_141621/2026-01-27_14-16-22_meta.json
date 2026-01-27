@@ -1,0 +1,12 @@
+{
+  "patient_id": "EVAL_NO_ROUTING_demo_profile_03_minimal_20260127_141621",
+  "session_start": "2026-01-27T14:16:22.880783",
+  "session_end": "2026-01-27T14:17:40.104883",
+  "duration_seconds": 77,
+  "total_questions": 14,
+  "profile_summary": {
+    "age": 75,
+    "gender": "N/A",
+    "main_condition": "N/A"
+  }
+}

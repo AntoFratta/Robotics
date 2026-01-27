@@ -158,6 +158,7 @@ def node_ask_and_read(state: DialogueState) -> DialogueState:
     """
     Input utente - supporta modalità MAIN/FOLLOWUP/DEEPENING.
     Usa pending_question se presente, altrimenti current_question.
+    Supporta callback per risposte automatiche (per evaluation).
     """
     mode = state.get("question_mode", "MAIN")
     
@@ -178,7 +179,13 @@ def node_ask_and_read(state: DialogueState) -> DialogueState:
         # Follow-up o deepening: senza numero, come se fosse assistente
         print(f"\n{q}")
     
-    ans = input("Risposta (scrivi Q per uscire): ").strip()
+    # Supporto per risposte automatiche (evaluation/testing)
+    auto_callback = state.get("auto_answer_callback")
+    if auto_callback:
+        ans = auto_callback()
+        print(f"[AUTO] {ans[:80]}{'...' if len(ans) > 80 else ''}")
+    else:
+        ans = input("Risposta (scrivi Q per uscire): ").strip()
     
     # NON resettiamo pending_question qui - serve a save_current_answer
     # Verrà resettata dopo il salvataggio
@@ -605,13 +612,18 @@ def route_answer_type(state: DialogueState) -> str:
     L'estrazione completa (con LLM) avviene in node_extract_emotion.
     
     Logica:
-    1. Se già in DEEPENING mode → loop o uscita da free_dialogue
-    2. Se già fatto 2+ interazioni → empathy_bridge (forza uscita)
-    3. Se risposta evasiva O emozione forte → free_dialogue
-    4. Altrimenti → empathy_bridge
+    1. Se routing_enabled=False (NO-ROUTING config) → sempre empathy_bridge
+    2. Se già in DEEPENING mode → loop o uscita da free_dialogue
+    3. Se già fatto 2+ interazioni → empathy_bridge (forza uscita)
+    4. Se risposta evasiva O emozione forte → free_dialogue
+    5. Altrimenti → empathy_bridge
     """
     if state.get("done"):
         return END
+    
+    # ABLATION: se routing disabilitato, vai sempre a empathy_bridge
+    if not state.get("routing_enabled", True):
+        return "empathy_bridge"
     
     # Se già in DEEPENING, controlla se continuare il loop
     mode = state.get("question_mode", "MAIN")

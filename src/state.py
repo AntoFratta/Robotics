@@ -65,3 +65,10 @@ class DialogueState(TypedDict):
     
     # Contesto salute recuperato via RAG
     health_context: Optional[str]
+    
+    # Configuration flag: abilita/disabilita routing verso free_dialogue
+    # True = FULL config (con routing), False = NO-ROUTING config
+    routing_enabled: bool
+    
+    # Callback per risposte automatiche (solo per evaluation/testing)
+    auto_answer_callback: Optional[object]

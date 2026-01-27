@@ -1,0 +1,1029 @@
+{
+  "profile_id": "EVAL_FULL_demo_profile_cognitive_mild_impairment_20260127_141740",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:17:42.046664",
+    "end_time": "2026-01-27T14:19:32.658680",
+    "duration_seconds": 110
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so proprio, forse mi confondo ummmm... Ho bisogno di ripetere le cose per capirlle meglio. Sentivo un po' di ansia l'altra sera, ma ormai è passata un po'. Spero di essere sempre contenta e felice, se no non sarebbe una giornata particolarmente positiva!",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 2,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "In questa settimana mi è capitato un momento in cui ho sentito davvero bene. Non so proprio quale sia stato, forse era quando ho mangiato la pasta al pomodoro. Sono contenta di essermene ricordata solo ora! Ci sono stati momentini più positivi come l'altra sera, quando siamo andati a vedere il film senza che succedesse nulla. Spero sempre di essere felice e contenta, anche se non mi sento sempre così. Non so proprio perché, ma ormai mi confondo un po'.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 3,
+      "question": "Questa sensazione è presente durante tutta la giornata o va e viene?",
+      "user_answer": "In questa settimana ti è capitato un momento in cui ti sei sentita davvero bene? Ti ricordi quando abbiamo visto il film senza che succedesse nulla? Spero sempre di essere felice e contenta, anche se non mi sento sempre così. Non so proprio perché, ma ormai mi confondo un po'.",
+      "assistant_reply": "Capisco quanto può essere difficile quando ci sentiamo un po' confusi. Ricorda però che anche le piccole cose possono portare gioia."
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 4,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "Questo momento di buona salute è venuto via e via, come una nuvola che passa in cielo. In questo periodo ci sono stati momenti più positivi, come quella sera al cinema dove non era successo nulla. Spero sempre di essermi sentita felice e contenta, anche se questa sensazione a volte mi sfugge umanamente. Non so proprio perché ormai mi confondo un po'.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 5,
+      "question": "Ci sono altre cose che ti danno questa stessa sensazione positiva?",
+      "user_answer": "Non so proprio perché, ma ormai mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 6,
+      "question": "Cosa ha contribuito a farti sentire così bene?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": "Capisco come ti senti. Ti valuta molto la tua felicità e capisco che può essere difficile."
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 7,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 8,
+      "question": "Come ti piacerebbe mantenere o coltivare questa sensazione?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 9,
+      "question": "Cosa ha contribuito a farti sentire così bene?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": "Capisco come ti senti. Forse potresti descrivere quella sensazione con la parola \"inquietudine\"."
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 10,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupata?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 11,
+      "question": "Cosa ha contribuito a farti sentire così bene?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 12,
+      "question": "Cosa ha contribuito a farti sentire così bene?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": "Capisco come ti senti, sembra una situazione complicata. Ricorda che è normale avere momenti di confusione anche se ci si sforza di essere felici."
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 13,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 14,
+      "question": "Come ti piacerebbe mantenere o coltivare questa sensazione?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 15,
+      "question": "Cosa ha contribuito a farti sentire così bene?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": "Capisco come ti senti. Ti dispiace parlarne un po' più?"
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 16,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 17,
+      "question": "Ci sono altre cose che ti danno questa stessa sensazione positiva?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 18,
+      "question": "Come ti piacerebbe mantenere o coltivare questa sensazione?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": "Ti ringrazio per la tua sincerità."
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 19,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 20,
+      "question": "Ci sono altre cose che ti danno questa stessa sensazione positiva?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 21,
+      "question": "Come ti piacerebbe mantenere o coltivare questa sensazione?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": "Se il tuo umore oggi fosse un colore, potresti dire che è una tonalità di marrone scuro, con sfumature di grigio e piccole note di rosso per rappresentare le buone sensazioni che ancora provi? Spero che possa esserti confortante sapere che è normale sentire diverse emozioni, anche in questo momento."
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 22,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 23,
+      "question": "Ci sono altre cose che ti danno questa stessa sensazione positiva?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 24,
+      "question": "Come ti piacerebbe mantenere o coltivare questa sensazione?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": "Capisco come ti senti. È normale avere momenti di confusione e domande su se stessi, specialmente quando affronti sfide."
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 25,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 26,
+      "question": "Cosa ha contribuito a farti sentire così bene?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 27,
+      "question": "Come ti piacerebbe mantenere o coltivare questa sensazione?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": "Ti ascolto, continua pure."
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 28,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 29,
+      "question": "Ci sono altre cose che ti danno questa stessa sensazione positiva?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 30,
+      "question": "Come ti piacerebbe mantenere o coltivare questa sensazione?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": "Capisco come ti senti. Ricordati che anche se può essere difficile, ci sono sempre piccole cose che possono aiutarti, come un bel caffè nel pomeriggio, una chiacchierata con un'amica o guardare un film che ti fa sorridere."
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 31,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 32,
+      "question": "Ci sono altre cose che ti danno questa stessa sensazione positiva?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 33,
+      "question": "Come ti piacerebbe mantenere o coltivare questa sensazione?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": "Capisco come ti senti, mamma. È normale avere momenti di confusione e trovare difficile mantenere le emozioni positive, specialmente con la tua attuale situazione."
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 34,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 35,
+      "question": "Ci sono altre cose che ti danno questa stessa sensazione positiva?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 36,
+      "question": "Come ti piacerebbe mantenere o coltivare questa sensazione?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": "Capisco come ti senti, e sono qui per supportarti. Continua a tenerti forte e cerca di sorridere quando puoi."
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 37,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 38,
+      "question": "Come ti piacerebbe mantenere o coltivare questa sensazione?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 39,
+      "question": "Ci sono altre cose che ti danno questa stessa sensazione positiva?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": "Capisco come ti senti, è normale avere questi momenti di confusione e trovare difficile mantenere le felicità. Ti rassicuro, stai facendo un ottimo lavoro prendendoti cura di te stessa anche in questo momento."
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 40,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 41,
+      "question": "Cosa ha contribuito a farti sentire così bene?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:19:32.658680",
+      "question_id": 42,
+      "question": "Cosa ha contribuito a farti sentire così bene?",
+      "user_answer": "Non so proprio perché mi confondo un po'. Spero sempre di essermi sentita felice e contenta, anche se non è facile mantenere queste sensazioni. Non ricordo esattamente quando ha iniziato a confondermi, ma penso che sia dovuto alla condizione che sto sperimentando.",
+      "assistant_reply": "Capisco che hai molti pensieri in testa e potrebbe sembrare tutto un po' confuso. So che non è facile affrontare questi cambiamenti, ma ricorda che sei forte e hai passato tanti momenti meravigliosi anche negli ultimi tempi."
+    }
+  ],
+  "branches": {
+    "total_count": 28,
+    "details": [
+      {
+        "timestamp": "2026-01-27T14:17:44.632967",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:17:46.194622",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Questa sensazione è presente durante tutta la giornata o va e viene?"
+      },
+      {
+        "timestamp": "2026-01-27T14:17:52.823099",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Ci sono altre cose che ti danno questa stessa sensazione positiva?"
+      },
+      {
+        "timestamp": "2026-01-27T14:17:54.026536",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Cosa ha contribuito a farti sentire così bene?"
+      },
+      {
+        "timestamp": "2026-01-27T14:18:00.880489",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Come ti piacerebbe mantenere o coltivare questa sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:18:02.037476",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Cosa ha contribuito a farti sentire così bene?"
+      },
+      {
+        "timestamp": "2026-01-27T14:18:08.528463",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Cosa ha contribuito a farti sentire così bene?"
+      },
+      {
+        "timestamp": "2026-01-27T14:18:09.674809",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Cosa ha contribuito a farti sentire così bene?"
+      },
+      {
+        "timestamp": "2026-01-27T14:18:16.102213",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Come ti piacerebbe mantenere o coltivare questa sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:18:17.257845",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Cosa ha contribuito a farti sentire così bene?"
+      },
+      {
+        "timestamp": "2026-01-27T14:18:24.032515",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Ci sono altre cose che ti danno questa stessa sensazione positiva?"
+      },
+      {
+        "timestamp": "2026-01-27T14:18:25.231726",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Come ti piacerebbe mantenere o coltivare questa sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:18:32.004491",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Ci sono altre cose che ti danno questa stessa sensazione positiva?"
+      },
+      {
+        "timestamp": "2026-01-27T14:18:33.205159",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Come ti piacerebbe mantenere o coltivare questa sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:18:40.036110",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Ci sono altre cose che ti danno questa stessa sensazione positiva?"
+      },
+      {
+        "timestamp": "2026-01-27T14:18:41.198259",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Come ti piacerebbe mantenere o coltivare questa sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:18:47.995485",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Cosa ha contribuito a farti sentire così bene?"
+      },
+      {
+        "timestamp": "2026-01-27T14:18:49.135887",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Come ti piacerebbe mantenere o coltivare questa sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:18:55.956643",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Ci sono altre cose che ti danno questa stessa sensazione positiva?"
+      },
+      {
+        "timestamp": "2026-01-27T14:18:57.133257",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Come ti piacerebbe mantenere o coltivare questa sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:19:03.846908",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Ci sono altre cose che ti danno questa stessa sensazione positiva?"
+      },
+      {
+        "timestamp": "2026-01-27T14:19:05.051938",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Come ti piacerebbe mantenere o coltivare questa sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:19:11.790692",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Ci sono altre cose che ti danno questa stessa sensazione positiva?"
+      },
+      {
+        "timestamp": "2026-01-27T14:19:12.964448",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Come ti piacerebbe mantenere o coltivare questa sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:19:19.417333",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Come ti piacerebbe mantenere o coltivare questa sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:19:20.570242",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Ci sono altre cose che ti danno questa stessa sensazione positiva?"
+      },
+      {
+        "timestamp": "2026-01-27T14:19:27.248444",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Cosa ha contribuito a farti sentire così bene?"
+      },
+      {
+        "timestamp": "2026-01-27T14:19:28.429994",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Cosa ha contribuito a farti sentire così bene?"
+      }
+    ]
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "futuro",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "memoria"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "memoria"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 42,
+    "branch_questions": 28
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "patient_id": "EVAL_NO_ROUTING_demo_profile_fragmented_sleep_20260127_142756",
+  "session_start": "2026-01-27T14:27:57.886687",
+  "session_end": "2026-01-27T14:29:11.356715",
+  "duration_seconds": 73,
+  "total_questions": 14,
+  "profile_summary": {
+    "age": 80,
+    "gender": "M",
+    "main_condition": "Ipertrofia prostatica benigna e artrosi"
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "profile_id": "EVAL_NO_ROUTING_demo_profile_01_20260127_141104",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:11:05.944616",
+    "end_time": "2026-01-27T14:12:33.181310",
+    "duration_seconds": 87
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:12:33.181310",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so, forse potremmo parlare di come mi piace fare colazione. Non ricordo se ho già mangiato oggi.",
+      "assistant_reply": "Ti ascolto con attenzione."
+    },
+    {
+      "timestamp": "2026-01-27T14:12:33.181310",
+      "question_id": 2,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "Non so, forse potremmo parlare di come mi piace fare colazione. Non ricordo se ho già mangiato oggi.",
+      "assistant_reply": "Capisco, parliamo della tua preferita colazione! Magari un succo d'arancia fresco o dei toast alle miele ti faranno sentire meglio."
+    },
+    {
+      "timestamp": "2026-01-27T14:12:33.181310",
+      "question_id": 3,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "Non so, forse potremmo parlare di come mi piace fare colazione. Non ricordo se ho già mangiato oggi.",
+      "assistant_reply": "Forse la parola che meglio la descrive è \"incertezza\". Ti capisco, spesso l'incertezza può farsi sentire anche attraverso piccole scelte quotidiane come il pranzo."
+    },
+    {
+      "timestamp": "2026-01-27T14:12:33.181310",
+      "question_id": 4,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupato?",
+      "user_answer": "Non so, forse potremmo parlare del caldo che fa esternamente. Non ricordo se ho già fatto esercizio fisico oggi.",
+      "assistant_reply": "Capisco come ti senti. Il calore può essere sfaticante, specialmente per le persone più anziane."
+    },
+    {
+      "timestamp": "2026-01-27T14:12:33.181310",
+      "question_id": 5,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Non so, forse potremmo parlare di come mi piace fare colazione. Non ricordo se ho già mangiato oggi. Non ricordo se ho fatto esercizio fisico oggi. Sono un po' ansioso per il caldo esterno.",
+      "assistant_reply": "Capisco come ti senti, l'ansia può verificarsi quando le cose sembrano confusamente sfuggire al controllo. Parliamone un po' di colazione, magari ricordiamo insieme qualche tuo piatto preferito che ti aiuta a sentirti meglio!"
+    },
+    {
+      "timestamp": "2026-01-27T14:12:33.181310",
+      "question_id": 6,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Sono un po' ansioso per il caldo esterno. Non ricordo se ho già fatto esercizio fisico o preso colazione oggi.",
+      "assistant_reply": "Ti ascolto, continua pure."
+    },
+    {
+      "timestamp": "2026-01-27T14:12:33.181310",
+      "question_id": 7,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Sono un po' ansioso per il caldo esterno. Non ricordo se ho già fatto esercizio fisico o preso colazione oggi. Spero che la sera mi rilassere.",
+      "assistant_reply": "Il mio umore oggi potrebbe essere blu scuro, come una notte senza luna, un po' pesante per l'ansia e le preoccupazioni. Sii gentile con te stesso e cerca di organizzare il tuo giorno in modo piano e graduale."
+    },
+    {
+      "timestamp": "2026-01-27T14:12:33.181310",
+      "question_id": 8,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "Sono un po' ansioso per il caldo esterno. Non ricordo se ho già fatto esercizio fisico o preso colazione oggi. Spero che la sera mi rilassere.",
+      "assistant_reply": "Grazie per averlo condiviso con me."
+    },
+    {
+      "timestamp": "2026-01-27T14:12:33.181310",
+      "question_id": 9,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Sono un po' ansioso per il caldo esterno. Non ricordo se ho già fatto esercizio fisico o preso colazione oggi. Spero che la sera mi rilassere.",
+      "assistant_reply": "Capisco come ti senti, è normale preoccuparsi in questi giorni caldi. Ti ricordo che puoi controllare le tue attività con un quaderno personale o un appuntamento del cellulare per aiutarti a mantenere la routine."
+    },
+    {
+      "timestamp": "2026-01-27T14:12:33.181310",
+      "question_id": 10,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Sono un po' ansioso per il caldo esterno. Non ricordo se ho già fatto esercizio fisico o preso colazione oggi. Spero che la sera mi rilassere.",
+      "assistant_reply": "Capisco come ti senti, spesso aiutare può essere qualcosa di semplice come guardare un film relaxante o leggere un libro tranquillo. Ti auguro una serata fresca e rilassante!"
+    },
+    {
+      "timestamp": "2026-01-27T14:12:33.181310",
+      "question_id": 11,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Non ricordo se ho già fatto esercizio fisico o preso colazione oggi. Spero che la sera mi rilassere. Ansioso per il caldo esterno.",
+      "assistant_reply": "Capisco come ti senti. È normale sentirsi un po' confusi e ansiosi, specialmente con il calore."
+    },
+    {
+      "timestamp": "2026-01-27T14:12:33.181310",
+      "question_id": 12,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Non ricordo se ho già fatto esercizio fisico o preso colazione oggi. Spero che la sera mi rilassere. Ansioso per il caldo esterno.",
+      "assistant_reply": "Capisco come ti senti. Ecco un consiglio: prova a preparare una lista di tutto ciò di cui hai bisogno, così eviti di dimenticare qualcosa."
+    },
+    {
+      "timestamp": "2026-01-27T14:12:33.181310",
+      "question_id": 13,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Non so, sembrano tutte cose importanti, ma non riesco a concentrarmi bene ora. Non ricordo se ho già fatto esercizio fisico o preso colazione oggi. Spero che la sera mi rilassere. Ansioso per il caldo esterno.",
+      "assistant_reply": "Capisco come ti senti, spesso può essere difficile gestire tante faccende. Ti incoraggio a prenderti un minuto ogni tanto per respirare profondamente e rilassarti."
+    },
+    {
+      "timestamp": "2026-01-27T14:12:33.181310",
+      "question_id": 14,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Non so, sembrano tutte cose importanti, ma non riesco a concentrarmi bene ora. Non ricordo se ho già fatto esercizio fisico o preso colazione oggi. Spero che la sera mi rilassere. Ansioso per il caldo esterno.",
+      "assistant_reply": "Capisco come ti senti. Le giornate potrebbero sembrare un po' confuse, ma ricorda che ci sono dei piccoli passi che possiamo fare ogni giorno."
+    }
+  ],
+  "branches": {
+    "total_count": 0,
+    "details": []
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Sorpresa",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "routine quotidiana",
+          "famiglia"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Sorpresa",
+        "intensity": "media",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Sorpresa",
+        "intensity": "media",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Sorpresa",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Sorpresa",
+        "intensity": "media",
+        "themes": [
+          "mobilità",
+          "sonno",
+          "famiglia"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Sorpresa",
+        "intensity": "media",
+        "themes": [
+          "salute fisica",
+          "sonno",
+          "famiglia"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Sorpresa",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 14,
+    "branch_questions": 0
+  }
+}

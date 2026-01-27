@@ -1,0 +1,12 @@
+{
+  "patient_id": "EVAL_FULL_demo_profile_complex_conditions_20260127_142911",
+  "session_start": "2026-01-27T14:29:13.129240",
+  "session_end": "2026-01-27T14:31:00.394087",
+  "duration_seconds": 107,
+  "total_questions": 40,
+  "profile_summary": {
+    "age": 84,
+    "gender": "F",
+    "main_condition": "BPCO (broncopneumopatia cronica ostruttiva)"
+  }
+}

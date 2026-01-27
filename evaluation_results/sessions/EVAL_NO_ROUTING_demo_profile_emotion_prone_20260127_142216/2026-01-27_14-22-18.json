@@ -1,0 +1,296 @@
+{
+  "profile_id": "EVAL_NO_ROUTING_demo_profile_emotion_prone_20260127_142216",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:22:18.412707",
+    "end_time": "2026-01-27T14:23:29.898954",
+    "duration_seconds": 71
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:23:29.898954",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so, forse hai presente che ogni giorno mi sveglio un po' stanco per l'artrosi, ma nonostante tutto cerco di fare il meglio possibile come posso. A volte sento ansia per quanto la situazione può essere difficile a volte, ma poi ci sono momenti di gioia nel trovare qualcosa che mi fa ridere ouh sorridere. Non so proprio cosa rispondere in questo caso, sperando solo che tutto andrà bene.",
+      "assistant_reply": "Sì, ho avuto momenti davvero bei nella settimana scorsa, come quando ho passato del tempo con i miei nipoti e abbiamo fatto un gioco insieme. Quel sorriso nei loro occhi mi ha fatto sentire molto felice."
+    },
+    {
+      "timestamp": "2026-01-27T14:23:29.898954",
+      "question_id": 2,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "In questa settimana, forse quando ho fatto colazione con i miei nipoti e abbiamo parlato di cose semplici come pesci gialli e fumetti, ho sentito un po' di gioia. Quel momento mi ha ricordato perché sono qui sulla faccia della terra, nonostante tutto.",
+      "assistant_reply": "È bello sentirlo, è una sensazione tanto importante! Quei momenti con i nipoti sono preziosi e fanno la differenza."
+    },
+    {
+      "timestamp": "2026-01-27T14:23:29.898954",
+      "question_id": 3,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "Perché quando ho fatto colazione con i miei nipoti e abbiamo parlato di cose semplici come pesci gialli e fumetti, ho sentito un po' di gioia. Quel momento mi ha ricordato perché sono qui sulla faccia della terra, nonostante tutto.",
+      "assistant_reply": "Forse potresti descrivere quella sensazione con la parola \"riluttanza\", come se fosse uno stato d'animo che combina felicità e gratitudine per i momenti semplici."
+    },
+    {
+      "timestamp": "2026-01-27T14:23:29.898954",
+      "question_id": 4,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupato?",
+      "user_answer": "gioia",
+      "assistant_reply": "Capisco, grazie per averlo condiviso."
+    },
+    {
+      "timestamp": "2026-01-27T14:23:29.898954",
+      "question_id": 5,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Perché quando ho fatto colazione con i miei nipoti e abbiamo parlato di cose semplici come pesci gialli e fumetti, ho sentito un po' di gioia. Quel momento mi ha ricordato perché sono qui sulla faccia della terra, nonostante tutto.",
+      "assistant_reply": "Sento che nel tuo corpo si è diffusa una sensazione di calore e serenità, mentre nei tuoi pensieri hai riacceso una fiamma di gioia e gratitudine. È bellissimo vedere come momenti semplici possono riempire il cuore di felicità!"
+    },
+    {
+      "timestamp": "2026-01-27T14:23:29.898954",
+      "question_id": 6,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Non so, forse mi trovo in uno stato di tranquillità quando penso a quei momenti con i nipoti. Sentivo un piacere sconosciuto, quasi come una riflessione sulla vita semplice. Non ricordo se ho avuto dei pensieri particolarmente preoccupati in quel momento, ma il caldo del sole e l'odore di muffa fresca erano quanto basta per farmi sentire a casa.",
+      "assistant_reply": "È bello sentirtelo dire! Quei momenti con i nipoti sembrano davvero far breccia nel tuo cuore."
+    },
+    {
+      "timestamp": "2026-01-27T14:23:29.898954",
+      "question_id": 7,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Non so, forse mi trovo in uno stato di tranquillità quando penso a quei momenti con i nipoti. Sentivo un piacere sconosciuto, quasi come una riflessione sulla vita semplice. Non ricordo se ho avuto dei pensieri particolarmente preoccupati in quel momento, ma il caldo del sole e l'odore di muffa fresca erano quanto basta per farmi sentire a casa.",
+      "assistant_reply": "Se il mio umore oggi fosse un colore, credo sarebbe l'uva scuro, come i tuoi occhi quando sorridi in quegli ricordi con i nipoti. Un bel colore pieno di dolcezza e pace."
+    },
+    {
+      "timestamp": "2026-01-27T14:23:29.898954",
+      "question_id": 8,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "Non so, forse grigio. O magari un blu tranquillo. Non ricordo se oggi ho avuto pensieri particolarmente preoccupati. Sentivo solo una calma che mi faceva ricordare momenti felici con i nipoti. Il sole era caldo e l'odore di muffa fresca sembrava tenermi a casa, come quando ero bambino.",
+      "assistant_reply": "Capisco, queste sono ricordi piacevoli. Forse sceglieresti questi colori perché evocano quei momenti felici con i nipoti e il senso di tranquillità che provavi da bambino."
+    },
+    {
+      "timestamp": "2026-01-27T14:23:29.898954",
+      "question_id": 9,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Non so, forse grigio. O magari un blu tranquillo. Non ricordo se oggi ho avuto pensieri particolarmente preoccupati. Sentivo solo una calma che mi faceva ricordare momenti felici con i nipoti. Il sole era caldo e l'odore di muffa fresca sembrava tenermi a casa, come quando ero bambino.",
+      "assistant_reply": "Sì, quel giorno con i nipoti è stato davvero speciale. Ricordarlo mi fa sentire ancora quella serenità che provavo da piccolo, come se il tempo si fermasse e tutto fosse perfetto."
+    },
+    {
+      "timestamp": "2026-01-27T14:23:29.898954",
+      "question_id": 10,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Non so, forse grigio. O magari un blu tranquillo. Non ricordo se oggi ho avuto pensieri particolarmente preoccupati. Sentivo solo una calma che mi faceva ricordare momenti felici con i nipoti. Il sole era caldo e l'odore di muffa fresca sembrava tenermi a casa, come quando ero bambino.",
+      "assistant_reply": "Questi pensieri dolci su dei momenti passati con i tuoi nipoti ti aiutano davvero molto, non è vero? Sono così felice che ancora oggi riesci a provare quel senso di gioia e conforto!"
+    },
+    {
+      "timestamp": "2026-01-27T14:23:29.898954",
+      "question_id": 11,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Non so, forse grigio. O magari un blu tranquillo. Non ricordo se oggi ho avuto pensieri particolarmente preoccupati. Sentivo solo una calma che mi faceva ricordare momenti felici con i nipoti. Il sole era caldo e l'odore di muffa fresca sembrava tenermi a casa, come quando ero bambino.",
+      "assistant_reply": "Capisco bene quei momenti tranquilli. Spero che tu possa portare a termine molte delle tue attività in questi giorni, come fai sempre."
+    },
+    {
+      "timestamp": "2026-01-27T14:23:29.898954",
+      "question_id": 12,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Non so, forse grigio. O magari un blu tranquillo. Non ricordo se oggi ho avuto pensieri particolarmente preoccupati. Sentivo solo una calma che mi faceva ricordare momenti felici con i nipoti. Il sole era caldo e l'odore di muffa fresca sembrava tenermi a casa, come quando ero bambino.",
+      "assistant_reply": "Ti ascolto con attenzione."
+    },
+    {
+      "timestamp": "2026-01-27T14:23:29.898954",
+      "question_id": 13,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Non so, forse grigio. O magari un blu tranquillo. Non ricordo se oggi ho avuto pensieri particolarmente preoccupati. Sentivo solo una calma che mi faceva ricordare momenti felici con i nipoti. Il sole era caldo e l'odore di muffa fresca sembrava tenermi a casa, come quando ero bambino.",
+      "assistant_reply": "Capisco bene queste tue sensazioni, sono state davvero belle. Ti auguro continui momenti di pace e ricordi felici nei tuoi giorni."
+    },
+    {
+      "timestamp": "2026-01-27T14:23:29.898954",
+      "question_id": 14,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Non so, forse grigio. O magari un blu tranquillo. Non ricordo se oggi ho avuto pensieri particolarmente preoccupati. Sentivo solo una calma che mi faceva ricordare momenti felici con i nipoti. Il sole era caldo e l'odore di muffa fresca sembrava tenermi a casa, come quando ero bambino.",
+      "assistant_reply": "Capisco bene le tue sensazioni, amico. Sono contento che tu senta quella tranquillità e quei ricordi piacevoli."
+    }
+  ],
+  "branches": {
+    "total_count": 0,
+    "details": []
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [],
+        "confidence": 0.3
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.9
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.9
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "solitudine"
+        ],
+        "confidence": 0.9
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.9
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.9
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 14,
+    "branch_questions": 0
+  }
+}

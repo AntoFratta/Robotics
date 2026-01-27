@@ -1,0 +1,12 @@
+{
+  "patient_id": "EVAL_NO_ROUTING_demo_profile_high_personalization_signal_20260127_143607",
+  "session_start": "2026-01-27T14:36:08.531896",
+  "session_end": "2026-01-27T14:37:16.211470",
+  "duration_seconds": 67,
+  "total_questions": 14,
+  "profile_summary": {
+    "age": 73,
+    "gender": "F",
+    "main_condition": "Artrite reumatoide"
+  }
+}

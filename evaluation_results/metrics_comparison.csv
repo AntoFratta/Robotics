@@ -1,0 +1,5 @@
+Metric,FULL (mean),FULL (std),NO_ROUTING (mean),NO_ROUTING (std)
+M1: Completion Rate,100.00%,-,100.00%,-
+M2: Avg Answer Length (words),35.05,16.33,33.04,12.52
+M3: Evasiveness Resolution Rate,100.00%,0.00%,N/A (routing disabled),-
+M4: Branch Rate,33.82%,28.97%,0.00%,0.00%

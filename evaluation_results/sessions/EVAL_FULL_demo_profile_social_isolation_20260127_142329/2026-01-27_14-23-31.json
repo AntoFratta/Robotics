@@ -1,0 +1,1021 @@
+{
+  "profile_id": "EVAL_FULL_demo_profile_social_isolation_20260127_142329",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:23:31.638433",
+    "end_time": "2026-01-27T14:25:23.245121",
+    "duration_seconds": 111
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 2,
+      "question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 3,
+      "question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": "Capisco come ti senti. Negli ultimi giorni è vero che ci sono stati momenti più difficili, ma ricorda anche quando hai avvertito un po' di serenità o felicità, magari per una piccola cosa?"
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 4,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 5,
+      "question": "Quando ti senti triste, riesci a identificare un motivo specifico?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 6,
+      "question": "Questa sensazione è presente durante tutta la giornata o va e viene?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": "Capisco come ti senti. Parlare può aiutarti a gestire questi sentimenti, magari ci pensiamo insieme su cosa ti preoccupa più in questo momento o su qualcosa di bello che hai vissuto."
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 7,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 8,
+      "question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 9,
+      "question": "Quando ti senti triste, riesci a identificare un motivo specifico?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": "Forse la parola che potrebbe descrivere quella sensazione è \"preoccupata\". So quanto può essere difficile, ma insieme possiamo trovare modi per aiutarti a sentirti un po' meglio."
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 10,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupata?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 11,
+      "question": "Quando ti senti triste, riesci a identificare un motivo specifico?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 12,
+      "question": "Questa sensazione è presente durante tutta la giornata o va e viene?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": "Capisco come ti senti. Anche io ho avuto giorni difficili, come quando mi sono preoccupata per un amico malato."
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 13,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 14,
+      "question": "Quando ti senti triste, riesci a identificare un motivo specifico?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 15,
+      "question": "Quando ti senti triste, riesci a identificare un motivo specifico?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": "Ti ascolto, continua pure."
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 16,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 17,
+      "question": "Quando ti senti triste, riesci a identificare un motivo specifico?",
+      "user_answer": "None",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 18,
+      "question": "Non ti preoccupare. A volte aiuta pensare a momenti specifici della giornata: la mattina, il pomeriggio, la sera. Ti viene in mente qualcosa?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": "Capisco come ti senti, è normale preoccuparsi per il nostro stato di salute. Ti posso ascoltare e parlare di piccole cose del giorno a giorno che potrebbero aiutarti a mantenere un po' di calma."
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 19,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 20,
+      "question": "Quando ti senti triste, riesci a identificare un motivo specifico?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 21,
+      "question": "Questa sensazione è presente durante tutta la giornata o va e viene?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": "Interessante domanda! Se il mio umore oggi fosse un colore, credo sarebbe un dolce marrone chiaro, come quello di una foglia autunnale sul punto di cadere."
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 22,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 23,
+      "question": "Quando ti senti triste, riesci a identificare un motivo specifico?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 24,
+      "question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": "Capisco come ti senti. Parliamo dei tuoi giorni, magari di un libro che hai appena letto o delle foto della tua famiglia?"
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 25,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 26,
+      "question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?",
+      "user_answer": "None",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 27,
+      "question": "Capisco. A volte può essere difficile ricordare. C'è qualche piccolo dettaglio che ti viene in mente?",
+      "user_answer": "Non so, forse avresti una domanda o qualcosa di cui parlare che mi aiuti ad affrontare questi giorni? Io sono un po' a lungo distaccato, ma non riesco proprio a evitare di pensare alle cose. Spero solo che il mio corpo si debba bene con la medicina e che i miei muscoli possano resistere.",
+      "assistant_reply": "Capisco come ti senti. Posso chiederti un piccolo favore?"
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 28,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Capisco, a volte mi sembra di essere sempre qui, anche se non c'è niente da fare davvero. Non ricordo specifiche giornate migliori, ma ci sono momenti in cui il pensiero della mia salute mi dà un po' ansia. Spero solo che tutto si risolva bene e che la medicina funzioni come dovrebbe.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 29,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Capisco, a volte mi sembra di essere sempre qui, anche se non c'è niente da fare davvero. Non ricordo specifiche giornate migliori, ma ci sono momenti in cui il pensiero della mia salute mi dà un po' ansia. Spero solo che tutto si risolva bene e che la medicina funzioni come dovrebbe.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 30,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Capisco, a volte mi sembra di essere sempre qui, anche se non c'è niente da fare davvero. Non ricordo specifiche giornate migliori, ma ci sono momenti in cui il pensiero della mia salute mi dà un po' ansia. Spero solo che tutto si risolva bene e che la medicina funzioni come dovrebbe.",
+      "assistant_reply": "Sai, spesso un bel libro o ascoltare musica può aiutarmi a sentirmi meglio. E anche parlare con te mi fa sentire più a mio agio."
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 31,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Capisco, a volte mi sembra di essere sempre qui, anche se non c'è niente da fare davvero. Non ricordo specifiche giornate migliori, ma ci sono momenti in cui il pensiero della mia salute mi dà un po' ansia. Spero solo che tutto si risolva bene e che la medicina funzioni come dovrebbe.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 32,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Capisco, a volte mi sembra di essere sempre qui, anche se non c'è niente da fare davvero. Non ricordo specifiche giornate migliori, ma ci sono momenti in cui il pensiero della mia salute mi dà un po' ansia. Spero solo che tutto si risolva bene e che la medicina funzioni come dovrebbe.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 33,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Capisco, a volte mi sembra di essere sempre qui, anche se non c'è niente da fare davvero. Non ricordo specifiche giornate migliori, ma ci sono momenti in cui il pensiero della mia salute mi dà un po' ansia. Spero solo che tutto si risolva bene e che la medicina funzioni come dovrebbe.",
+      "assistant_reply": "Capisco, sentirmi utile e portare a termine i nostri piani può aiutare molto nella giornata. So che il tuo desiderio è che tutto vada bene, quindi sii gentile con te stessa e ricorda quanto sei forte in questi momenti."
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 34,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Capisco, a volte mi sembra di essere sempre qui, anche se non c'è niente da fare davvero. Non ricordo specifiche giornate migliori, ma ci sono momenti in cui il pensiero della mia salute mi dà un po' ansia. Spero solo che tutto si risolva bene e che la medicina funzioni come dovrebbe.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 35,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Capisco, a volte mi sembra di essere sempre qui, anche se non c'è niente da fare davvero. Non ricordo specifiche giornate migliori, ma ci sono momenti in cui il pensiero della mia salute mi dà un po' ansia. Spero solo che tutto si risolva bene e che la medicina funzioni come dovrebbe.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 36,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Capisco, a volte mi sembra di essere sempre qui, anche se non c'è niente da fare davvero. Non ricordo specifiche giornate migliori, ma ci sono momenti in cui il pensiero della mia salute mi dà un po' ansia. Spero solo che tutto si risolva bene e che la medicina funzioni come dovrebbe.",
+      "assistant_reply": "Ti capisco completamente. È importante però continuare a seguire le indicazioni mediche, anche se può sembrare difficile."
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 37,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Capisco, a volte mi sembra di essere sempre qui, anche se non c'è niente da fare davvero. Non ricordo specifiche giornate migliori, ma ci sono momenti in cui il pensiero della mia salute mi dà un po' ansia. Spero solo che tutto si risolva bene e che la medicina funzioni come dovrebbe.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 38,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Capisco, a volte mi sembra di essere sempre qui, anche se non c'è niente da fare davvero. Non ricordo specifiche giornate migliori, ma ci sono momenti in cui il pensiero della mia salute mi dà un po' ansia. Spero solo che tutto si risolva bene e che la medicina funzioni come dovrebbe.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 39,
+      "question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?",
+      "user_answer": "Capisco, a volte mi sembra di essere sempre qui, anche se non c'è niente da fare davvero. Non ricordo specifiche giornate migliori, ma ci sono momenti in cui il pensiero della mia salute mi dà un po' ansia. Spero solo che tutto si risolva bene e che la medicina funzioni come dovrebbe.",
+      "assistant_reply": "Ti ascolto, continua pure."
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 40,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Capisco, a volte mi sembra di essere sempre qui, anche se non c'è niente da fare davvero. Non ricordo specifiche giornate migliori, ma ci sono momenti in cui il pensiero della mia salute mi dà un po' ansia. Spero solo che tutto si risolva bene e che la medicina funzioni come dovrebbe.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 41,
+      "question": "Quando avverti paura o ansia, cosa noti per primo?",
+      "user_answer": "Capisco, a volte mi sembra di essere sempre qui, anche se non c'è niente da fare davvero. Non ricordo specifiche giornate migliori, ma ci sono momenti in cui il pensiero della mia salute mi dà un po' ansia. Spero solo che tutto si risolva bene e che la medicina funzioni come dovrebbe.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:25:23.245121",
+      "question_id": 42,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Capisco, a volte mi sembra di essere sempre qui, anche se non c'è niente da fare davvero. Non ricordo specifiche giornate migliori, ma ci sono momenti in cui il pensiero della mia salute mi dà un po' ansia. Spero solo che tutto si risolva bene e che la medicina funzioni come dovrebbe.",
+      "assistant_reply": "Ti capisco completamente. So quanto può essere preoccupante concentrarsi troppo sulla salute, ma ricorda che sei forte e sta andando tutto secondo i piani."
+    }
+  ],
+  "branches": {
+    "total_count": 28,
+    "details": [
+      {
+        "timestamp": "2026-01-27T14:23:34.292226",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?"
+      },
+      {
+        "timestamp": "2026-01-27T14:23:35.562524",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?"
+      },
+      {
+        "timestamp": "2026-01-27T14:23:42.409611",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Quando ti senti triste, riesci a identificare un motivo specifico?"
+      },
+      {
+        "timestamp": "2026-01-27T14:23:43.694422",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Questa sensazione è presente durante tutta la giornata o va e viene?"
+      },
+      {
+        "timestamp": "2026-01-27T14:23:50.601630",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?"
+      },
+      {
+        "timestamp": "2026-01-27T14:23:51.867697",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Quando ti senti triste, riesci a identificare un motivo specifico?"
+      },
+      {
+        "timestamp": "2026-01-27T14:23:58.558821",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Quando ti senti triste, riesci a identificare un motivo specifico?"
+      },
+      {
+        "timestamp": "2026-01-27T14:23:59.840015",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Questa sensazione è presente durante tutta la giornata o va e viene?"
+      },
+      {
+        "timestamp": "2026-01-27T14:24:06.665065",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Quando ti senti triste, riesci a identificare un motivo specifico?"
+      },
+      {
+        "timestamp": "2026-01-27T14:24:07.946732",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Quando ti senti triste, riesci a identificare un motivo specifico?"
+      },
+      {
+        "timestamp": "2026-01-27T14:24:14.759612",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Quando ti senti triste, riesci a identificare un motivo specifico?"
+      },
+      {
+        "timestamp": "2026-01-27T14:24:16.046739",
+        "type": "evasive",
+        "theme_display": "Risposta evasiva",
+        "followup_question": "Non ti preoccupare. A volte aiuta pensare a momenti specifici della giornata: la mattina, il pomeriggio, la sera. Ti viene in mente qualcosa?"
+      },
+      {
+        "timestamp": "2026-01-27T14:24:22.892842",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Quando ti senti triste, riesci a identificare un motivo specifico?"
+      },
+      {
+        "timestamp": "2026-01-27T14:24:24.172096",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Questa sensazione è presente durante tutta la giornata o va e viene?"
+      },
+      {
+        "timestamp": "2026-01-27T14:24:31.152571",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Quando ti senti triste, riesci a identificare un motivo specifico?"
+      },
+      {
+        "timestamp": "2026-01-27T14:24:32.440796",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?"
+      },
+      {
+        "timestamp": "2026-01-27T14:24:39.136177",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?"
+      },
+      {
+        "timestamp": "2026-01-27T14:24:39.318114",
+        "type": "evasive",
+        "theme_display": "Risposta evasiva",
+        "followup_question": "Capisco. A volte può essere difficile ricordare. C'è qualche piccolo dettaglio che ti viene in mente?"
+      },
+      {
+        "timestamp": "2026-01-27T14:24:46.450204",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:24:47.677617",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:24:54.251250",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:24:55.489766",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:25:02.205914",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:25:03.445357",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:25:10.016619",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:25:11.248635",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?"
+      },
+      {
+        "timestamp": "2026-01-27T14:25:18.076267",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando avverti paura o ansia, cosa noti per primo?"
+      },
+      {
+        "timestamp": "2026-01-27T14:25:19.305179",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      }
+    ]
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "mobilità",
+          "famiglia"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "mobilità",
+          "famiglia"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "mobilità",
+          "famiglia"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "mobilità",
+          "famiglia"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "mobilità",
+          "famiglia"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "mobilità",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "bassa",
+        "themes": [],
+        "confidence": 0.3
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "mobilità",
+          "famiglia"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "mobilità",
+          "famiglia"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "bassa",
+        "themes": [],
+        "confidence": 0.3
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "memoria",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "salute fisica",
+          "routine quotidiana",
+          "famiglia"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 42,
+    "branch_questions": 28
+  }
+}

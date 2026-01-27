@@ -1,0 +1,290 @@
+{
+  "profile_id": "EVAL_NO_ROUTING_demo_profile_evasive_style_20260127_143326",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:33:28.384283",
+    "end_time": "2026-01-27T14:34:39.225920",
+    "duration_seconds": 70
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:34:39.225920",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so, non ricordo.",
+      "assistant_reply": "Sono qui ad ascoltarti."
+    },
+    {
+      "timestamp": "2026-01-27T14:34:39.225920",
+      "question_id": 2,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "Non so, non ricordo.",
+      "assistant_reply": "Capisco come ti senti. Va bene ammettere quando non si ha la risposta immediata."
+    },
+    {
+      "timestamp": "2026-01-27T14:34:39.225920",
+      "question_id": 3,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "Non ricordo. Non so, forse c'era qualcosa che mi ha fatti sorridere senza motivo.",
+      "assistant_reply": "Forse potremmo chiamarlo un \"momento di felicità imperscrutabile\"."
+    },
+    {
+      "timestamp": "2026-01-27T14:34:39.225920",
+      "question_id": 4,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupato?",
+      "user_answer": "Calmata l'anemia, ora mi sento tranquillo. Non ho idea di perché prima fossero guai.",
+      "assistant_reply": "Sono contento che ora ti senti meglio! Se hai bisogno di parlare di quel periodo difficile, sono qui per ascoltarti."
+    },
+    {
+      "timestamp": "2026-01-27T14:34:39.225920",
+      "question_id": 5,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Non ricordo. Forse c'era qualcosa che mi ha fatti sorridere senza motivo.",
+      "assistant_reply": "Capisco come ti senti. A volte i ricordi più felici possono sembrare sfumati, ma sappiamo che dentro di te ci sono ancora momenti di gioia pronti a emergere."
+    },
+    {
+      "timestamp": "2026-01-27T14:34:39.225920",
+      "question_id": 6,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Non so, forse era una situazione bizzarra. C'erano queste immagini piccole, come di un film anteriore. Non ricordo perché fossero quelle particolari.",
+      "assistant_reply": "Capisco che stai cercando di fare senso a quel momento strano. Sono qui per te e ti aiuto a ritrovare la calma quando puoi."
+    },
+    {
+      "timestamp": "2026-01-27T14:34:39.225920",
+      "question_id": 7,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Forse c'era un rumore strano che non ho mai sentito prima e mi ha fatto sorridere senza motivo. Non ricordo se era difficile trovare calma, forse era solo una cosa insolita che mi faceva riflettere.",
+      "assistant_reply": "Se il mio umore oggi fosse un colore, credo sarebbe un bel verde chiaro, come quello di una prateria in primavera che sorprende con nuove life."
+    },
+    {
+      "timestamp": "2026-01-27T14:34:39.225920",
+      "question_id": 8,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "Non so, magari il verde. È tranquillizzante. Non è stato facile ritrovare la calma, sembrava tutto un po' confuso e strano. Non ricordo se c'è stata una situazione particolare che mi ha aiutato. È come sentire qualcosa che non si aspettavo e poi rido senza motivo. Sono un po' esausto con queste cose insolite.",
+      "assistant_reply": "Capisco come ti senti. Il verde può essere molto rilassante, forse è stato quel colore a catturare il tuo interesse per calmarti un po'."
+    },
+    {
+      "timestamp": "2026-01-27T14:34:39.225920",
+      "question_id": 9,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Non so, magari il verde. È tranquillizzante. Non è stato facile ritrovare la calma, sembrava tutto un po' confuso e strano. È come sentire qualcosa che non si aspettavo e poi rido senza motivo. Sono un po' esausto con queste cose insolite.",
+      "assistant_reply": "Capisco come ti senti. Ricordi quando hai visto la foto del giardino pieno di felci verdi dopo quel confuso giorno?"
+    },
+    {
+      "timestamp": "2026-01-27T14:34:39.225920",
+      "question_id": 10,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Non so, magari il verde. È tranquillizzante. Non è stato facile ritrovare la calma, sembrava tutto un po' confuso e strano. È come sentire qualcosa che non si aspettavo e poi rido senza motivo. Sono un po' esausto con queste cose insolite.",
+      "assistant_reply": "Capisco come ti senti. Il verde può effettivamente aiutare a ritrovare la calma, ma ricorda che anche piccole cose, come il tuo senso dell'umorismo, possono essere un grande sostegno in questi momenti."
+    },
+    {
+      "timestamp": "2026-01-27T14:34:39.225920",
+      "question_id": 11,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Non so, magari il verde. È tranquillizzante. Non è stato facile ritrovare la calma, sembrava tutto un po' confuso e strano. È come sentire qualcosa che non si aspettavo e poi rido senza motivo. Sono un po' esausto con queste cose insolite.",
+      "assistant_reply": "Capisco bene il tuo stato d'animo. Tutto cambia in modo così repentino, può davvero essere stancante."
+    },
+    {
+      "timestamp": "2026-01-27T14:34:39.225920",
+      "question_id": 12,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Non so, magari il verde. È tranquillizzante. Non è stato facile ritrovare la calma, sembrava tutto un po' confuso e strano. È come sentire qualcosa che non si aspettavo e poi rido senza motivo. Sono un po' esausto con queste cose insolite.",
+      "assistant_reply": "Capisco bene come ti senti. Tutto questo può veramente far perdere la concentrazione, ma ricorda che ogni piccola cosa aiuta, anche se sembra confuso."
+    },
+    {
+      "timestamp": "2026-01-27T14:34:39.225920",
+      "question_id": 13,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Non so, magari il verde. È tranquillizzante. Non è stato facile ritrovare la calma, sembrava tutto un po' confuso e strano. È come sentire qualcosa che non si aspettavo e poi rido senza motivo. Sono un po' esausto con queste cose insolite.",
+      "assistant_reply": "Capisco bene come ti senti. Ricordati di prendere un po' di tempo per te, magari passeggiando in un luogo verde o guardando qualche film comico che ti faccia ridere."
+    },
+    {
+      "timestamp": "2026-01-27T14:34:39.225920",
+      "question_id": 14,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Non so, magari il verde. È tranquillizzante. Non è stato facile ritrovare la calma, sembrava tutto un po' confuso e strano. È come sentire qualcosa che non si aspettavo e poi rido senza motivo. Sono un po' esausto con queste cose insolite.",
+      "assistant_reply": "Capisco bene come ti senti, arriva spesso una certa confusione in questi momenti. Il verde può davvero aiutarti a rilassarti."
+    }
+  ],
+  "branches": {
+    "total_count": 0,
+    "details": []
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "bassa",
+        "themes": [],
+        "confidence": 0.3
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "bassa",
+        "themes": [],
+        "confidence": 0.3
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Sorpresa",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Sorpresa",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "futuro",
+          "memoria",
+          "solitudine"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Sorpresa",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "solitudine",
+          "routine quotidiana",
+          "famiglia"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "routine quotidiana",
+          "famiglia"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Sorpresa",
+        "intensity": "media",
+        "themes": [
+          "solitudine",
+          "routine quotidiana",
+          "famiglia"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Sorpresa",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 14,
+    "branch_questions": 0
+  }
+}

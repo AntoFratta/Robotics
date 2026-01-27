@@ -1,0 +1,12 @@
+{
+  "patient_id": "EVAL_FULL_demo_profile_01_20260127_140845",
+  "session_start": "2026-01-27T14:08:46.735284",
+  "session_end": "2026-01-27T14:11:04.401837",
+  "duration_seconds": 137,
+  "total_questions": 14,
+  "profile_summary": {
+    "age": 78,
+    "gender": "M",
+    "main_condition": "Parkinson"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "patient_id": "EVAL_FULL_demo_profile_social_isolation_20260127_142329",
+  "session_start": "2026-01-27T14:23:31.638433",
+  "session_end": "2026-01-27T14:25:23.245121",
+  "duration_seconds": 111,
+  "total_questions": 42,
+  "profile_summary": {
+    "age": 79,
+    "gender": "F",
+    "main_condition": "Osteoporosi severa"
+  }
+}

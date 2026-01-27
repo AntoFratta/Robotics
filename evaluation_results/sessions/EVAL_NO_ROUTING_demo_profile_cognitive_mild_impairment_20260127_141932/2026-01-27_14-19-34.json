@@ -1,0 +1,300 @@
+{
+  "profile_id": "EVAL_NO_ROUTING_demo_profile_cognitive_mild_impairment_20260127_141932",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:19:34.154422",
+    "end_time": "2026-01-27T14:20:50.659543",
+    "duration_seconds": 76
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:20:50.659543",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so proprio come rispondere a quella domanda senza di più. Non mi viene in mente nulla per ora.",
+      "assistant_reply": "Capisco che puoi sentirti a disagio, ma prenditi tutto il tempo che hai bisogno. Forse un momento dolce può emergere se ci pensi con calma."
+    },
+    {
+      "timestamp": "2026-01-27T14:20:50.659543",
+      "question_id": 2,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "Non so proprio, forse quando stavo guardando il cielo e pensavo a come è cambiato nel corso degli anni. È stato un momento tranquillo, ma non ho notato niente di particolare.",
+      "assistant_reply": "Grazie per avermelo detto."
+    },
+    {
+      "timestamp": "2026-01-27T14:20:50.659543",
+      "question_id": 3,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "Non so proprio, forse quando stavo guardando il cielo e pensavo a come è cambiato nel corso degli anni. È stato un momento tranquillo, ma non ho notato niente di particolare. Non ricordo se mi sia sentito bene o meno.",
+      "assistant_reply": "Capisco, potresti descriverlo forse con la parola \"riflessione\". Questo può essere un momento in cui ti sei semplicemente fermata a pensare e riflettere sul passato e il presente."
+    },
+    {
+      "timestamp": "2026-01-27T14:20:50.659543",
+      "question_id": 4,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupata?",
+      "user_answer": "Non so proprio, forse quando stavo guardando il cielo e pensando a come è cambiata la mia casa nel corso degli anni. È stato un momento tranquillo, ma non ho notato niente di particolare. Non ricordo se mi sia sentito bene o meno.",
+      "assistant_reply": "Capisco come ti senti, spesso i momenti più semplici possono essere davvero meaningful. Ti riassicuro che anche quando non ci accorgiamo di qualcosa di speciale, è bello passare del tempo in pace a riflettere sulle nostre storie."
+    },
+    {
+      "timestamp": "2026-01-27T14:20:50.659543",
+      "question_id": 5,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Non so proprio, forse quando stavo guardando il cielo e pensando a come è cambiata la mia casa nel corso degli anni. È stato un momento tranquillo, ma non ho notato niente di particolare. Non ricordo se mi sia sentito bene o meno.",
+      "assistant_reply": "Capisco come ti senti. Spesso i momenti più semplici, come guardare il cielo, possono portare a pensieri profondi."
+    },
+    {
+      "timestamp": "2026-01-27T14:20:50.659543",
+      "question_id": 6,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Non so proprio, forse quando stavo guardando il cielo e pensando a come è cambiata la mia casa nel corso degli anni. È stato un momento tranquillo, ma non ho notato niente di particolare. Non ricordo se mi sia sentito bene o meno.",
+      "assistant_reply": "Capisco come ti senti, trascorrere del tempo in silenzio con i pensieri può aiutare a trovare il calmo. Forse il cielo e le tue riflessioni sulla casa ti hanno offerto un po' di pace."
+    },
+    {
+      "timestamp": "2026-01-27T14:20:50.659543",
+      "question_id": 7,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Non so proprio, forse quando stavo guardando il cielo e pensando a come è cambiata la mia casa nel corso degli anni. È stato un momento tranquillo, ma non ho notato niente di particolare. Non ricordo se mi sia sentito bene o meno.",
+      "assistant_reply": "Capisco, magari quel colore potrebbe essere una sfumatura di grigio blu, come il cielo quando è sereno ma anche un po' stanco. Ti rassicuro che i nostri ricordi e i nostri pensieri possono cambiare l'umore in maniera sorprendente, anche se non lo sentiamo subito."
+    },
+    {
+      "timestamp": "2026-01-27T14:20:50.659543",
+      "question_id": 8,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "Non so proprio, forse quando stavo guardando il cielo e pensando a come è cambiata la mia casa nel corso degli anni. È stato un momento tranquillo, ma non ho notato niente di particolare. Non ricordo se mi sia sentito bene o meno.",
+      "assistant_reply": "Capisco come ti senti. Spesso i momenti più semplici e tranquilli possono portare a pensieri profondi."
+    },
+    {
+      "timestamp": "2026-01-27T14:20:50.659543",
+      "question_id": 9,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Non so proprio, forse quando stavo guardando il cielo e pensando a come è cambiata la mia casa nel corso degli anni. È stato un momento tranquillo, ma non ho notato niente di particolare. Non ricordo se mi sia sentito bene o meno.",
+      "assistant_reply": "Capisco bene i tuoi sentimenti. Guardare il cielo e pensare al passato può essere un modo bello per riflettere su come cambiano le cose, anche se non sempre ne notiamo subito l'effetto."
+    },
+    {
+      "timestamp": "2026-01-27T14:20:50.659543",
+      "question_id": 10,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Non so proprio, forse quando stavo guardando il cielo e pensando a come è cambiata la mia casa nel corso degli anni. È stato un momento tranquillo, ma non ho notato niente di particolare. Non ricordo se mi sia sentito bene o meno.",
+      "assistant_reply": "Capisco come ti senti, spesso momenti semplici come osservare il cielo possono portare conforto e pace interiore. Se vuoi parlarne più a fondo, sono qui per ascoltarti."
+    },
+    {
+      "timestamp": "2026-01-27T14:20:50.659543",
+      "question_id": 11,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Non so proprio, forse quando stavo guardando il cielo e pensando a come è cambiata la mia casa nel corso degli anni. È stato un momento tranquillo, ma non ho notato niente di particolare. Non ricordo se mi sia sentito bene o meno.",
+      "assistant_reply": "Capisco come ti senti, è normale quando ci sono momenti in cui non ricordiamo tutto con precisione. Ti rassicuro che anche i piccoli momenti di quiete possono essere molto significativi."
+    },
+    {
+      "timestamp": "2026-01-27T14:20:50.659543",
+      "question_id": 12,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Non so proprio, forse quando stavo guardando il cielo e pensando a come è cambiata la mia casa nel corso degli anni. È stato un momento tranquillo, ma non ho notato niente di particolare. Non ricordo se mi sia sentito bene o meno.",
+      "assistant_reply": "Capisco bene come ti senti, è normale a volte avere momenti in cui non ti ricordi delle cose. Ti importa molto della tua casa e dei cambiamenti che ha subito, vero?"
+    },
+    {
+      "timestamp": "2026-01-27T14:20:50.659543",
+      "question_id": 13,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Non so proprio, forse quando stavo guardando il cielo e pensando a come è cambiata la mia casa nel corso degli anni. È stato un momento tranquillo, ma non ho notato niente di particolare riguardo alla salute. Non ricordo se mi sia sentito bene o meno.",
+      "assistant_reply": "Capisco, sembra che tu abbia passato del tempo a riflettere sulla tua casa e sulle sue变迁已经悄悄发生。随着岁月的流逝，家中的每一砖一瓦都承载着过往的记忆与故事。你是否曾经在某个晴朗的日子里，静静地坐在窗前，望着天空发呆，思绪飘向那些关于家的美好回忆？尽管那段时间你可能没有特别注意到自己的健康状况，但那段宁静的时光一定给你带来了一些安慰和平静。记得照顾好自己，无论是心灵还是身体，都有值得珍惜和呵护的地方。"
+    },
+    {
+      "timestamp": "2026-01-27T14:20:50.659543",
+      "question_id": 14,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Non so proprio, forse quando stavo guardando il cielo e pensando a come è cambiata la mia casa nel corso degli anni. È stato un momento tranquillo, ma non ho notato niente di particolare riguardo alla salute. Non ricordo se mi sia sentito bene o meno.",
+      "assistant_reply": "Capisco come ti senti, spesso i momenti più tranquilli ci fanno riflettere su tutto quanto. Se hai qualcosa che ti preoccupa, non esitare a parlarne, sono qui per ascoltarti e supportarti."
+    }
+  ],
+  "branches": {
+    "total_count": 0,
+    "details": []
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "futuro",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "futuro",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "futuro",
+          "memoria",
+          "solitudine"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "memoria",
+          "futuro",
+          "solitudine"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "memoria",
+          "futuro",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "futuro",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "futuro",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "futuro",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "memoria",
+          "futuro",
+          "routine quotidiana"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "memoria",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "futuro",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "futuro",
+          "routine quotidiana"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "futuro",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "futuro",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 14,
+    "branch_questions": 0
+  }
+}

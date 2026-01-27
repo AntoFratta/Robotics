@@ -1,0 +1,298 @@
+{
+  "profile_id": "EVAL_NO_ROUTING_demo_profile_high_personalization_signal_20260127_143607",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:36:08.531896",
+    "end_time": "2026-01-27T14:37:16.211470",
+    "duration_seconds": 67
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:37:16.211470",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so, non ricordo proprio. Possiamo parlare di qualcos'altro?",
+      "assistant_reply": "Capisco come ti senti. Forse possiamo parlarne di altri momenti della tua giornata che ti hanno fatto piacere."
+    },
+    {
+      "timestamp": "2026-01-27T14:37:16.211470",
+      "question_id": 2,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "Non so, non ricordo proprio. Possiamo parlare di qualcos'altro?",
+      "assistant_reply": "Capisco che stai trovando difficile rispondere a questa domanda. Se preferisci cambiare argomento, posso ascoltarti su qualsiasi cosa ti sia venuto in mente."
+    },
+    {
+      "timestamp": "2026-01-27T14:37:16.211470",
+      "question_id": 3,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "Non so, non ricordo proprio. Possiamo parlare di qualcos'altro?",
+      "assistant_reply": "Ti ascolto con attenzione."
+    },
+    {
+      "timestamp": "2026-01-27T14:37:16.211470",
+      "question_id": 4,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupata?",
+      "user_answer": "Non so, non ricordo proprio. Possiamo parlare di qualcos'altro?",
+      "assistant_reply": "Ti ringrazio per la tua sincerità."
+    },
+    {
+      "timestamp": "2026-01-27T14:37:16.211470",
+      "question_id": 5,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Non so, non ricordo proprio. Possiamo parlare di qualcos'altro?",
+      "assistant_reply": "Capisco che potrebbe essere difficile tornare a quel momento. Se vuoi, possiamo parlarne in un altro modo o cambiare argomento per il momento."
+    },
+    {
+      "timestamp": "2026-01-27T14:37:16.211470",
+      "question_id": 6,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Non so, non ricordo proprio. Possiamo parlare di qualcos'altro?",
+      "assistant_reply": "Ti ringrazio per la tua sincerità."
+    },
+    {
+      "timestamp": "2026-01-27T14:37:16.211470",
+      "question_id": 7,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Non so, non ricordo proprio. Possiamo parlare di qualcos'altro?",
+      "assistant_reply": "Ti ascolto, continua pure."
+    },
+    {
+      "timestamp": "2026-01-27T14:37:16.211470",
+      "question_id": 8,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "Non so, non ricordo proprio. Possiamo parlare di qualcos'altro?",
+      "assistant_reply": "Capisco che stai passando un momento un po' confuso. Magari potremmo parlarne di qualche altro argomento che ti interessa!"
+    },
+    {
+      "timestamp": "2026-01-27T14:37:16.211470",
+      "question_id": 9,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Non so, possiamo parlare di come stanno andando le mie ginnicità oggi? Spero di poter muovermi senza troppi dolori.",
+      "assistant_reply": "Certamente! Parliamo delle tue ginnicità di oggi."
+    },
+    {
+      "timestamp": "2026-01-27T14:37:16.211470",
+      "question_id": 10,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Non so, possiamo parlare di come stanno andando le mie ginnicità oggi? Spero di poter muoversene senza troppi dolori.",
+      "assistant_reply": "Certamente, possiamo parlarne. Come ti senti durante le ginnicità?"
+    },
+    {
+      "timestamp": "2026-01-27T14:37:16.211470",
+      "question_id": 11,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Non so, possiamo parlare di come stanno andando le mie ginnicità oggi? Spero di poter muoversene senza troppi dolori.",
+      "assistant_reply": "Certo, parliamone! Spero davvero che la tua sessionsi di ginnastica vada bene e che tu riesca a muoverti con facilità."
+    },
+    {
+      "timestamp": "2026-01-27T14:37:16.211470",
+      "question_id": 12,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Non so, possiamo parlare di come stanno andando le mie ginnicità oggi? Spero di poter muoversene senza troppi dolori.",
+      "assistant_reply": "Capisco che hai molte domande su come stanno andando le tue ginnastiche. Ti auguro ogni successo e spero davvero che possa essere un'esperienza piacevole per te, con pochi dolori."
+    },
+    {
+      "timestamp": "2026-01-27T14:37:16.211470",
+      "question_id": 13,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Non so, possiamo parlare di come stanno andando le mie ginnicità oggi? Spero di poter muoversene senza troppi dolori.",
+      "assistant_reply": "Capisco come ti senti. Parliamo delle tue ginnicità oggi, spero che tu riesca a muoverti con facilità e senza troppi dolori."
+    },
+    {
+      "timestamp": "2026-01-27T14:37:16.211470",
+      "question_id": 14,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Non so, possiamo parlare di come stanno andando le mie ginnicità oggi? Spero di poter muoversene senza troppi dolori.",
+      "assistant_reply": "Capisco bene i tuoi timori. Parliamo delle tue ginnicità e vediamo come vanno."
+    }
+  ],
+  "branches": {
+    "total_count": 0,
+    "details": []
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "futuro",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "solitudine"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "mobilità",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "mobilità",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "mobilità",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "mobilità",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "mobilità",
+          "famiglia"
+        ],
+        "confidence": 0.8
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 14,
+    "branch_questions": 0
+  }
+}

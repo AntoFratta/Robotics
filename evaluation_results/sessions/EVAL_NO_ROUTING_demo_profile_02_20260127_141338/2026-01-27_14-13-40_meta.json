@@ -1,0 +1,12 @@
+{
+  "patient_id": "EVAL_NO_ROUTING_demo_profile_02_20260127_141338",
+  "session_start": "2026-01-27T14:13:40.386849",
+  "session_end": "2026-01-27T14:14:50.217931",
+  "duration_seconds": 69,
+  "total_questions": 14,
+  "profile_summary": {
+    "age": 82,
+    "gender": "F",
+    "main_condition": "Alzheimer iniziale"
+  }
+}

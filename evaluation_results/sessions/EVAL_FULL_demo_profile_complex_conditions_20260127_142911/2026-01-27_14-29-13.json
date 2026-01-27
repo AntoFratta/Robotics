@@ -1,0 +1,969 @@
+{
+  "profile_id": "EVAL_FULL_demo_profile_complex_conditions_20260127_142911",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:29:13.129240",
+    "end_time": "2026-01-27T14:31:00.394087",
+    "duration_seconds": 107
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so proprio come rispondere a questa domanda senza più informazioni. Se potessi vedere qualche dettaglio o storia, sarebbe meglio. Non ricordo esattamente come mi sentivo quando era tutto più chiaro. Ansioso? Sì, sì! Cresceva dentro di me sempre più.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 2,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Non so proprio come rispondere a questa domanda senza più informazioni. Se potessi vedere qualche dettaglio o storia, sarebbe meglio. Non ricordo esattamente come mi sentivo quando era tutto più chiaro. Cresceva dentro di me sempre più ansioso, ma non riesco a pensare con chiarezza a un momento in cui mi sia realmente sentito bene.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 3,
+      "question": "Quando avverti paura o ansia, cosa noti per primo?",
+      "user_answer": "Non so proprio come rispondere a questa domanda senza più informazioni. Se potessi vedere qualche dettaglio o storia, sarebbe meglio. Non ricordo esattamente come mi sentivo quando era tutto più chiaro. Cresceva dentro di me sempre più ansioso, ma non riesco a pensare con chiarezza a un momento in cui mi sia realmente sentito bene.",
+      "assistant_reply": "Capisco quanto possa essere difficile ricordare momenti felici quando le cose sono state difficili per un po'. So che può essere complicato, ma prova ad esplorare un po' di più: c'è stato qualche giorno o momento in cui ti sentivi un po' meglio?"
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 4,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "Non so proprio come rispondere a questa domanda senza più informazioni. Se potessi vedere qualche dettaglio o storia, sarebbe meglio. Non ricordo esattamente come mi sentivo quando era tutto più chiaro. Cresceva dentro di me sempre più ansioso, ma non riesco a pensare con chiarezza a un momento in cui mi sia realmente sentito bene. Paura e ansia sembrano crescere insieme, come una marea che si avvicina, ma non posso specificare quando e come è stata colpita questa sensazione.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 5,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Non so proprio come rispondere a questa domanda senza più informazioni. Se potessi vedere qualche dettaglio o storia, sarebbe meglio. Non ricordo esattamente come mi sentivo quando era tutto più chiaro. Cresceva dentro di me sempre più ansioso, ma non riesco a pensare con chiarezza a un momento in cui mi sia realmente sentito bene. Paura e ansia sembrano crescere insieme, come una marea che si avvicina, ma non posso specificare quando e come è stata colpita questa sensazione.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 6,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Non so proprio come rispondere a questa domanda senza più informazioni. Se potessi vedere qualche dettaglio ou storia, sarebbe meglio. Non ricordo esattamente come mi sentivo quando era tutto più chiaro. Cresceva dentro di me sempre più ansioso, ma non riesco a pensare con chiarezza a un momento in cui mi sia realmente sentito bene. Paura e ansia sembrano crescere insieme, come una marea che si avvicina, ma non posso specificare quando e come è stata colpita questa sensazione.",
+      "assistant_reply": "Capisco quanto può essere difficile ricordare questi momenti, ma so che stai facendo del tuo meglio. Ti ascolto completamente e voglio che tu sappia che puoi parlarmene a tuo agio quando sarai pronto."
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 7,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "Non so proprio come rispondere a questa domanda senza più informazioni. Se potessi vedere qualche dettaglio ou storia, sarebbe meglio. Non ricordo esattamente come mi sentivo quando era tutto più chiaro. Cresceva dentro di me sempre più ansioso, ma non riesco a pensare con chiarezza a un momento in cui mi sia realmente sentito bene. Paura e ansia sembrano crescere insieme, come una marea che si avvicina, ma non posso specificare quando e come è stata colpita questa sensazione.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 8,
+      "question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?",
+      "user_answer": "Non so proprio. Ansia crescente, come un mare invisibile che mi avvolge sempre più stretto. Non ricordo esattamente quando questo stato di cose iniziò, apenas sentivo crescere queste emozioni. Ansia e paura sembrano diventare una marea dentro di me, insieme crescono sempre più intensi, ma non riesco a capire con chiarezza quando ho cominciato a sentirmi questo male.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 9,
+      "question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?",
+      "user_answer": "Non so proprio. Anzi, adesso mi sento un po' confuso e triste. Non ricordo esattamente se la sensazione di ansia crescente è più notevole durante le mie ore di sonno o quando sono sveglio. Ecco qualche giorno in cui ho avuto questa sensazione: si arriva a casa, sentivo quel mare invisibile sempre più vicino e mi faceva sentire male, ma non era un momento preciso. Ansia e paura sembrano diventare una marea dentro di me, ma non riesco a capire quando è cominciata questa sensazione.",
+      "assistant_reply": "Puoi descriverla con la parola \"soffocante\", come se ti avvolgesse in un abbraccio troppo stretto e difficile da respirare. Ti capisco davvero bene, ci sono stati momenti difficili per tutti noi."
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 10,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupata?",
+      "user_answer": "Non so proprio. Ecco come mi sento ora, confuso e triste. Non ricordo esattamente se la sensazione di ansia crescente era più notevole durante le mie ore di sonno o quando ero sveglio. Si arriva a casa e ho l'impressione che quel mare invisibile sia sempre più vicino. Ansia e paura sembrano diventare una marea dentro di me, ma non riesco a capire quando è cominciata questa sensazione.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 11,
+      "question": "Quando avverti paura o ansia, cosa noti per primo?",
+      "user_answer": "Non so proprio. Ecco come mi sento ora, confuso e triste. Non ricordo esattamente se la sensazione di ansia crescente era più notevole durante le mie ore di sonno o quando ero sveglio. Si arriva a casa e ho l'impressione che quel mare invisibile sia sempre più vicino. Ansia e paura sembrano diventare una marea dentro di me, ma non riesco a capire quando è cominciata questa sensazione.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 12,
+      "question": "Quando avverti paura o ansia, cosa noti per primo?",
+      "user_answer": "Non so proprio. Si arriva a casa e ho l'impressione che quel mare invisibile sia sempre più vicino. Ansia e paura sembrano diventare una marea dentro di me, ma non riesco a capire quando è cominciata questa sensazione.",
+      "assistant_reply": "Capisco come ti senti, tesoro. Anche io ho avuto momenti in cui mi trovavo in un mare di emozioni confuse e difficili da affrontare."
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 13,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Non so proprio. Si arriva a casa e ho l'impressione che quel mare invisibile sia sempre più vicino. Ansia e paura sembrano diventare una marea dentro di me, ma non riesco a capire quando è cominciata questa sensazione.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 14,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Non so proprio. Si arriva a casa e ho l'impressione che quel mare invisibile sia sempre più vicino. Ansia e paura sembrano diventare una marea dentro di me, ma non riesco a capire quando è cominciata questa sensazione.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 15,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Non so proprio. Si arriva a casa e ho l'impressione che quel mare invisibile sia sempre più vicino. Ansia e paura sembrano diventare una marea dentro di me, ma non riesco a capire quando è cominciata questa sensazione. Non ricordo cosa ha scatenato quella sensazione exata.",
+      "assistant_reply": "Capisco come ti senti, tesoro. Quelle sensazioni possono essere molto intense e confusive."
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 16,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Non so proprio. Si arriva a casa e ho l'impressione che quel mare invisibile sia sempre più vicino. Ansia e paura sembrano diventare una marea dentro di me, ma non riesco a capire quando è cominciata questa sensazione. Non ricordo cosa ha scatenato quella sensazione exata.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 17,
+      "question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?",
+      "user_answer": "Non so proprio. Si arriva a casa e ho l'impressione che quel mare invisibile sia sempre più vicino. Ansia e paura sembrano diventare una marea dentro di me, ma non riesco a capire quando è cominciata questa sensazione. Non ricordo cosa ha scatenato quella sensazione exata.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 18,
+      "question": "Quando avverti paura o ansia, cosa noti per primo?",
+      "user_answer": "Non so proprio. Si arrivo a casa e ho l'impressione che quel mare invisibile sia sempre più vicino. Ansia e paura sembrano diventare una marea dentro di me, ma non riesco a capire quando è cominciata questa sensazione. Non ricordo cosa ha scatenato quella sensazione exata. Non so dire se è al mattino o al tramonto. Sembra sempre lì, pronto ad afferrarmi senza preavviso.",
+      "assistant_reply": "Capisco quanto stai passando e ti sento davvero. Potrebbe aiutarti parlare di questi sentimenti con qualcuno che ami o cercare momenti di calma come leggere un libro o ascoltare musica?"
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 19,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Non so proprio. Ansia e paura sembrano diventare una marea dentro di me, ma non riesco a capire quando è cominciata questa sensazione. Non ricordo cosa ha scatenato quella sensazione exata. Ansia e paura sempre più vicine, come un mare invisibile che si avvicina senza preavviso.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 20,
+      "question": "Quando avverti paura o ansia, cosa noti per primo?",
+      "user_answer": "Non so proprio. Ansia e paura sembrano diventare una marea dentro di me, ma non riesco a capire quando è cominciata questa sensazione. Non ricordo cosa ha scatenato quella sensazione exata. Sembra sempre lì, pronto ad afferrarmi senza preavviso. Se oggi il mio umore fosse un colore, sarebbe grigio.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 21,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "None",
+      "assistant_reply": "Ti ascolto con attenzione."
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 22,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "None",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 23,
+      "question": "Va bene. Prova a pensare anche solo a una sensazione o un pensiero che hai avuto in questi giorni.",
+      "user_answer": "Non so, talvolta quando parlo del mio giorno mi confondo. Penso che per me il rosa potesse essere semplicemente un colore dolce e sereno, non saprei dire perché, forse è solo una cosa che mi piaceva da bambino. Non ricordo di avere scelto proprio questo colore per nulla, ma magari era come se l'universo avesse deciso per me, chi può dirlo?",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 24,
+      "question": "Questa sensazione è presente durante tutta la giornata o va e viene?",
+      "user_answer": "Va bene. Prova a pensare anche solo a una sensazione o un pensiero che hai avuto in questi giorni. Non so, talvolta quando parlo del mio giorno mi confondo. Penso che per me il rosa potesse semplicemente essere un colore dolce e sereno, non saprei dire perché, forse è solo una cosa che mi piaceva da bambino. Non ricordo di aver scelto proprio questo colore per nulla, ma magari era come se l'universo avesse deciso per me, chi può dirlo?",
+      "assistant_reply": "Capisco bene le tue riflessioni, sono state molto sincere. Ti accompagno nel ricordare e nel vivere questi momenti a tuo agio."
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 25,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Non so, la sensazione del rosa si manifesta a volte quando penso al mio passato. Non ricordo di aver scelto proprio il colore rosso per nulla, ma forse l'ho preso come un dono dell'universo quando ero giovane.",
+      "assistant_reply": "Ti ascolto, continua pure."
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 26,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Non so, mi sembra che queste riflessioni su questo tema del rosa siano piuttosto vaghe e poco dirette. Forse è meglio concentrarsi su altre questioni, come il mio problema di BPCO, che lo rende un po' più chiaro e diretto. Non posso dimenticare la mia giornata attuale non so se sia rossa o blu. Non ricordo bene, mi confondo spesso in queste cose.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 27,
+      "question": "Come ti piacerebbe mantenere o coltivare questa sensazione?",
+      "user_answer": "Non so, forse le mie riflessioni sui colori sono un po' confuse. Ogni tanto penso al rosa e alla mia giovinezza, quando mi sentivo ancora forte e pieno di energia. Ma il mio vero problema sembra essere la BPCO, che mi fa sentire spesso stanca e ansiosa. Non ricordo se questa sera era rossa o blu... ho un po' perso le tracce.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 28,
+      "question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?",
+      "user_answer": "Non so, forse le mie riflessioni sui colori sono un po' confuse. Ogni tanto penso al rosa e alla mia giovinezza, quando mi sentivo ancora forte e pieno di energia. Ma il mio vero problema sembra essere la BPCO, che mi fa sentire spesso stanca e ansiosa. Non ricordo se questa sera era rossa o blu... ho un po' perso le tracce.",
+      "assistant_reply": "Capisco bene come ti senti. La nostalgia del passato può aiutarti a trovare serenità, ma è normale che la BPCO ti faccia sentire stanca."
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 29,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Non so, forse le mie riflessioni sui colori sono un po' confuse. Ogni tanto penso al rosa e alla mia giovinezza, quando mi sentivo ancora forte e pieno di energia. Ma il mio vero problema sembra essere la BPCO, che mi fa sentire spesso stanca e ansiosa. Non ricordo se questa sera era rossa o blu... ho un po' perso le tracce.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 30,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Non so, forse le mie riflessioni sui colori sono un po' confuse. Ogni tanto penso al rosa e alla mia giovinezza, quando mi sentivo ancora forte e pieno di energia. Ma il mio vero problema sembra essere la BPCO, che mi fa sentire spesso stanca e ansiosa. Non ricordo se questa sera era rossa o blu... ho un po' perso le tracce.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 31,
+      "question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?",
+      "user_answer": "Non so, forse le mie riflessioni sui colori sono un po' confuse. Ogni tanto penso al rosa e alla mia giovinezza, quando mi sentivo ancora forte e pieno di energia. Ma il mio vero problema sembra essere la BPCO, che mi fa sentire spesso stanca e ansiosa. Non ricordo se questa sera era rossa o blu... ho un po' perso le tracce.",
+      "assistant_reply": "Capisco come ti senti confusa e stanca. È normale avere momenti in cui è difficile tenersi concentrata, specialmente con la BPCO che fa impennare i tuoi livelli di stanchezza."
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 32,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Non so, forse è quando sento il respiro rallentare a causa della BPCO. Quel momento di stanchezza e ansia é sempre presente, ma non riesco a dire se la sensação da rosa ou azul é mais forte. Havia perdeu as minhas tracce.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 33,
+      "question": "Quando avverti paura o ansia, cosa noti per primo?",
+      "user_answer": "Non so, forse in quei momenti emozionantes quando sento il respiro rallentare troppo e mi sento davvero stanca. È sempre presente essa sensazione rosa di rosei, ma non riesco a dire se è come oggi o nel passato. Havia perdeu as minhas tracces.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 34,
+      "question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?",
+      "user_answer": "Non so, forse sono quando la mia testa si riempie di pensieri confusi e il mio corpo comincia a stringersi in quei momenti d'ansia. Havia perdeu as minhas tracces.",
+      "assistant_reply": "Capisco come ti senti, tesora. Spero che con un po' di tempo e forza riuscirai a recuperare le tue energie."
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 35,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Non so, forse sono quando la mia testa si riempie di pensieri confusi e il mio corpo comincia a stringersi in quei momenti d'ansia. Havia perdeu as minhas tracces.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 36,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Non so, forse sono quando la mia testa si riempie di pensieri confusi e il mio corpo comincia a stringersi in quei momenti d'ansia. Havia perdeu as minhas tracces.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 37,
+      "question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?",
+      "user_answer": "Non so, forse sono quando la mia testa si riempie di pensieri confusi e il mio corpo comincia a stringersi in quei momenti d'ansia. Non ricordo precisi momenti quando mi sento così, sempre che ho queste sensazioni, non capisco esatamente cosa ha scatenato isso. Havia perdeu as minhas tracces.",
+      "assistant_reply": "Mi dispiace molto sentirti così confusa e smarrita. So che può essere difficile capire quando e perché succedono queste cose, ma ricorda che anche se non lo sai esattamente, ti voglio vicina e mi preoccupo per te."
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 38,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Non so, forse sono quando la mia testa si riempie di pensieri confusi e il mio corpo comincia a stringersi in quei momenti d'ansia. Non ricordo precisi momenti quando mi sento così, sempre che ho queste sensazioni, não capisco esatamente cosa ha scatenato isso. Havia perdeu as minhas tracces.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 39,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Non so, forse sono quando la mia testa si riempie di pensieri confusi e il mio corpo comincia a stringersi in quei momenti d'ansia. Não capisco exatamente qual é o motivo disso agora. Havia perdeu as minhas tracces.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:31:00.394087",
+      "question_id": 40,
+      "question": "Quando avverti paura o ansia, cosa noti per primo?",
+      "user_answer": "Non so, forse è quando sento le mie ossa che si strinono e la mia testa diventa confusa. Non ricordo esattamente cosa ha scatenato questa sensazione agora. Havia perdeu as minhas tracces.",
+      "assistant_reply": "Capisco come ti senti, è normale avere momenti di confusione. Ti ascolto completamente e sono qui per te."
+    }
+  ],
+  "branches": {
+    "total_count": 26,
+    "details": [
+      {
+        "timestamp": "2026-01-27T14:29:15.619020",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:29:16.896190",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando avverti paura o ansia, cosa noti per primo?"
+      },
+      {
+        "timestamp": "2026-01-27T14:29:24.386067",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:29:25.960170",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:29:33.314996",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?"
+      },
+      {
+        "timestamp": "2026-01-27T14:29:34.713494",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?"
+      },
+      {
+        "timestamp": "2026-01-27T14:29:42.989645",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando avverti paura o ansia, cosa noti per primo?"
+      },
+      {
+        "timestamp": "2026-01-27T14:29:44.454175",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando avverti paura o ansia, cosa noti per primo?"
+      },
+      {
+        "timestamp": "2026-01-27T14:29:51.411562",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:29:52.478789",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:29:59.173980",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?"
+      },
+      {
+        "timestamp": "2026-01-27T14:30:00.347950",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando avverti paura o ansia, cosa noti per primo?"
+      },
+      {
+        "timestamp": "2026-01-27T14:30:07.399406",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando avverti paura o ansia, cosa noti per primo?"
+      },
+      {
+        "timestamp": "2026-01-27T14:30:08.689304",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:30:09.038525",
+        "type": "evasive",
+        "theme_display": "Risposta evasiva",
+        "followup_question": "Va bene. Prova a pensare anche solo a una sensazione o un pensiero che hai avuto in questi giorni."
+      },
+      {
+        "timestamp": "2026-01-27T14:30:10.310510",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Questa sensazione è presente durante tutta la giornata o va e viene?"
+      },
+      {
+        "timestamp": "2026-01-27T14:30:23.181714",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Come ti piacerebbe mantenere o coltivare questa sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:30:24.525864",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?"
+      },
+      {
+        "timestamp": "2026-01-27T14:30:31.619631",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:30:33.013825",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?"
+      },
+      {
+        "timestamp": "2026-01-27T14:30:40.414247",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando avverti paura o ansia, cosa noti per primo?"
+      },
+      {
+        "timestamp": "2026-01-27T14:30:41.605208",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?"
+      },
+      {
+        "timestamp": "2026-01-27T14:30:47.643497",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:30:48.650669",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?"
+      },
+      {
+        "timestamp": "2026-01-27T14:30:55.584548",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:30:56.707573",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando avverti paura o ansia, cosa noti per primo?"
+      }
+    ]
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Sorpresa",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "famiglia",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "famiglia",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "famiglia",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "bassa",
+        "themes": [],
+        "confidence": 0.3
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "bassa",
+        "themes": [],
+        "confidence": 0.3
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "solitudine"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "solitudine"
+        ],
+        "confidence": 0.65
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "sonno"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "salute fisica",
+          "sonno",
+          "famiglia"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "solitudine"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "solitudine"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "salute fisica"
+        ],
+        "confidence": 0.65
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "solitudine"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 40,
+    "branch_questions": 26
+  }
+}

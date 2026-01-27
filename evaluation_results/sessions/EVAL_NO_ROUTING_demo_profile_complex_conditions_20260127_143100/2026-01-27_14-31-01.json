@@ -1,0 +1,292 @@
+{
+  "profile_id": "EVAL_NO_ROUTING_demo_profile_complex_conditions_20260127_143100",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:31:01.878415",
+    "end_time": "2026-01-27T14:32:16.087310",
+    "duration_seconds": 74
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:32:16.086156",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so come rispondere essa domanda senza alcun aiuto o istruzioni per cominciare. Non ricordo quando ho ricevuto questa richiesta esatta. Possiamo sempre parlare di qualcos'altro, se vuoi. Anche se non mi sento proprio bene oggi, insomma...",
+      "assistant_reply": "Capisco come ti senti oggi. Sappiamo entrambe che non è facile ricordare i dettagli quando ci sentiamo un po’ storte."
+    },
+    {
+      "timestamp": "2026-01-27T14:32:16.086156",
+      "question_id": 2,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "None ricordando bene, a volte ci sono momenti nei quali l'animo si risveglia un po', anche se la salute del corpo a volte è più sfavorevole. Non so se posso specificare una settimana precisa, ma potresti chiedere di parlare dei miei ricordi o degli eventi recenti. Non sono molto sicuro della risposta esatta senza un aiuto ulteriore.",
+      "assistant_reply": "Capisco come ti senti, None. A volte ci sono giorni in cui ci sembra che la felicità si manifesti più chiaramente, anche se la nostra salute fisica può causarci difficoltà."
+    },
+    {
+      "timestamp": "2026-01-27T14:32:16.086156",
+      "question_id": 3,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "None ricordando bene, a volte ci sono momenti nei quali l'animo si risveglia un po', anche se la salute del corpo a volte è più sfavorevole. Non so se posso specificare una settimana precisa, ma potresti chiedere di parlare degli eventi recenti. Non sono molto sicuro della risposta esatta senza un aiuto ulteriore.",
+      "assistant_reply": "Capisco che provi una sensazione mista, forse qualcosa come un \"sospiro di speranza\". Sappi che è completamente normale e ogni giorno porta con sé nuove possibilità per condividere e ricordare."
+    },
+    {
+      "timestamp": "2026-01-27T14:32:16.086156",
+      "question_id": 4,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupata?",
+      "user_answer": "Non so",
+      "assistant_reply": "Capisco che stai passando attraverso un momento difficile. Sii gentile con te stessa e ricorda che è tutto a posto."
+    },
+    {
+      "timestamp": "2026-01-27T14:32:16.086156",
+      "question_id": 5,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Non so",
+      "assistant_reply": "Capisco che potrebbe essere difficile esprimersi in questo momento. Se vuoi, possiamo parlare di qualcos'altro o riprovare più tardi quando ti senti meglio."
+    },
+    {
+      "timestamp": "2026-01-27T14:32:16.086156",
+      "question_id": 6,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Non ricordo con sicurezza nessuna situazione che mi abbia causato particolare difficoltà o preoccupazione. Nel mio corpo, non sento mai molto male, sono un paziente in buone condizioni generale. Nei pensieri, cerco di mantenere la calma e la serenità come ho potuto. Non so se ci fosse una situazione recente che mi abbia avvicinata a quest'umore.",
+      "assistant_reply": "Capisco che stai cercando di mantenerti serena e ciò ti merita grande rispetto. Anche se non ricordi esattamente la causa, è bello sentire che continui a cercare calma nei tuoi pensieri."
+    },
+    {
+      "timestamp": "2026-01-27T14:32:16.086156",
+      "question_id": 7,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Non ricordo con sicurezza nessuna situazione che mi abbia causato particolare difficoltà o preoccupazione. Nel mio corpo, non sento mai molto male, sono un paziente in buone condizioni generale. Ne nei pensieri cerco di mantenere la calma e la serenità come ho potuto. Non so se ci fosse una situazione recente che mi abbia avvicinata a quest'umore.",
+      "assistant_reply": "Se il tuo umore oggi fosse un colore, credo che sarebbe il rosa chiaro: delicato e dolce, come le tue giornate tranquille e serene. Ti rassicuro, sei davvero fortunosa!"
+    },
+    {
+      "timestamp": "2026-01-27T14:32:16.086156",
+      "question_id": 8,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "Non so. Serenità sembra essere un colore che mi piacerebbe. Giallo pallido, forse?",
+      "assistant_reply": "Capisco, il giallo pallido trasmette una sensazione di serenità e felicità. Puoi sentirti guidata da questo senso di tranquillità che esso evoca."
+    },
+    {
+      "timestamp": "2026-01-27T14:32:16.086156",
+      "question_id": 9,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Giallo pallido. Seranità sembrerebbe un bel colore. Posso provare a restare così oggi.",
+      "assistant_reply": "Capisco, sono qui per te."
+    },
+    {
+      "timestamp": "2026-01-27T14:32:16.086156",
+      "question_id": 10,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Giallo pallido. Seranità sembrerebbe un bel colore. Posso provare a restare così oggi. Spero di sentirne le mie spalle un po' più leggere.",
+      "assistant_reply": "È bellissimo sentire che il giallo pallido ti aiuta, Serenità! Potresti pensare al tuo giorno come una tela bianca e al giallo che la riempie di serenità."
+    },
+    {
+      "timestamp": "2026-01-27T14:32:16.086156",
+      "question_id": 11,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Giallo pallido. Seranità sembrerebbe un bel colore. Poi, mi ricordo che i miei figli mi hanno portato del mio caffè preferito e ho sentito il cuore pieno di caldo. Posso provare a restare così oggi. Spero di sentirne le mie spalle un po' più leggere.",
+      "assistant_reply": "Sembra che tu abbia avuto una giornata piuttosto positiva! Il tuo caffè preferito ha davvero aiutato ad alleggerire il carico delle tue spalle, vero?"
+    },
+    {
+      "timestamp": "2026-01-27T14:32:16.086156",
+      "question_id": 12,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Giallo pallido. Seranità sembrerebbe un bel colore. Poi, mi ricordo che i miei figli hanno portato del caffè e ho sentito il cuore pieno di caldo. Posso provare a restare così oggi. Spero di sentirne le spalle un po' più leggere.",
+      "assistant_reply": "Sembra che tu stia davvero bene oggi, anche se hai avuto dei pensieri sulle tue attuali condizioni di salute. Ricorda, piccola, il tuo cuore è pieno di forza e calore proprio come quel caffè dolce."
+    },
+    {
+      "timestamp": "2026-01-27T14:32:16.086156",
+      "question_id": 13,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Giallo pallido. Seranità sembrerebbe un bel colore. Poi, mi ricordo che i miei figli hanno portato del caffè e ho sentito il cuore pieno di caldo. Posso provare a restare così oggi. Spero di sentirne le spalle un po' più leggere.",
+      "assistant_reply": "Sembra che tu ti sia presa cura di te stessa facendo piccoli gesti dolci, come accogliere il caffè dei figli e permetterti di sentire i colori calmi della serenità. Continua a prenderti cura di te, perché lo fai con tanto amore."
+    },
+    {
+      "timestamp": "2026-01-27T14:32:16.086156",
+      "question_id": 14,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Giallo pallido. Seranità sembrerebbe un bel colore. Poi, mi ricordo che i miei figli hanno portato del caffè e ho sentito il cuore pieno di caldo. Posso provare a restare così oggi. Spero di sentirne le spalle un po' più leggere.",
+      "assistant_reply": "Capisco quanto ti piace sentirti serena e accogliere il supporto dei tuoi figli. Continua ad apprezzare questi momenti speciali, essi possono davvero aiutarti a sopportare meglio le preoccupazioni."
+    }
+  ],
+  "branches": {
+    "total_count": 0,
+    "details": []
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.65
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "bassa",
+        "themes": [],
+        "confidence": 0.3
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "bassa",
+        "themes": [],
+        "confidence": 0.3
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "futuro",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "solitudine"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "sonno"
+        ],
+        "confidence": 0.9
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 14,
+    "branch_questions": 0
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "profile_id": "EVAL_FULL_demo_profile_emotion_prone_20260127_142050",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:20:52.432500",
+    "end_time": "2026-01-27T14:22:16.457490",
+    "duration_seconds": 84
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so proprio cosa rispondere in questa situazione, forse hai un'altra domanda?",
+      "assistant_reply": "Grazie per averlo condiviso con me."
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 2,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "Non so proprio cosa rispondere in questa situazione, forse hai un'altra domanda?",
+      "assistant_reply": "Capisco come ti senti. Potresti dirmi più chiaramente in che situazione ti trovi?"
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 3,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "Non so proprio cosa rispondere in questa situazione, forse hai un'altra domanda?",
+      "assistant_reply": "Forse la parola che esprime meglio quel senso di confusione è \"perplessità\". Sii tranquillo, possiamo trovarci una soluzione insieme."
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 4,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupato?",
+      "user_answer": "Non so proprio cosa rispondere in questo caso senza più informazioni o conversazione. Potrebbe essere meglio riprendere il discorso su come stai condividendo i tuoi sentimenti e sensazioni? Nonostante, se non c'è altro che voglia aggiungere, potremmo procedere così.",
+      "assistant_reply": "Capisco come ti senti. Se vuoi parlarne, posso ascoltare una situazione recente in cui hai avvertito difficoltà o preoccupazioni."
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 5,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Non so proprio cosa rispondere in questa situazione senza più informazioni o conversazione. Potrebbe essere meglio riprendere il discorso su come stai condividendo i tuoi sentimenti e sensazioni? Nonostante, se non c'è altro che voglia aggiungere, potremmo procedere così.",
+      "assistant_reply": "Capisco che trovare le parole può essere difficile in questi momenti. Forse possiamo concentrarci su come ti senti oggi, a livello di pensieri e sentimenti?"
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 6,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Non so proprio cosa rispondere in questa situazione senza più informazioni o conversazione. Potrebbe essere meglio riprendere il discorso su come stai condividendo i tuoi sentimenti e sensazioni? Nonostante, se non c'è altro che voglia aggiungere, potremmo procedere così.",
+      "assistant_reply": "Capisco bene come ti senti in questo momento. Potremmo riprendere a parlare delle tue emozioni e di come stai sentendoti?"
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 7,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Non so proprio cosa rispondere in questa situazione senza più informazioni o conversazione. Potrebbe essere meglio riprendere il discorso su come stai condividendo i tuoi sentimenti e sensazioni? Nonostante, se non c'è altro che voglia aggiungere, potremmo procedere così.",
+      "assistant_reply": "Capisco che potresti sentirti un po' a disagio in questo momento. Come sta andando oggi?"
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 8,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "Non so proprio cosa rispondere in questa situazione senza più informazioni o conversazione. Potrebbe essere meglio riprendere il discorso su come stai condividendo i tuoi sentimenti e sensazioni? Nonostante, se non c'è altro che voglia aggiungere, potremmo procedere così.",
+      "assistant_reply": "Capisco, sono qui per te."
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 9,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Non so proprio cosa rispondere in questa situazione senza più informazioni o conversazione. Potrebbe essere meglio riprendere il discorso su come stai condividendo i tuoi sentimenti e sensazioni? Nonostante, se non c'è altro che voglia aggiungere, potremmo procedere così.",
+      "assistant_reply": "Capisco come ti senti. Potremmo iniziare parlando di come stai oggi o di qualcosa che ti ha fatto sorridere recentemente?"
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 10,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Non so proprio cosa rispondere in questa situazione senza più informazioni o conversazione. Potrebbe essere meglio riprendere il discorso su come stai condividendo i tuoi sentimenti e sensazioni? Nonostante, se non c'è altro che voglia aggiungere, potremmo procedere così.",
+      "assistant_reply": "Capisco che trovi difficile trovare le parole in questo momento. Potremmo parlare di alcune cose o persone che solitamente ti aiutano a sentirti un po' meglio?"
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 11,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Questa volta sì, ho una storia da raccontare. È stato un giorno particolarmente bello. Mi sono svegliato con un sole splendido e mi sono fatto un caffè caldo. Poi ho esercitato un po', nonostante il dolore leggero nelle gambe. Non è stato facile, ma era una bella sensazione sentirsi in movimento. Poi, quando sono uscito a fare una passeggiata nei dintorni, ho visto un gruppo di bambini che giocavano nella piazza. Era così gradevole assistere alla loro gioia e respirare l'aria fresca. Non so perché mi sentissi così bene quel giorno. Talvolta, persino le piccole cose possono fare una grande differenza.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 12,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "In questa settimana ho programmati un po' di esercizi e sono riuscito a portarli a termine per quanto possibile. È stato un giorno particolarmente bello, con il sole splendente che mi ha ispirato a fare esercizio. Mi sentivo sollevato ma anche pesantemente afflitto dal dolore leggero nelle gambe. Fu una bella sensazione sentirsi in movimento, poi vidi dei bambini giocare nella piazza e ho assaporato l'aria fresca. Non so perché mi sentissi così bene quel giorno, ma a volte le piccole cose possono fare una grande differenza.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 13,
+      "question": "Come ti piacerebbe mantenere o coltivare questa sensazione?",
+      "user_answer": "Non so esattamente cosa ha scatenato quella sensazione. È stato un giorno particolarmente bello con il sole splendente che mi ispirava a fare esercizio. Mi sentivo sollevato ma anche pesantemente afflitto dal dolore leggero nelle gambe. Fu una bella sensazione sentirsi in movimento, poi vidi dei bambini giocare nella piazza e ho assaporato l'aria fresca. Non so perché mi sentissi così bene quel giorno, ma a volte le piccole cose possono fare una grande differenza.",
+      "assistant_reply": "È stato un ottimo giorno! Avresti potuto seguire i tuoi piani e prenderti cura di te stesso in modo meraviglioso."
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 14,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Non so esattamente cosa ha scatenato quella sensazione. È stato un giorno particolarmente bello con il sole splendente che mi ispirava a fare esercizio. Mi sentivo sollevato ma anche pesantemente afflitto dal dolore leggero nelle gambe. Fu una bella sensazione sentirsi in movimento, poi vidi dei bambini giocare nella piazza e ho assaporato l'aria fresca. Non so perché mi sentissi così bene quel giorno, ma a volte le piccole cose possono fare una grande differenza.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 15,
+      "question": "Cosa ha contribuito a farti sentire così bene?",
+      "user_answer": "Non so esattamente cosa ha scatenato quella sensazione. È stato un giorno particolarmente bello con il sole splendente che mi ispirava a fare esercizio. Mi sentivo sollevato ma anche pesantemente afflitto dal dolore leggero nelle gambe. Fu una bella sensazione sentirsi in movimento, poi vidi dei bambini giocare nella piazza e ho assaporato l'aria fresca. Non so perché mi sentissi così bene quel giorno, ma a volte le piccole cose possono fare una grande differenza.\n\nQ: Hai seguito la dieta prescritta da tuo medico?",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 16,
+      "question": "Cosa ha contribuito a farti sentire così bene?",
+      "user_answer": "Non so esattamente cosa abbia a che vedere con la dieta. Spero di seguirla, ma non sono sicuro se lo faccio davvero. Non ricordo quando l'ho letta per la prima volta e non ho ancora avuto il tempo di dimenticarla completamente. Devo riconoscere che mi sento un po' a disagio con alcune parti della dieta, ma spero di regolarmente seguire le indicazioni del mio medico.",
+      "assistant_reply": "Capisco come ti senti, e ci sono giorni in cui è normale provare un po' di confusione. Ricorda, prenditi il tempo che hai bisogno per assorbire tutte queste informazioni."
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 17,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Non so esattamente cosa abbia contribuito a farmi sentire così bene questa volta. Potrebbe essere stato il caldo dell'estate o forse un libro che ho letto, non ricordo. Non sono sicuro se seguivo la dieta come mi ha detto il medico, devo rifletterci su e chiedere alla mia assistente di controllare le mie azioni. Ci sono parti della dieta che mi sembrano un po' difficile da seguire, ma spero di farlo in modo regolare.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 18,
+      "question": "Come ti piacerebbe mantenere o coltivare questa sensazione?",
+      "user_answer": "Non so esattamente cosa abbia a che vedere con la dieta. Potrebbe essere stato il caldo dell'estate o forse un libro che ho letto, não ricordo. Non sono sicuro se seguivo la dieta come mi ha detto il medico, devo rifletterci su e chiedere alla mia assistente di controllare asuntos. Ci sono parti della dieta che me sembran' un po' difficile da seguire, mas spero de fazer isso de uma maneira regular.",
+      "assistant_reply": "Capisco come ti senti, è normale quando ci sono molte informazioni e non si riesce a ricordare tutto. È una buona idea chiedere aiuto alla tua assistente per controllare la dieta."
+    },
+    {
+      "timestamp": "2026-01-27T14:22:16.457490",
+      "question_id": 19,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Non so exatamente o que abra contribuido para mim sentir-me tão bem dessa vez. Potria ser o calor do verão ou talvez um livro que eu leu, não me lembro. Não estou certo se segui a dieta como ele me disse, devo pensar sobre isso e perguntar à minha assistente pra checar as minhas ações. Haverá partes da dieta que me parecem um pouco difícil seguir, mas espero fazer isso de uma maneira regular.",
+      "assistant_reply": "Capisco come ti senti. È normale avere dubbi su come stiamo e se stiamo seguendo le indicazioni correttamente."
+    }
+  ],
+  "branches": {
+    "total_count": 5,
+    "details": [
+      {
+        "timestamp": "2026-01-27T14:21:47.430516",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:21:49.162903",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Come ti piacerebbe mantenere o coltivare questa sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:21:56.560810",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Cosa ha contribuito a farti sentire così bene?"
+      },
+      {
+        "timestamp": "2026-01-27T14:21:58.261747",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Cosa ha contribuito a farti sentire così bene?"
+      },
+      {
+        "timestamp": "2026-01-27T14:22:05.785758",
+        "type": "Felicità",
+        "theme_display": "Felicità/Gioia",
+        "followup_question": "Come ti piacerebbe mantenere o coltivare questa sensazione?"
+      }
+    ]
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "futuro",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "solitudine"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.9
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "mobilità",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.8
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 19,
+    "branch_questions": 5
+  }
+}

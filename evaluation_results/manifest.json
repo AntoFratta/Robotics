@@ -1,0 +1,243 @@
+{
+  "metadata": {
+    "seed": 42,
+    "num_sessions_per_config": 10,
+    "total_sessions": 20,
+    "simulator_model": "qwen2.5:3b",
+    "simulator_temperature": 0.7,
+    "profiles_used": [
+      "demo_profile_01",
+      "demo_profile_02",
+      "demo_profile_03_minimal",
+      "demo_profile_cognitive_mild_impairment",
+      "demo_profile_emotion_prone",
+      "demo_profile_social_isolation",
+      "demo_profile_fragmented_sleep",
+      "demo_profile_complex_conditions",
+      "demo_profile_evasive_style",
+      "demo_profile_high_personalization_signal"
+    ]
+  },
+  "sessions": [
+    {
+      "session_index": 1,
+      "config": "FULL",
+      "profile_name": "demo_profile_01",
+      "patient_id": "EVAL_FULL_demo_profile_01_20260127_140845",
+      "routing_enabled": true,
+      "timestamp": "20260127_140845",
+      "total_questions": 14,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_01_20260127_140845\\2026-01-27_14-08-46.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_01_20260127_140845\\2026-01-27_14-08-46.csv"
+    },
+    {
+      "session_index": 2,
+      "config": "NO_ROUTING",
+      "profile_name": "demo_profile_01",
+      "patient_id": "EVAL_NO_ROUTING_demo_profile_01_20260127_141104",
+      "routing_enabled": false,
+      "timestamp": "20260127_141104",
+      "total_questions": 14,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_01_20260127_141104\\2026-01-27_14-11-05.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_01_20260127_141104\\2026-01-27_14-11-05.csv"
+    },
+    {
+      "session_index": 3,
+      "config": "FULL",
+      "profile_name": "demo_profile_02",
+      "patient_id": "EVAL_FULL_demo_profile_02_20260127_141233",
+      "routing_enabled": true,
+      "timestamp": "20260127_141233",
+      "total_questions": 14,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_02_20260127_141233\\2026-01-27_14-12-34.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_02_20260127_141233\\2026-01-27_14-12-34.csv"
+    },
+    {
+      "session_index": 4,
+      "config": "NO_ROUTING",
+      "profile_name": "demo_profile_02",
+      "patient_id": "EVAL_NO_ROUTING_demo_profile_02_20260127_141338",
+      "routing_enabled": false,
+      "timestamp": "20260127_141338",
+      "total_questions": 14,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_02_20260127_141338\\2026-01-27_14-13-40.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_02_20260127_141338\\2026-01-27_14-13-40.csv"
+    },
+    {
+      "session_index": 5,
+      "config": "FULL",
+      "profile_name": "demo_profile_03_minimal",
+      "patient_id": "EVAL_FULL_demo_profile_03_minimal_20260127_141450",
+      "routing_enabled": true,
+      "timestamp": "20260127_141450",
+      "total_questions": 25,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_03_minimal_20260127_141450\\2026-01-27_14-14-51.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_03_minimal_20260127_141450\\2026-01-27_14-14-51.csv"
+    },
+    {
+      "session_index": 6,
+      "config": "NO_ROUTING",
+      "profile_name": "demo_profile_03_minimal",
+      "patient_id": "EVAL_NO_ROUTING_demo_profile_03_minimal_20260127_141621",
+      "routing_enabled": false,
+      "timestamp": "20260127_141621",
+      "total_questions": 14,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_03_minimal_20260127_141621\\2026-01-27_14-16-22.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_03_minimal_20260127_141621\\2026-01-27_14-16-22.csv"
+    },
+    {
+      "session_index": 7,
+      "config": "FULL",
+      "profile_name": "demo_profile_cognitive_mild_impairment",
+      "patient_id": "EVAL_FULL_demo_profile_cognitive_mild_impairment_20260127_141740",
+      "routing_enabled": true,
+      "timestamp": "20260127_141740",
+      "total_questions": 42,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_cognitive_mild_impairment_20260127_141740\\2026-01-27_14-17-42.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_cognitive_mild_impairment_20260127_141740\\2026-01-27_14-17-42.csv"
+    },
+    {
+      "session_index": 8,
+      "config": "NO_ROUTING",
+      "profile_name": "demo_profile_cognitive_mild_impairment",
+      "patient_id": "EVAL_NO_ROUTING_demo_profile_cognitive_mild_impairment_20260127_141932",
+      "routing_enabled": false,
+      "timestamp": "20260127_141932",
+      "total_questions": 14,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_cognitive_mild_impairment_20260127_141932\\2026-01-27_14-19-34.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_cognitive_mild_impairment_20260127_141932\\2026-01-27_14-19-34.csv"
+    },
+    {
+      "session_index": 9,
+      "config": "FULL",
+      "profile_name": "demo_profile_emotion_prone",
+      "patient_id": "EVAL_FULL_demo_profile_emotion_prone_20260127_142050",
+      "routing_enabled": true,
+      "timestamp": "20260127_142050",
+      "total_questions": 19,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_emotion_prone_20260127_142050\\2026-01-27_14-20-52.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_emotion_prone_20260127_142050\\2026-01-27_14-20-52.csv"
+    },
+    {
+      "session_index": 10,
+      "config": "NO_ROUTING",
+      "profile_name": "demo_profile_emotion_prone",
+      "patient_id": "EVAL_NO_ROUTING_demo_profile_emotion_prone_20260127_142216",
+      "routing_enabled": false,
+      "timestamp": "20260127_142216",
+      "total_questions": 14,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_emotion_prone_20260127_142216\\2026-01-27_14-22-18.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_emotion_prone_20260127_142216\\2026-01-27_14-22-18.csv"
+    },
+    {
+      "session_index": 11,
+      "config": "FULL",
+      "profile_name": "demo_profile_social_isolation",
+      "patient_id": "EVAL_FULL_demo_profile_social_isolation_20260127_142329",
+      "routing_enabled": true,
+      "timestamp": "20260127_142329",
+      "total_questions": 42,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_social_isolation_20260127_142329\\2026-01-27_14-23-31.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_social_isolation_20260127_142329\\2026-01-27_14-23-31.csv"
+    },
+    {
+      "session_index": 12,
+      "config": "NO_ROUTING",
+      "profile_name": "demo_profile_social_isolation",
+      "patient_id": "EVAL_NO_ROUTING_demo_profile_social_isolation_20260127_142523",
+      "routing_enabled": false,
+      "timestamp": "20260127_142523",
+      "total_questions": 14,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_social_isolation_20260127_142523\\2026-01-27_14-25-24.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_social_isolation_20260127_142523\\2026-01-27_14-25-24.csv"
+    },
+    {
+      "session_index": 13,
+      "config": "FULL",
+      "profile_name": "demo_profile_fragmented_sleep",
+      "patient_id": "EVAL_FULL_demo_profile_fragmented_sleep_20260127_142639",
+      "routing_enabled": true,
+      "timestamp": "20260127_142639",
+      "total_questions": 15,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_fragmented_sleep_20260127_142639\\2026-01-27_14-26-41.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_fragmented_sleep_20260127_142639\\2026-01-27_14-26-41.csv"
+    },
+    {
+      "session_index": 14,
+      "config": "NO_ROUTING",
+      "profile_name": "demo_profile_fragmented_sleep",
+      "patient_id": "EVAL_NO_ROUTING_demo_profile_fragmented_sleep_20260127_142756",
+      "routing_enabled": false,
+      "timestamp": "20260127_142756",
+      "total_questions": 14,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_fragmented_sleep_20260127_142756\\2026-01-27_14-27-57.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_fragmented_sleep_20260127_142756\\2026-01-27_14-27-57.csv"
+    },
+    {
+      "session_index": 15,
+      "config": "FULL",
+      "profile_name": "demo_profile_complex_conditions",
+      "patient_id": "EVAL_FULL_demo_profile_complex_conditions_20260127_142911",
+      "routing_enabled": true,
+      "timestamp": "20260127_142911",
+      "total_questions": 40,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_complex_conditions_20260127_142911\\2026-01-27_14-29-13.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_complex_conditions_20260127_142911\\2026-01-27_14-29-13.csv"
+    },
+    {
+      "session_index": 16,
+      "config": "NO_ROUTING",
+      "profile_name": "demo_profile_complex_conditions",
+      "patient_id": "EVAL_NO_ROUTING_demo_profile_complex_conditions_20260127_143100",
+      "routing_enabled": false,
+      "timestamp": "20260127_143100",
+      "total_questions": 14,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_complex_conditions_20260127_143100\\2026-01-27_14-31-01.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_complex_conditions_20260127_143100\\2026-01-27_14-31-01.csv"
+    },
+    {
+      "session_index": 17,
+      "config": "FULL",
+      "profile_name": "demo_profile_evasive_style",
+      "patient_id": "EVAL_FULL_demo_profile_evasive_style_20260127_143216",
+      "routing_enabled": true,
+      "timestamp": "20260127_143216",
+      "total_questions": 15,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_evasive_style_20260127_143216\\2026-01-27_14-32-17.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_evasive_style_20260127_143216\\2026-01-27_14-32-17.csv"
+    },
+    {
+      "session_index": 18,
+      "config": "NO_ROUTING",
+      "profile_name": "demo_profile_evasive_style",
+      "patient_id": "EVAL_NO_ROUTING_demo_profile_evasive_style_20260127_143326",
+      "routing_enabled": false,
+      "timestamp": "20260127_143326",
+      "total_questions": 14,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_evasive_style_20260127_143326\\2026-01-27_14-33-28.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_evasive_style_20260127_143326\\2026-01-27_14-33-28.csv"
+    },
+    {
+      "session_index": 19,
+      "config": "FULL",
+      "profile_name": "demo_profile_high_personalization_signal",
+      "patient_id": "EVAL_FULL_demo_profile_high_personalization_signal_20260127_143439",
+      "routing_enabled": true,
+      "timestamp": "20260127_143439",
+      "total_questions": 32,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_high_personalization_signal_20260127_143439\\2026-01-27_14-34-41.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_FULL_demo_profile_high_personalization_signal_20260127_143439\\2026-01-27_14-34-41.csv"
+    },
+    {
+      "session_index": 20,
+      "config": "NO_ROUTING",
+      "profile_name": "demo_profile_high_personalization_signal",
+      "patient_id": "EVAL_NO_ROUTING_demo_profile_high_personalization_signal_20260127_143607",
+      "routing_enabled": false,
+      "timestamp": "20260127_143607",
+      "total_questions": 14,
+      "json_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_high_personalization_signal_20260127_143607\\2026-01-27_14-36-08.json",
+      "csv_path": "C:\\Users\\Antonio\\Desktop\\Robotics-1\\evaluation_results\\sessions\\EVAL_NO_ROUTING_demo_profile_high_personalization_signal_20260127_143607\\2026-01-27_14-36-08.csv"
+    }
+  ]
+}

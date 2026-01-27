@@ -1,0 +1,760 @@
+{
+  "profile_id": "EVAL_FULL_demo_profile_high_personalization_signal_20260127_143439",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:34:41.001772",
+    "end_time": "2026-01-27T14:36:07.022028",
+    "duration_seconds": 86
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so... Non ricordo... Ansioso per saber como va el tratamiento...",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 2,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "None",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 3,
+      "question": "Capisco. A volte può essere difficile ricordare. C'è qualche piccolo dettaglio che ti viene in mente?",
+      "user_answer": "None",
+      "assistant_reply": "Capisco, grazie per averlo condiviso."
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 4,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "Non so, forse era umido lá dentro? Non mi ricordo.",
+      "assistant_reply": "Capisco come ti senti. Spesso i ricordi possono diventare sfocati con il tempo e le sensazioni estranee, come un'umidità, potrebbero influenzarli ulteriormente."
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 5,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "Non so, forse era umido là dentro? Non mi ricordo.",
+      "assistant_reply": "Forse \"confusa\" potrebbe essere una buona parola per descriverla. È normale quando le cose non sono chiare sentirci un po' confusi."
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 6,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupata?",
+      "user_answer": "Non so, forse era umido là dentro? Non mi ricordo.",
+      "assistant_reply": "Capisco come ti senti. Spesso le nostre membra di memoria possono giocare brutti scherzi su di noi."
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 7,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Non so, forse era umido là dentro? Non mi ricordo.",
+      "assistant_reply": "Ti ascolto con attenzione."
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 8,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Non so, forse ero lì per un esame e sentivo disagio. Non ricordo se mi sono sentita particolarmente preoccupata, solo confusa com'è normale in situazioni nuove.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 9,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Non so, forse ero lì per un esame e sentivo disagio. Non ricordo se mi sono sentita particolarmente preoccupata, solo confusa com'è normale in situazioni nuove.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 10,
+      "question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?",
+      "user_answer": "Non so, forse ero lì per un esame e sentivo disagio. Non ricordo se mi sono sentita particolarmente preoccupata, solo confusa com'è normale in situazioni nuove.",
+      "assistant_reply": "Ti ringrazio per la tua sincerità."
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 11,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Non so, forse ero lì per un esame e sentivo disagio. Non ricordo se mi sono sentita particolarmente preoccupata, solo confusa com'è normale in situazioni nuove.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 12,
+      "question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?",
+      "user_answer": "Non so, ma forse avrei detto grigio... come una giornata neutrale senza nessun cambiamento emotivo noto. Non ricordo se oggi fosse particolarmente stressante o tranquillo. Sentivo solo confusione.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 13,
+      "question": "Quando ti senti triste, riesci a identificare un motivo specifico?",
+      "user_answer": "Non so, ma forse sarebbe stato blu... come un pensiero che sfuggiva alla mia mente. Non ricordo esattamente perché sentissi quella sensazione di confusione e disagio.",
+      "assistant_reply": "Capisco come ti senti. È normale avere questi momenti in cui le emozioni si mescolano in modo complesso."
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 14,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "Non so, potrebbe essere nero... come quando penso a cose della mia vita passata e mi chiedo se avrò ancora un ruolo importante. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quell'umore di confusione e nostalgia.",
+      "assistant_reply": "Capisco bene quanto possano essere duri quei momenti di confusione e nostalgia. Sovente, riflettere sulle nostre esperienze passate può farci sentire in quel modo."
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 15,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Non so, potrebbe essere grigio... come quando penso alle vecchie malattie e come mi sento adesso con l'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 16,
+      "question": "Quando ti senti triste, riesci a identificare un motivo specifico?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 17,
+      "question": "Quando ti senti triste, riesci a identificare un motivo specifico?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": "Capisco bene come ti senti, cara. Ricordati che è normale avere questi momenti, anche se non capiamo esattamente dove vengono dalla nostra mente."
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 18,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 19,
+      "question": "Quando ti senti triste, riesci a identificare un motivo specifico?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 20,
+      "question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": "Capisco quanto può essere difficile quando ti senti così. Potrebbe aiutarti parlarne o forse un po' di musica o una foto di un paesaggio invernale?"
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 21,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 22,
+      "question": "Questa sensazione è presente durante tutta la giornata o va e viene?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 23,
+      "question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": "Mi dispiace molto sentirti così. È normale trovarsi in quei momenti, ma ricorda che anche le giornate più nere si passano."
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 24,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 25,
+      "question": "Questa sensazione è presente durante tutta la giornata o va e viene?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 26,
+      "question": "Quando ti senti triste, riesci a identificare un motivo specifico?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": "Capisco che stai passando attraverso momenti difficili, ma cerca di pensare ai piccoli miglioramenti che puoi fare, come prenderti i tuoi farmaci in orario o fare una pausa per riposare. Siamo qui per supportarti."
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 27,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 28,
+      "question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 29,
+      "question": "Quando ti senti triste, riesci a identificare un motivo specifico?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": "Capisco quanto possa essere difficile quando ti senti così. Forse potresti provare a fare un'inferiorazione del dolore con la musica o il calore, anche per un po'."
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 30,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 31,
+      "question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:36:07.022028",
+      "question_id": 32,
+      "question": "Quando ti senti triste, riesci a identificare un motivo specifico?",
+      "user_answer": "Non so, potrebbe essere blu... come quando penso alle giornate d'inverno e come mi sento isolato per via dell'artrite reumatoida. Non ricordo se oggi ho pensato a qualcosa che abbia provocato quel senso di tristezza e angoscia.",
+      "assistant_reply": "Capisco come ti senti, e ti ascolto con compassione. So che l'artrite reumatoida può rendere difficile affrontare le giornate, specialmente in questo periodo freddo."
+    }
+  ],
+  "branches": {
+    "total_count": 18,
+    "details": [
+      {
+        "timestamp": "2026-01-27T14:34:43.136900",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:34:43.296430",
+        "type": "evasive",
+        "theme_display": "Risposta evasiva",
+        "followup_question": "Capisco. A volte può essere difficile ricordare. C'è qualche piccolo dettaglio che ti viene in mente?"
+      },
+      {
+        "timestamp": "2026-01-27T14:35:03.547542",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:35:04.484775",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Puoi dirmi in quale momento della giornata ti capita più spesso di sentirti così?"
+      },
+      {
+        "timestamp": "2026-01-27T14:35:10.614691",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando ti senti in questo modo, riesci a capire cosa ha scatenato quella sensazione?"
+      },
+      {
+        "timestamp": "2026-01-27T14:35:11.623647",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Quando ti senti triste, riesci a identificare un motivo specifico?"
+      },
+      {
+        "timestamp": "2026-01-27T14:35:23.646647",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Quando ti senti triste, riesci a identificare un motivo specifico?"
+      },
+      {
+        "timestamp": "2026-01-27T14:35:24.792433",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Quando ti senti triste, riesci a identificare un motivo specifico?"
+      },
+      {
+        "timestamp": "2026-01-27T14:35:31.193754",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Quando ti senti triste, riesci a identificare un motivo specifico?"
+      },
+      {
+        "timestamp": "2026-01-27T14:35:32.333549",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?"
+      },
+      {
+        "timestamp": "2026-01-27T14:35:38.835559",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Questa sensazione è presente durante tutta la giornata o va e viene?"
+      },
+      {
+        "timestamp": "2026-01-27T14:35:39.996045",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?"
+      },
+      {
+        "timestamp": "2026-01-27T14:35:46.550395",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Questa sensazione è presente durante tutta la giornata o va e viene?"
+      },
+      {
+        "timestamp": "2026-01-27T14:35:47.719764",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Quando ti senti triste, riesci a identificare un motivo specifico?"
+      },
+      {
+        "timestamp": "2026-01-27T14:35:54.240510",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?"
+      },
+      {
+        "timestamp": "2026-01-27T14:35:55.392251",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Quando ti senti triste, riesci a identificare un motivo specifico?"
+      },
+      {
+        "timestamp": "2026-01-27T14:36:01.698434",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "C'è qualche momento recente in cui ti sei sentito un po' meglio, anche solo per poco?"
+      },
+      {
+        "timestamp": "2026-01-27T14:36:02.845720",
+        "type": "Tristezza",
+        "theme_display": "Tristezza/Solitudine",
+        "followup_question": "Quando ti senti triste, riesci a identificare un motivo specifico?"
+      }
+    ]
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "futuro",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.9
+      }
+    },
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "bassa",
+        "themes": [],
+        "confidence": 0.3
+      }
+    },
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "bassa",
+        "themes": [],
+        "confidence": 0.3
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "futuro",
+          "salute fisica",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "futuro",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "salute fisica",
+          "sonno",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "futuro",
+          "sonno",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "sonno",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "salute fisica",
+          "famiglia",
+          "solitudine"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "alta",
+        "themes": [
+          "solitudine",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 32,
+    "branch_questions": 18
+  }
+}

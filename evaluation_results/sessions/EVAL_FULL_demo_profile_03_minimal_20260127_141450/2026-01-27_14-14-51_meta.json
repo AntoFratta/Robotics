@@ -1,0 +1,12 @@
+{
+  "patient_id": "EVAL_FULL_demo_profile_03_minimal_20260127_141450",
+  "session_start": "2026-01-27T14:14:51.830117",
+  "session_end": "2026-01-27T14:16:21.366811",
+  "duration_seconds": 89,
+  "total_questions": 25,
+  "profile_summary": {
+    "age": 75,
+    "gender": "N/A",
+    "main_condition": "N/A"
+  }
+}

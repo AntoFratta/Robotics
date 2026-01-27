@@ -1,0 +1,12 @@
+{
+  "patient_id": "EVAL_FULL_demo_profile_emotion_prone_20260127_142050",
+  "session_start": "2026-01-27T14:20:52.432500",
+  "session_end": "2026-01-27T14:22:16.457490",
+  "duration_seconds": 84,
+  "total_questions": 19,
+  "profile_summary": {
+    "age": 76,
+    "gender": "M",
+    "main_condition": "Artrosi diffusa"
+  }
+}

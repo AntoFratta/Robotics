@@ -1,0 +1,12 @@
+{
+  "patient_id": "EVAL_NO_ROUTING_demo_profile_cognitive_mild_impairment_20260127_141932",
+  "session_start": "2026-01-27T14:19:34.154422",
+  "session_end": "2026-01-27T14:20:50.659543",
+  "duration_seconds": 76,
+  "total_questions": 14,
+  "profile_summary": {
+    "age": 83,
+    "gender": "F",
+    "main_condition": "Lieve deterioramento cognitivo (MCI)"
+  }
+}

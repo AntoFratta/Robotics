@@ -1,0 +1,12 @@
+{
+  "patient_id": "EVAL_FULL_demo_profile_evasive_style_20260127_143216",
+  "session_start": "2026-01-27T14:32:17.746628",
+  "session_end": "2026-01-27T14:33:26.901313",
+  "duration_seconds": 69,
+  "total_questions": 15,
+  "profile_summary": {
+    "age": 80,
+    "gender": "M",
+    "main_condition": "Diabete"
+  }
+}

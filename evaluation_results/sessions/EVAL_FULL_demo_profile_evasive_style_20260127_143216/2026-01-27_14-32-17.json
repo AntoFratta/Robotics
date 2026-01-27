@@ -1,0 +1,319 @@
+{
+  "profile_id": "EVAL_FULL_demo_profile_evasive_style_20260127_143216",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:32:17.746628",
+    "end_time": "2026-01-27T14:33:26.901313",
+    "duration_seconds": 69
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:33:26.901313",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so, non ricordo, forse ho dormito un po'.",
+      "assistant_reply": "Capisco quello che mi dici."
+    },
+    {
+      "timestamp": "2026-01-27T14:33:26.901313",
+      "question_id": 2,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "Non ricordo se abbia mai avuto quel momento. Forse era una settimana buona per il mio sonno.",
+      "assistant_reply": "Capisco, magari un po' più di riposo ti ha fatto sentire diverso quella settimana. Se hai bisogno di parlare di più, sono qui per ascoltarti."
+    },
+    {
+      "timestamp": "2026-01-27T14:33:26.901313",
+      "question_id": 3,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "Non so, non ricordo di averne sentito uno speciale. Potrebbe essere stato perché mi sono addormentato più del solito quella settimana.",
+      "assistant_reply": "Capisco come ti senti. Forse potremmo descriverlo con la parola \"vago\"."
+    },
+    {
+      "timestamp": "2026-01-27T14:33:26.901313",
+      "question_id": 4,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupato?",
+      "user_answer": "Settimana buona per il mio sonno.",
+      "assistant_reply": "Capisco, sembra che tu abbia avuto una settimana di buon riposo! Se hai bisogno di parlare di qualcosa che ti sta causando preoccupazione, sono qui per ascoltarti."
+    },
+    {
+      "timestamp": "2026-01-27T14:33:26.901313",
+      "question_id": 5,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Non so, não me lembro de sentir nenhuma dificuldade específica. Sonha muito há tempos.",
+      "assistant_reply": "Capisco, sembra che tu stia bene e non senta nessun particolare disagio. Spero che continui a sognare molto!"
+    },
+    {
+      "timestamp": "2026-01-27T14:33:26.901313",
+      "question_id": 6,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Non so, não me lembro de aver provado muita dificuldade ou preoccupazione em especial naquele momento. Sonho bastante, há tempos.",
+      "assistant_reply": ""
+    },
+    {
+      "timestamp": "2026-01-27T14:33:26.901313",
+      "question_id": 7,
+      "question": "Quando avverti paura o ansia, cosa noti per primo?",
+      "user_answer": "Sonha bastanti e parece que o sonhar é algo que ajuda a manter-me calmo nesta situação.",
+      "assistant_reply": "Sembri aver trovato un po' di calma nel dormire e nei tuoi sogni, che è una cosa positiva. Continua a fare ciò che ti aiuta a sentirti meglio!"
+    },
+    {
+      "timestamp": "2026-01-27T14:33:26.901313",
+      "question_id": 8,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Sonho bastante e isso me ajuda mesmo assim. Não vejo nada de errado com essa resposta?",
+      "assistant_reply": "Se il tuo umore oggi fosse un colore, forse sarebbe un blu sereno. Spero che i tuoi sogni continui a portarti conforto."
+    },
+    {
+      "timestamp": "2026-01-27T14:33:26.901313",
+      "question_id": 9,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "Sonha bastanti e parece que o sonhar é algo que ajuda a manter-me calmo nesta situação. Não vejo nada de errado em dizer que o meu umore hoje seria verde, por exemplo. Sonho muito mesmo assim.",
+      "assistant_reply": "Il verde rappresenta la pace e la serenità, come i tuoi sogni che ti aiutano a restare calmo. È come se i tuoi sogni fossero un albero che cresce nella tua mente, portando con sé la tranquillità."
+    },
+    {
+      "timestamp": "2026-01-27T14:33:26.901313",
+      "question_id": 10,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Não vejo nada de errado com escolher o verde para hoje. Sonho bastante e parece que o sonhar é algo que ajuda a manter-me calmo nesta situação.",
+      "assistant_reply": "Capisco molto bene il tuo senso del calma. Ricordati, come una volta hai sognato di camminare in un giardino pieno di verdi foglie, anche oggi puoi sentirti tranquillo e sereno."
+    },
+    {
+      "timestamp": "2026-01-27T14:33:26.901313",
+      "question_id": 11,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Sonha bastantes e parece que o sonhar é algo que ajuda a manter-me calmo nesta situação. Não vejo nada de errado com escolher o verde para hoje. Sonho bastante mesmo assim.",
+      "assistant_reply": "Il tuo sonno sembra proprio un grande aiuto per te, mantenerti sereno in questi momenti. Continua a fare quella scelta che ti fa sentire bene, anche il colore verde può portarti pace."
+    },
+    {
+      "timestamp": "2026-01-27T14:33:26.901313",
+      "question_id": 12,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Sonho bastantes e parece que o sonhar é algo que ajuda a manter-me calmo nesta situação. Sonho bastante mesmo assim.",
+      "assistant_reply": "Sì, ho cercato di realizzare quanto più possibile i miei piani per la settimana. So che i sogni possono aiutare a mantenere il morale alta, e anche se sognare non risolve tutto, mi fa sentire un po' meglio."
+    },
+    {
+      "timestamp": "2026-01-27T14:33:26.901313",
+      "question_id": 13,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Sonho bastantes e parece que o sonhar é algo que ajuda a manter-me calmo nesta situação. Sonho bastante mesmo assim.",
+      "assistant_reply": "Sono felice che i tuoi sogni ti aiutino a rimanere sereno in questi giorni. Se hai bisogno di qualcosa, fammi sapere!"
+    },
+    {
+      "timestamp": "2026-01-27T14:33:26.901313",
+      "question_id": 14,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Sonho bastantes e parece que o sonhar é algo que ajuda a manter-me calmo nesta situação. Sonho bastante mesmo assim.",
+      "assistant_reply": "È bello sentire che trovi conforto nel dormire e nei sogni. Spero che questi momenti di riposo ti aiutino a gestire tutto meglio."
+    },
+    {
+      "timestamp": "2026-01-27T14:33:26.901313",
+      "question_id": 15,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Sonho bastantes e parece que o sonhar é algo que ajuda a manter-me calmo nesta situação. Sonho bastante mesmo assim.",
+      "assistant_reply": "Capisco bene i tuoi sogni possono aiutarti a mantenere la calma, ma se c'è qualcosa che ti preoccupa riguardo alla tua salute o alle tue giornate, è importante parlarne. Sono qui per ascoltarti e supportarti."
+    }
+  ],
+  "branches": {
+    "total_count": 1,
+    "details": [
+      {
+        "timestamp": "2026-01-27T14:32:43.512376",
+        "type": "Paura",
+        "theme_display": "Paura/Ansia",
+        "followup_question": "Quando avverti paura o ansia, cosa noti per primo?"
+      }
+    ]
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "futuro",
+          "salute fisica"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "famiglia"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "sonno"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "famiglia"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "alta",
+        "themes": [
+          "sonno",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Paura",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "famiglia"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "salute fisica"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Tristezza",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "famiglia"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "futuro",
+          "solitudine",
+          "routine quotidiana"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "famiglia",
+          "routine quotidiana"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "sonno",
+          "famiglia"
+        ],
+        "confidence": 0.8
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 15,
+    "branch_questions": 1
+  }
+}

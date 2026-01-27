@@ -1,0 +1,300 @@
+{
+  "profile_id": "EVAL_FULL_demo_profile_01_20260127_140845",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:08:46.735284",
+    "end_time": "2026-01-27T14:11:04.403845",
+    "duration_seconds": 137
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:11:04.401837",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so, forse potremmo parlare di come è andata oggi? Non ricordo tutto, ma ci provo.",
+      "assistant_reply": "Certo, possiamo parlarne. Come stai sentendoti adesso?"
+    },
+    {
+      "timestamp": "2026-01-27T14:11:04.401837",
+      "question_id": 2,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "Non so, forse potremmo parlare di come è andata oggi? Non ricordo tutto, ma ci provo.",
+      "assistant_reply": "Certo, possiamo parlarne. Come ti senti in questo momento?"
+    },
+    {
+      "timestamp": "2026-01-27T14:11:04.401837",
+      "question_id": 3,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "Non so, forse potremmo parlare di come è andata oggi? Non ricordo tutto, ma ci provo.",
+      "assistant_reply": "Forse \"confusione\" esprime bene quel senso di non certezza. Se vuoi, possiamo ripassarlo insieme e trovare qualcosa che ti aiuti a ricordare meglio."
+    },
+    {
+      "timestamp": "2026-01-27T14:11:04.401837",
+      "question_id": 4,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupato?",
+      "user_answer": "Non so, forse potremmo parlare di come è andata oggi? Non ricordo tutto, ma ci provo.",
+      "assistant_reply": "Certo, possiamo parlarne. Anche se non ricordi tutto, ogni pezzo di informazione può aiutarti a tornare indietro nel tempo e a riflettere sulle tue giornate."
+    },
+    {
+      "timestamp": "2026-01-27T14:11:04.401837",
+      "question_id": 5,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Non so, forse potremmo parlare di come è andata oggi? Non ricordo tutto, ma ci provo.",
+      "assistant_reply": "Capisco, parliamo lentamente e alla tua velocità. Forse ripercorrendo i momenti ti verranno in mente delle emozioni che puoi condividere quando sarai pronto."
+    },
+    {
+      "timestamp": "2026-01-27T14:11:04.401837",
+      "question_id": 6,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Non so, forse potremmo parlare di come è andata oggi? Non ricordo tutto, ma ci provo.",
+      "assistant_reply": "Certo, possiamo parlarne. Ti ascolto e insieme possiamo riflettere su come stai sentendoti oggi."
+    },
+    {
+      "timestamp": "2026-01-27T14:11:04.401837",
+      "question_id": 7,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Non so, forse potremmo parlare di come è andata oggi? Non ricordo tutto, ma ci provo.",
+      "assistant_reply": "Ti ringrazio per la tua sincerità."
+    },
+    {
+      "timestamp": "2026-01-27T14:11:04.401837",
+      "question_id": 8,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "Non so, forse potremmo parlare di come è andata oggi? Non ricordo tutto, ma ci provo.",
+      "assistant_reply": "Capisco che non sia facile ricordare tutte le cose del giorno. Parliamo pure di quello che ti viene in mente, magari ne usciranno anche belle sorprese!"
+    },
+    {
+      "timestamp": "2026-01-27T14:11:04.401837",
+      "question_id": 9,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Non so, forse potremmo parlare di come è andata oggi? Non ricordo tutto, ma ci provo.",
+      "assistant_reply": "Certamente, possiamo ripensare insieme a un momento del giorno o della giornata passata. Anche se non ti ricordi bene, ogni piccola cosa può essere importante e ci aiuta a capirti meglio."
+    },
+    {
+      "timestamp": "2026-01-27T14:11:04.401837",
+      "question_id": 10,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Non so, forse potremmo parlare di come è andata oggi? Non ricordo tutto, ma ci provo.",
+      "assistant_reply": "Certamente, parliamo un po'. Anche se non ricordi tutto, ogni piccola cosa aiuta a far passare il tempo in modo meno difficile."
+    },
+    {
+      "timestamp": "2026-01-27T14:11:04.401837",
+      "question_id": 11,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Non so, forse potremmo parlare di come è andata oggi? Non ricordo tutto, ma ci provo.",
+      "assistant_reply": "Certo, parliamone. Anche se non ti ricordi tutto, posso ascoltarti e aiutarti a riorganizzare i tuoi pensieri."
+    },
+    {
+      "timestamp": "2026-01-27T14:11:04.401837",
+      "question_id": 12,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Non so, forse potremmo parlare di come è andata oggi? Non ricordo tutto, ma ci provo.",
+      "assistant_reply": "Certo, possiamo farlo insieme. Raccontami cosa ti viene in mente delle ultime giornate e insieme possiamo riflettere su come andarono."
+    },
+    {
+      "timestamp": "2026-01-27T14:11:04.401837",
+      "question_id": 13,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Non so, forse potremmo parlare di come è andata oggi? Non ricordo tutto, ma ci provo.",
+      "assistant_reply": "Certo, possiamo parlarne. Come ti senti se raccontami brevemente cosa hai fatto oggi o in questi giorni?"
+    },
+    {
+      "timestamp": "2026-01-27T14:11:04.401837",
+      "question_id": 14,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Non so, forse potremmo parlare di come è andata oggi? Non ricordo tutto, ma ci provo.",
+      "assistant_reply": "Certo, possiamo parlarne. Come stai sentendoti oggi?"
+    }
+  ],
+  "branches": {
+    "total_count": 0,
+    "details": []
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "salute fisica"
+        ],
+        "confidence": 0.65
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.7
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Neutralità",
+        "intensity": "media",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.8
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 14,
+    "branch_questions": 0
+  }
+}

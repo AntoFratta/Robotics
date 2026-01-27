@@ -1,0 +1,300 @@
+{
+  "profile_id": "EVAL_NO_ROUTING_demo_profile_02_20260127_141338",
+  "session_metadata": {
+    "start_time": "2026-01-27T14:13:40.386849",
+    "end_time": "2026-01-27T14:14:50.219015",
+    "duration_seconds": 69
+  },
+  "qa_history": [
+    {
+      "timestamp": "2026-01-27T14:14:50.217931",
+      "question_id": 1,
+      "question": "In questa settimana ti è capitato un momento in cui ti sei sentito davvero bene?",
+      "user_answer": "Non so, forse oggi non ricordo bene. Potrebbe essere che sto pensando a qualcosa importante?",
+      "assistant_reply": "Capisco come ti senti. È normale a volte fare confusione tra i ricordi."
+    },
+    {
+      "timestamp": "2026-01-27T14:14:50.217931",
+      "question_id": 2,
+      "question": "Per quale motivo pensi di esserti sentito così?",
+      "user_answer": "Non so, forse oggi non ricordo bene. Potrebbe essere che sto pensando a qualcosa importante?",
+      "assistant_reply": "Capisco come ti senti. È normale avere momenti in cui le nostre menti sono molto affollate e ci fa dubitare di quello che stiamo pensando."
+    },
+    {
+      "timestamp": "2026-01-27T14:14:50.217931",
+      "question_id": 3,
+      "question": "Se dovessi descrivere quella sensazione con una parola, quale useresti?",
+      "user_answer": "Non so, forse oggi non ricordo bene. Potrebbe essere che sto pensando a qualcosa importante?",
+      "assistant_reply": "Capisco come ti senti. Forse la parola che esprime meglio quel senso di confusione è \"pensierosa\"."
+    },
+    {
+      "timestamp": "2026-01-27T14:14:50.217931",
+      "question_id": 4,
+      "question": "Puoi raccontarmi una situazione recente in cui ti sei sentito in difficoltà o particolarmente preoccupata?",
+      "user_answer": "Non so, forse oggi non ricordo bene. Potrebbe essere che sto pensando a qualcosa importante?",
+      "assistant_reply": "Capisco come ti senti. A volte ci sono giorni in cui le nostre menti lavorano un po' al rallentatore."
+    },
+    {
+      "timestamp": "2026-01-27T14:14:50.217931",
+      "question_id": 5,
+      "question": "Che cosa hai provato in quel momento, sia nel corpo sia nei pensieri?",
+      "user_answer": "Non so, forse oggi non ricordo bene. Potrebbe essere che sto pensando a qualcosa importante?",
+      "assistant_reply": "Capisco come ti senti. Ti ascolto con attenzione e vorrei rassicurarti: quei pensieri possono venire e andare, e sono normali."
+    },
+    {
+      "timestamp": "2026-01-27T14:14:50.217931",
+      "question_id": 6,
+      "question": "Sei riuscito a ritrovare un po' di calma? Se sì, che cosa ti ha aiutato? Se no, che cosa te lo ha reso difficile?",
+      "user_answer": "Non so, forse oggi non ricordo bene. Potrebbe essere che sto pensando a qualcosa importante?",
+      "assistant_reply": "Ti ascolto, continua pure."
+    },
+    {
+      "timestamp": "2026-01-27T14:14:50.217931",
+      "question_id": 7,
+      "question": "Se il tuo umore oggi fosse un colore, quale sarebbe?",
+      "user_answer": "Non so, forse oggi non ricordo bene. Potrebbe essere che sto pensando a qualcosa importante?",
+      "assistant_reply": "Capisco come ti senti. Forse stai riflettendo su qualcosa di profondo."
+    },
+    {
+      "timestamp": "2026-01-27T14:14:50.217931",
+      "question_id": 8,
+      "question": "Per quale motivo sceglieresti proprio questo colore?",
+      "user_answer": "Non so, forse oggi non ricordo bene. Potrebbe essere che sto pensando a qualcosa importante?",
+      "assistant_reply": "Capisco come ti senti. Ti rassicuro, ci sono giorni in cui anche le decisioni più semplici sembrano difficili."
+    },
+    {
+      "timestamp": "2026-01-27T14:14:50.217931",
+      "question_id": 9,
+      "question": "Raccontami un episodio recente che, secondo te, spiega bene questo colore e come ti sei sentito.",
+      "user_answer": "Non so, forse oggi non ricordo bene. Potrebbe essere che sto pensando a qualcosa importante?",
+      "assistant_reply": "Capisco come ti senti. Spesso i nostri ricordi possono fluttuare un po', ma ci sono sempre dei momenti che ci toccano molto."
+    },
+    {
+      "timestamp": "2026-01-27T14:14:50.217931",
+      "question_id": 10,
+      "question": "Chi o che cosa ti aiuta, di solito, a stare un po' meglio?",
+      "user_answer": "Non so, forse oggi non ricordo bene. Potrebbe essere che sto pensando a qualcosa importante?",
+      "assistant_reply": "Capisco come ti senti. Spesso ci sono momenti in cui le nostre menti si riempiono di pensieri importanti."
+    },
+    {
+      "timestamp": "2026-01-27T14:14:50.217931",
+      "question_id": 11,
+      "question": "In questa settimana sei riuscito, per quanto possibile, a portare a termine ciò che avevi programmato per la tua giornata o settimana?",
+      "user_answer": "Non so, forse oggi non ricordo bene. Potrebbe essere che sto pensando a qualcosa importante?",
+      "assistant_reply": "Capisco come ti senti. È normale a volte avere momenti di confusione."
+    },
+    {
+      "timestamp": "2026-01-27T14:14:50.217931",
+      "question_id": 12,
+      "question": "In questa settimana sei riuscito, per quanto ti è stato possibile, a seguire le indicazioni che riguardano la tua salute (ad esempio farmaci, controlli, movimento, riposo)?",
+      "user_answer": "Non so, forse oggi non ricordo bene. Potrebbe essere che sto pensando a qualcosa importante?",
+      "assistant_reply": "Capisco come ti senti e mi dispiace se hai delle preoccupazioni. Ti posso aiutare a registrare quello di cui hai bisogno nella tua giornata o a fissare un ricordino per le tue medicine e controlli?"
+    },
+    {
+      "timestamp": "2026-01-27T14:14:50.217931",
+      "question_id": 13,
+      "question": "In che modo ti sei preso cura di te questa settimana?",
+      "user_answer": "Non so, forse oggi non ricordo bene. Potrebbe essere che sto pensando a qualcosa importante?",
+      "assistant_reply": "Capisco come ti senti. È normale a volte avere momenti in cui ci è difficile concentrarci."
+    },
+    {
+      "timestamp": "2026-01-27T14:14:50.217931",
+      "question_id": 14,
+      "question": "C'è qualcosa, riguardo alla tua salute o alla tua vita quotidiana, che in questo periodo ti preoccupa in modo particolare?",
+      "user_answer": "Non so, forse oggi non ricordo bene. Potrebbe essere che sto pensando a qualcosa importante?",
+      "assistant_reply": "Capisco come ti senti, è normale preoccuparsi per le proprie facoltà cognitive. Ti ascolto completamente e se hai qualcosa di specifico in mente, ci possiamo discutere tranquillamente."
+    }
+  ],
+  "branches": {
+    "total_count": 0,
+    "details": []
+  },
+  "signals": [
+    {
+      "question_id": 1,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "futuro"
+        ],
+        "confidence": 0.65
+      }
+    },
+    {
+      "question_id": 2,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "futuro",
+          "memoria",
+          "solitudine"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 3,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "futuro"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 4,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 5,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "futuro"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 6,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "futuro"
+        ],
+        "confidence": 0.8
+      }
+    },
+    {
+      "question_id": 7,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 8,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "routine quotidiana"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 9,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "memoria",
+          "futuro"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 10,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 11,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "routine quotidiana",
+          "famiglia",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 12,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 13,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "futuro",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    },
+    {
+      "question_id": 14,
+      "extracted": {
+        "emotion": "Felicità",
+        "intensity": "alta",
+        "themes": [
+          "famiglia",
+          "routine quotidiana",
+          "memoria"
+        ],
+        "confidence": 0.6
+      }
+    }
+  ],
+  "statistics": {
+    "total_questions": 14,
+    "branch_questions": 0
+  }
+}
